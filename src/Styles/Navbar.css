@@ -1,0 +1,148 @@
+/* Navbar Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  position: relative;
+}
+
+.logo {
+  font-family: Product Sans;
+  font-size: 36px;
+  font-weight: 700;
+  color: #25a75b;
+}
+
+.nav1 {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav1 li {
+  font-family: Product Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #979797;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav1 li:hover,
+.nav1 li.active {
+  color: #25a75b;
+}
+
+.nav1 li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #25a75b;
+  transition: width 0.3s ease;
+}
+
+.nav1 li.active::after,
+.nav1 li:hover::after {
+  width: 100%;
+}
+
+/* Styling for the login button */
+.loginbtn {
+  padding: 10px 20px;
+  border-radius: 35px;
+  background: #25a75b;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.loginbtn:hover {
+  background-color: #218c4e;
+}
+
+/* Responsive Styling for Mobile and Tablets */
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .nav1 {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    display: none;
+  }
+
+  .nav1 li {
+    font-size: 18px;
+  }
+
+  .loginbtn {
+    margin-top: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #25a75b;
+  }
+
+  .nav1.show {
+    display: flex;
+  }
+}
+
+/* Tablets (from 768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nav1 {
+    gap: 25px; /* Reduce gap for tablets */
+  }
+  .nav1 li {
+    font-size: 18px; /* Increase font size slightly */
+  }
+  .loginbtn {
+    margin-top: 15px; /* Adjust login button for tablets */
+  }
+}
+
+/* Mobile Specific */
+@media (max-width: 768px) {
+  .nav1 {
+    display: none;
+  }
+
+  .nav1.show {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .loginbtn {
+    width: 100%; /* Make the login button full width */
+    margin-top: 20px;
+  }
+}

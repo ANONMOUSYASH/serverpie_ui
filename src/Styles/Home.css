@@ -1,0 +1,368 @@
+.heropar1 {
+  width: 250px;
+  height: 38px;
+  margin-top: 180px;
+  margin-left: 580px;
+  font-family: "Product Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #8d8d8d;
+}
+
+.herohead1 {
+  width: 795px;
+  height: 125px;
+  margin-top: 10px;
+  margin-left: 326px;
+  font-family: "Product Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2a3858;
+}
+
+.heropar2 {
+  width: 600px;
+  height: 57px;
+  margin-top: 10px;
+  margin-left: 430px;
+  font-family: "Montserrat", serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #595f7a;
+}
+
+.heroinput {
+  display: flex;
+  align-items: center;
+  width: 608px;
+  height: 56px;
+  margin-top: 20px;
+  margin-left: 411px;
+  padding: 8px;
+  border-radius: 30px; /* Smoother rounded corners */
+  border: 1px solid #dadada;
+  background: #ffffff;
+  box-shadow: 0px 4px 19.1px 0px #a5a5a540;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+}
+
+.herosearch {
+  position: absolute;
+  left: 10px;
+  width: 21px;
+  height: 21px;
+  color: #c6c6c6;
+}
+
+.heroinput1 {
+  flex: 1;
+  width: 100%;
+  height: 25px;
+  padding: 8px 12px 8px 35px; /* Space for search icon */
+  border: none;
+  outline: none;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #b0b0b0;
+}
+
+.herohr {
+  height: 30px;
+  width: 1px;
+  background: #dadada;
+  margin: 0 10px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+}
+
+.heroearth {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  color: #25a75b;
+}
+
+.heroselect {
+  width: 80px;
+  height: 36px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Product Sans;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  cursor: pointer;
+}
+
+.herobtn {
+  width: 180px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 606px;
+  padding: 6px 27px;
+  border-radius: 30px; /* More balanced rounded corners */
+  font-family: "Product Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center; /* Center the text */
+  color: #ffffff;
+  background: #2c3765;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.herobtn:hover {
+  background: #1f2850; /* Darker shade for hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.herobtn:active {
+  background: #1a2245; /* Even darker on click */
+  transform: translateY(0);
+}
+
+.herorec {
+  width: 1236px;
+  height: 407px;
+  margin: 50px auto; /* Centers the box horizontally */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  border-radius: 30px;
+  background: #000000;
+  text-align: center;
+}
+
+.subrec {
+  max-width: 900px; /* Restricts content width for better readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.subrechead {
+  font-family: "Product Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 65px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.subrecpar {
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ffffff;
+  max-width: 900px;
+}
+
+.herohead2 {
+  width: 790px;
+  height: 102px;
+  margin-top: 60px;
+  margin-left: 339px;
+  font-family: "Montserrat", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.herorec2 {
+  display: flex;
+  width: 508px;
+  height: 47px;
+  margin-top: 40px;
+  margin-left: 468px;
+  border-radius: 30px;
+  background: #f6f6f6;
+}
+
+.herorec3 {
+  width: 160px;
+  height: 40px;
+  margin-top: 2px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.herohead4 {
+  width: 108px;
+  height: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.herohead5 {
+  width: 59px;
+  height: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Product Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #747474;
+}
+
+.heromainbox {
+  display: flex; /* Aligns boxes in one line */
+  justify-content: center; /* Centers the boxes */
+  align-items: center; /* Vertically centers the content inside */
+  gap: 30px; /* Adds 10px space between boxes */
+  margin-top: 60px; /* Adjust top margin */
+}
+
+.herobox1,
+.herobox2,
+.herobox3 {
+  width: 298px;
+  height: 294px;
+  padding: 51px 37px;
+  border-radius: 15px;
+  border: 1px solid #e2e2e2; /* Removed duplicate border */
+  display: flex;
+  justify-content: center; /* Centers content inside each box */
+  align-items: center;
+  text-align: center;
+}
+
+.herobox2 {
+  background: #25a75b;
+}
+
+.herosubbox1 {
+  width: 221px;
+  height: 192px;
+  gap: 7px;
+  opacity: 0px;
+}
+
+.herosubearth1 {
+    width: 56px;
+height: 56px;
+margin-left: 80px;
+padding: 16px 0px 0px 0px;
+gap: 10px;
+border-radius: 28px;
+background: #EDFFF5;
+
+}
+
+.herosubearth2 {
+    width: 24px;
+height: 24px;
+color: #25A75B;
+}
+
+.heroboxhead1 {
+    width: 221px;
+height: 29px;
+margin-top: 5px;
+font-family: "Product Sans", sans-serif;
+font-size: 22px;
+font-weight: 400;
+line-height: 26.4px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #000000;
+}
+
+.heroboxpar1 {
+    width: 221px;
+height: 87px;
+font-family: "Montserrat", serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #797979;
+}
+
+.heroboxhead2 {
+    width: 221px;
+height: 29px;
+margin-top: 5px;
+font-family: "Product Sans", sans-serif;
+font-size: 22px;
+font-weight: 400;
+line-height: 26.4px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+}
+
+.heroboxpar2 {
+    width: 221px;
+height: 87px;
+font-family: "Montserrat", serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+}
