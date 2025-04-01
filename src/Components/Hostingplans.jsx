@@ -6,14 +6,15 @@ const Hostingplans = () => {
     <div className='hostingplanmaian'>
     <div className='hostingplansub'>
     <div className='hostingplansub1'>
-      <p className='hostingplansubpar1'>WITH ALL HOSTING PLANS,{' '}<span className='youget'>YOU GET</span></p>
+      <p className='hostingplansubpar1'>witth all hosting {' '}<span className='youget'>plans</span>,{" "}you get</p>
       <p className='hostingplansubpar12'>Included with NVMe Unlimited Storage for your Website. Well Optimized Server with Cloudlinux + LiteSpeed + imunify360 for Faster Website Performance & Server Security.</p>
     </div>
     <div className='hostingplansub2'>
     <div class="features">
         <div class="column">
             <ul>
-                <li>User Manager</li><hr className='lihr' />
+            <li className="w-[246px] h-[48px] rounded-[18px] px-[15px] py-[12px] bg-gradient-to-r from-[#EFF4FE] to-[#FFFFFF] flex text-center">
+            User Manager</li>
                 <li>Backups</li><hr  className='lihr'/>
                 <li>SitePad Website Builder</li><hr className='lihr' />
                 <li>1-Click Installer</li><hr className='lihr'/>

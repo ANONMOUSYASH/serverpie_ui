@@ -9,6 +9,7 @@ import { IoEarthSharp } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import TechBoxes from "../../Components/TechBoxes";
+import BestPricing from "../../Components/BestPricing";
 
 const VpsServer = () => {
   return (
@@ -363,72 +364,7 @@ const VpsServer = () => {
         </div> */}
         {/* First Table End */}
 
-        <div className="comparepricemain">
-          <div className="comparepricesub1">
-            <div className="comparepricesub2">
-              <p className="comparepricesubpar2">
-                We Offer the{" "}
-                <span className="comparepricesubpar22">Best Pricing</span>{" "}
-                Compared to Others
-              </p>
-              <p className="comparepricesubpar3">
-                Even during economic hikes, we maintain stable pricing.
-              </p>
-            </div>
-            <div className="comparepricesub3">
-              <div className="comparepricesub31">
-                <div className="circlecompare">
-                  <p className="scompare">s</p>
-                </div>
-                <div className="vcpu1">
-                  <div className="raccompare"></div>
-                  <p className="vcpu2">2 vCPU/2 GB RAM/30 GB SSD</p>
-                </div>
-                <p className="fourcompare">$4.43 /mo</p>
-              </div>
-              <div className="comparepricesub31">
-                <div className="circlecompare1">
-                  <img className="vimg1" src="v1.png" alt="" />
-                </div>
-                <div className="vcpu1">
-                  <div className="raccompare1"></div>
-                  <p className="vcpu2">2 vCPU/2 GB RAM/30 GB SSD</p>
-                </div>
-                <p className="fourcompare">$4.43 /mo</p>
-              </div>
-              <div className="comparepricesub31">
-                <div className="circlecompare2">
-                  <img className="vimg1" src="v2.png" alt="" />
-                </div>
-                <div className="vcpu1">
-                  <div className="raccompare2"></div>
-                  <p className="vcpu2">2 vCPU/2 GB RAM/30 GB SSD</p>
-                </div>
-                <p className="fourcompare">$4.43 /mo</p>
-              </div>
-              <div className="comparepricesub31">
-                <div className="circlecompare3">
-                  <img className="vimg1" src="v3.png" alt="" />
-                </div>
-                <div className="vcpu1">
-                  <div className="raccompare3"></div>
-                  <p className="vcpu2">2 vCPU/2 GB RAM/30 GB SSD</p>
-                </div>
-                <p className="fourcompare">$4.43 /mo</p>
-              </div>
-              <div className="comparepricesub31">
-                <div className="circlecompare4">
-                  <img className="vimg1" src="v4.png" alt="" />
-                </div>
-                <div className="vcpu1">
-                  <div className="raccompare4"></div>
-                  <p className="vcpu2">2 vCPU/2 GB RAM/30 GB SSD</p>
-                </div>
-                <p className="fourcompare">$4.43 /mo</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <BestPricing />
         {/* Boxes */}
         <div className="w-full max-w-[1000px] flex flex-wrap justify-center gap-[26px] mx-auto">
           <div className="w-[301px] h-[271px] bg-white border border-[#E7E6E6] shadow-[0px_4px_23.5px_0px_rgba(197,197,197,0.25)] rounded-[26px] flex flex-col items-center justify-center mx-auto p-8">

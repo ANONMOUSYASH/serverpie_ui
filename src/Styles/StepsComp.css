@@ -1,6 +1,6 @@
 .containermain {
   width: 1422px;
-  height: 596px;
+  height: 570px;
   margin: auto;
   background-color: #3973E6;
   border-radius: 29px;
@@ -114,7 +114,7 @@ text-shadow: #000;
 
 @media (max-width: 768px) {
   .containermain {
-    height: auto;
+    height: 100%;
     margin: 30px auto;
     gap: 30px;
     text-align: center;
@@ -135,9 +135,10 @@ text-shadow: #000;
   .sub2container {
     width: 100%;
     height: auto;
-    gap: 30px;
+    margin-top: -20%;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
   }
 
@@ -179,6 +180,7 @@ text-shadow: #000;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    height: 980px;
     justify-content: center;
   }
 
@@ -205,4 +207,5 @@ text-shadow: #000;
     width: 1px;
   }
 }
+
 

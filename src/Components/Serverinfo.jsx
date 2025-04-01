@@ -5,31 +5,15 @@ import { IoEarthOutline } from "react-icons/io5";
 const Serverinfo = () => {
   return (
     <div className="mainserve">
-      <div className="subserve">
-        <hr className="minihr" />
-        <div className="circlezero">
-          <div className="circlezeromini"></div>
-        </div>
-        <hr className="minihr" />
-        <div className="circlezero">
-          <div className="circlezeromini"></div>
-        </div>
-        <hr className="minihr" />
-        <div className="circlezero">
-          <div className="circlezeromini"></div>
-        </div>
-        <hr className="minihr" />
-        <div className="circlezero">
-          <div className="circlezeromini"></div>
-        </div>
-        <hr className="minihr" />
-        {/* <div className="circlezero">
-            <div className="circlezeromini"></div>
-            </div> */}
+      <div className="vip1 w-[924px] mr-[25%]">
+        <p className="font-inter font-medium text-[64px] leading-[100%] tracking-[-6%] text-[#083376] text-start">
+          Get <span className="text-[#3973E6]">exclusive perks</span> with ServerPie DDoS protection
+        </p>
+
       </div>
       <div className="minisubserve">
         <div className="subminiservebox1">
-          <div className="earthserve">
+          <div className="rounded-[50%] bg-[#3973E6]">
             <IoEarthOutline className="webearth" />
           </div>
           <div className="parserve">
@@ -42,7 +26,7 @@ const Serverinfo = () => {
           </div>
         </div>
         <div className="subminiservebox1">
-          <div className="earthserve">
+          <div className="rounded-[50%] bg-[#3973E6]">
             <IoEarthOutline className="webearth" />
           </div>
           <div className="parserve">
@@ -55,7 +39,7 @@ const Serverinfo = () => {
           </div>
         </div>
         <div className="subminiservebox1">
-          <div className="earthserve">
+          <div className="rounded-[50%] bg-[#3973E6]">
             <IoEarthOutline className="webearth" />
           </div>
           <div className="parserve">
@@ -67,7 +51,7 @@ const Serverinfo = () => {
           </div>
         </div>
         <div className="subminiservebox1">
-          <div className="earthserve">
+          <div className="rounded-[50%] bg-[#3973E6]">
             <IoEarthOutline className="webearth" />
           </div>
           <div className="parserve">

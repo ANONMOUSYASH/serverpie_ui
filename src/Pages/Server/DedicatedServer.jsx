@@ -6,6 +6,7 @@ import TechBoxes from "../../Components/TechBoxes";
 import DedicatedBox from "../../Components/DedicatedBox";
 import ServerFeatures from "../../Components/ServerFeatures";
 import FilterTable from "../../Components/FilterTable";
+import ResellerOptions from "../../Components/Reselleroptions";
 
 const DedicatedServer = () => {
   return (
@@ -133,6 +134,7 @@ const DedicatedServer = () => {
             <DedicatedBox />
 
           {/* Dedicated Box End*/}
+          <ResellerOptions />
 
           {/* Migration Start */}
               <Migration />

@@ -1,7 +1,7 @@
 .ddosattackmain {
     width: 95%;
     max-width: 1417px;
-    height: 823px;
+    height: 750px;
     margin: auto;
     gap: 40px;
     text-align: center;
@@ -110,13 +110,23 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     .ddosattacksubpar1 {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .ddosattacksubpar2 {
         font-size: 14px;
-        line-height: 18px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ddosattacksub2 {
+        width: 100%;
+        max-width: 45%;
+        margin: 10px auto;
     }
 
     .ddosattack2 {
@@ -126,37 +136,77 @@
 
 @media (max-width: 768px) {
     .ddosattacksubpar1 {
-        font-size: 32px;
-        line-height: 38px;
-    }
-
-    .ddosattacksubpar2 {
-        font-size: 14px;
-    }
-
-    .ddosattack2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ddosattacksub2,
-    .ddosattacksub2sub {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .ddosattacksubpar1 {
         font-size: 28px;
-        line-height: 34px;
+        line-height: 36px;
     }
 
     .ddosattacksubpar2 {
         font-size: 13px;
+        width: 100%;
     }
 
-    .ddosattacksub2,
-    .ddosattacksub2sub {
+    .ddosattacksub2 {
         width: 100%;
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .ddosattack2 {
+        gap: 15px;
+    }
+
+    .ddosattacksubpar12 {
+        font-size: 20px;
+    }
+
+    .ddosattacksubpar22 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ddosattackmain {
+        height: auto;
+    }
+    .ddosattacksubpar1 {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .ddosattacksubpar2 {
+        font-size: 12px;
+    }
+    .ddosattacksub2 {
+        width: auto;
+        height: auto;
+    }
+
+    .ddosattacksub2sub {
+        width: auto;
+        height: auto;
+    }
+
+    .ddosattacksub2 {
+        width: auto;
+        height: auto;
+    }
+
+    /* .ddosattacksub2 {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    } */
+
+    .ddosattacksubpar12 {
+        font-size: 18px;
+    }
+
+    .ddosattacksubpar22 {
+        font-size: 12px;
+    }
+
+    .ddosattack2 {
+        gap: 10px;
     }
 }

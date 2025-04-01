@@ -10,6 +10,8 @@ import Contactfriedly from '../../Components/Contactfriedly';
 import Hosting from '../../Components/Hosting';
 import Hostingplans from '../../Components/Hostingplans';
 import Testimonial from "../../Components/Testimonial";
+import WorkingStaps from '../../Components/WorkingSteps';
+import BestPricing from '../../Components/BestPricing';
 
 const SharedHosting = () => {
   return (
@@ -20,19 +22,22 @@ const SharedHosting = () => {
     <main>
       <div className='sharedhosthero'>
         <div className="sharedhostherosub">
-          <p className='sharedhostingheropar1'>Blazing Fast & Secure Shared Hosting 
-          Get Online Instantly!</p>
-          <p className='sharedhostingheropar2'>Affordable, reliable, and optimized for speed – Perfect for blogs, startups, 
+          <p className='sharedhostingheropar1 text-start font-medium'>Fast & Secure Hosting Go Live Instantly!</p>
+          <p className='sharedhostingheropar2 text-start pl-[30px] text-[#2D5087]'>Affordable, reliable, and optimized for speed – Perfect for blogs, startups, 
           and businesses. Get free SSL, cPanel, and 24/7 expert support!</p>
+          <div className="sharehostherobtn mr-[20%]">
+        <button className='sharedhostingbtn12 bg-[#3973E6]'>Buy Now</button>
+        <button className='sharedhostingbtn22' style={{width: "222px"}}>Connect With Expert</button>
         </div>
-        <div className="sharehostherobtn">
-        <button className='sharedhostingbtn1'>See Plans</button>
-        <button className='sharedhostingbtn2' style={{width: "222px"}}>Connect With Expert</button>
+        </div>
+        <div className='w-auto h-auto ml-[15%]'>
+          <img src="computer1.png" alt="" />
         </div>
       </div>
-      <Steps />
+      <WorkingStaps />
       <Hosting />
         <HostingSolution />
+        <BestPricing />
 
         {/* The Secret OF Serverpie */}
         <div className="sharedhostsecretmain">

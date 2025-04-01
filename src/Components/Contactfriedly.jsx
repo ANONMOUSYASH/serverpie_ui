@@ -19,7 +19,7 @@ const Contactfriedly = () => {
       <div className="submainfram92">
         <div className="subbox91">
             {/* <div className="circle"> */}
-            <img src="call4.png" alt="" />
+            <img src="call.svg" alt="" />
           {/* </div> */}
           <p className="livep">Live Chat with Sales</p>
           <p className="speak">
@@ -29,7 +29,7 @@ const Contactfriedly = () => {
         </div>
         <div className="subbox91">
           {/* <div className="circle"> */}
-          <img src="call3.png" alt="" />
+          <img src="whats.svg" alt="" />
           {/* </div> */}
           <p className="livep">Whatsapp Support</p>
           <p className="speak">
@@ -39,7 +39,7 @@ const Contactfriedly = () => {
         </div>
         <div className="subbox91">
           {/* <div className="circle"> */}
-            <img src="call2.png" alt="" />
+            <img src="whats1.svg" alt="" />
           {/* </div> */}
           <p className="livep">Raise a Support Ticket</p>
           <p className="speak">
@@ -49,7 +49,7 @@ const Contactfriedly = () => {
         </div>
         <div className="subbox91">
            {/* <div className="circle"> */}
-           <img src="call1.png" alt="" />
+           <img src="call1.svg" alt="" />
           {/* </div> */}
           <p className="livep">Connect on call</p>
           <p className="speak">

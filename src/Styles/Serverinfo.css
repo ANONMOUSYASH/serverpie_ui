@@ -1,19 +1,19 @@
 /* General Styles */
 .mainserve {
-  width: 90%;
-  max-width: 1276px;
-  margin: 50px auto;
+  width: 1276px;
+  /* max-width: 1276px; */
+  margin:auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 41px;
   position: relative;
 }
 
 .subserve {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center;
+  justify-content: space-between; */
   width: 100%;
   position: relative;
 }
@@ -51,7 +51,7 @@
   min-height: 313px;
   border-radius: 26px;
   padding: 46px 32px;
-  border: 1px solid #e7e6e6;
+  border: 1px solid #E7E6E6;
   background: #ffffff;
   box-shadow: 0px 4px 23.5px 0px #c5c5c540;
   display: flex;
@@ -64,7 +64,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #25a75b;
+  background: #3973E6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,7 @@
   font-weight: 700;
   font-size: 20px;
   margin-top: 20px;
-  color: #0e2954;
+  color: #0E2954;
 }
 
 .servepar2 {
@@ -89,7 +89,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
-  color: #2d5087;
+  color: #2D5087;
 }
 
 /* Responsive Design */
@@ -135,6 +135,11 @@
   .subserve {
     flex-direction: column;
     align-items: center;
+  }
+
+  .vip1 {
+    width: auto;
+    margin-left: 30%;
   }
 
   .subminiservebox1 {

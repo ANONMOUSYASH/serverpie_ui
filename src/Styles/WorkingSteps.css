@@ -103,111 +103,126 @@ color: #0e2954;
 text-shadow: #000;
 }
 
-@media (max-width: 1024px) {
+/* Responsive Design */
+@media (max-width: 1200px) {
   .containermain1 {
-    margin: 40px auto;
-    gap: 40px;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .top1 {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .sub2box11 {
+    width: 300px;
+    height: 220px;
+  }
+
+  .one1 {
+    font-size: 22px;
+  }
+
+  .choose1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .containermain1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .howp1 {
+    font-size: 42px;
+  }
+
+  .top1 {
+    font-size: 20px;
   }
 
   .sub2container1 {
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    gap: 40px;
+  }
+
+  .sub2box11 {
+    width: 280px;
+    height: 200px;
+    margin: 30px auto;
+  }
+
+  .choose1 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .chhose11 {
+    width: auto;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .containermain1 {
-    height: auto;
-    margin: 30px auto;
-    gap: 30px;
-    text-align: center;
-    width: 95%;
-  }
-
   .howp1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 36px;
   }
 
   .top1 {
-    width: 100%;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .sub2container1 {
-    width: 100%;
-    height: auto;
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-size: 18px;
+    padding: 0 10px;
   }
 
   .sub2box11 {
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 190px;
   }
 
-  .sub2box21 {
-    width: 40px;
-    height: 40px;
-    padding: 6px;
+  .choose1 {
+    font-size: 18px;
+  }
+
+  .chhose11 {
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
-  .containermain1 {
-    margin: 15px auto;
-    gap: 15px;
-    width: 100%;
-    
+
+  .containermain1{
+    height: 1000px;
   }
 
   .howp1 {
-    font-size: 22px;
-    width: 75%;
-    line-height: 28px;
+    font-size: 28px;
   }
 
   .top1 {
-    font-size: 14px;
-    line-height: 20px;
-    width: 75%;
-    text-align: center;
-  }
-
-  .sub2container1 {
-    width: 100%;
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-size: 16px;
   }
 
   .sub2box11 {
     width: 100%;
-    max-width: 300px;
     height: auto;
+    padding: 20px;
+    display: flex;
   }
 
-  .sub2box21 {
-    width: 30px;
-    height: 30px;
-    padding: 4px;
-  }
-
-  .one1 {
+  .choose1 {
     font-size: 16px;
-    text-align: center;
-    justify-content: center;
-    margin-top: -4px;
-    margin-left: 5px;
   }
-  .hr51 {
-    width: 1px;
+
+  .chhose11 {
+    font-size: 10px;
+    padding-left: 40px;
+    width: 200px;
   }
 }
-

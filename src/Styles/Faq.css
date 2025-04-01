@@ -1,5 +1,5 @@
 .minifram6 {
-    width: 867px;
+    width: auto;
     text-align: center;
   }
   
@@ -49,11 +49,13 @@
   
   .minifram7 {
     width: 100%;
-    max-width: 928px;
+    /* max-width: 928px; */
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: auto;
+    margin-top: 20px;
+    background-color: #FAFCFF;
+    border-radius: 26px;
   }
   
   .faq-item {

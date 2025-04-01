@@ -45,7 +45,7 @@ const Home = () => {
             <div className="framechildbox1">
               <div className="framechildicon">
                 <div className="w-[55px] h-[55px] bg-[#FF0808] rounded-[27px] m-[30px]">
-                  <LuRocket className="icon22" />
+                <img src="01.svg" className="icon22 " />
                 </div>
                 <p className="framechildipar1">Advanced DDoS Protection</p>
                 <p className="framechildipar2">
@@ -57,7 +57,7 @@ const Home = () => {
             <div className="framechildbox2">
               <div className="framechildicon">
                 <div className="w-[55px] h-[55px] rounded-[27px] m-[30px] bg-[#FF8D41]">
-                  <MdOutlineSecurity className="icon22 " />
+                  <img src="03.svg" className="icon22 " />
                 </div>
                 <p className="framechildipar1">Multi-Layered Security</p>
                 <p className="framechildipar2">
@@ -70,7 +70,7 @@ const Home = () => {
             <div className="framechildbox3">
               <div className="framechildicon">
                 <div className="w-[55px] h-[55px] bg-[#25A75B] rounded-[27px] m-[30px]">
-                  <MdElectricBolt className="icon22" />
+                <img src="02.svg" className="icon22 " />
                 </div>
                 <p className="framechildipar1">Real-Time Traffic Filtering</p>
                 <p className="framechildipar2">
@@ -81,7 +81,7 @@ const Home = () => {
             <div className="framechildbox5">
               <div className="framechildicon">
                 <div className="w-[55px] h-[55px] bg-[#3E9CFF] rounded-[27px] m-[30px]">
-                  <AiOutlineBarChart className="icon22" />
+                <img src="04.svg" className="icon22 " />
                 </div>
                 <p className="framechildipar1">24/7 Monitoring & Alerts</p>
                 <p className="framechildipar2">
@@ -101,7 +101,7 @@ const Home = () => {
         <SeoBanner />
 
         <div className="heroheadmain2">
-          <div className="flex w-auto gap-[86px] ">
+        <div className="flex flex-col lg:flex-row w-auto gap-6 lg:gap-[86px] text-center lg:text-left items-center">
           <p className="herohead2">
             From top performance to constant support, we’ve got you covered.
           </p>
@@ -125,7 +125,7 @@ const Home = () => {
             <div className="herobox1">
               <div className="herosubbox1">
                 <div className="herosubearth1">
-                  <IoEarthSharp className="herosubearth2" />
+                  <img src="05.svg" className="herosubearth2" />
                 </div>
                 <h4 className="heroboxhead1">Faster Load Times</h4>
                 <p className="heroboxpar1">
@@ -137,7 +137,7 @@ const Home = () => {
             <div className="herobox1">
               <div className="herosubbox1">
                 <div className="herosubearth1">
-                  <IoEarthSharp className="herosubearth2" />
+                <img src="05.svg" className="herosubearth2" />
                 </div>
                 <h4 className="heroboxhead1">Faster Load Times</h4>
                 <p className="heroboxpar1">
@@ -149,7 +149,7 @@ const Home = () => {
             <div className="herobox2">
               <div className="herosubbox1">
                 <div className="herosubearth1">
-                  <IoEarthSharp className="herosubearth2" />
+                <img src="05.svg" className="herosubearth2" />
                 </div>
                 <h4 className="heroboxhead2">Instant Activation</h4>
                 <p className="heroboxpar2">
@@ -161,7 +161,7 @@ const Home = () => {
             <div className="herobox3">
               <div className="herosubbox1">
                 <div className="herosubearth1">
-                  <IoEarthSharp className="herosubearth2" />
+                <img src="05.svg" className="herosubearth2" />
                 </div>
                 <h4 className="heroboxhead1">High-Performance Architecture</h4>
                 <p className="heroboxpar1">

@@ -1,0 +1,311 @@
+.comparepricemain {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 35px;
+    padding-top: 43px;
+    padding-right: 51px;
+    padding-bottom: 43px;
+    padding-left: 51px;
+    gap: 10px;
+    /* background: #F1F6FE; */
+  }
+  
+  .comparepricesub1 {
+    width: 1292px;
+    height: auto;
+    display: flex;
+    gap: 113px;
+  }
+  
+  .comparepricesub2 {
+    width: 483px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    /* justify-content: center; */
+    gap: 24px;
+  }
+  
+  .comparepricesub3 {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Ensures vertical alignment */
+    width: auto;
+    /* margin-top: 50px; */
+    text-align: center;
+    height: auto;
+    /* gap: 24px;  */
+  }
+  
+  .comparepricesubpar2 {
+    /* width: 950px; */
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 65px;
+    letter-spacing: -4%;
+    /* text-align: center; */
+    color: #083376;
+  }
+  
+  .comparepricesubpar22 {
+    color: #3973E6;
+  }
+  
+  .comparepricesubpar3 {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* margin-left: 10px; */
+    line-height: 20px;
+    letter-spacing: 1%;
+    color: #2D5087;
+  }
+
+  .comparepricesub3 {
+    display: flex;
+    gap: 39px;
+  }
+  
+  .comparepricesub31 {
+    display: flex;
+    width: auto;
+    height: 66px;
+    gap: 20px;
+  }
+  
+  .circlecompare {
+    width: 47px;
+    height: 44px;
+    margin: 5px;
+    border-radius: 6px;
+    background: #88B0FF;
+  }
+  
+  .scompare {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px auto;
+    line-height: 23.82px;
+    letter-spacing: 0%;
+    color: #ffffff;
+  }
+  
+  .raccompare {
+    width: 191px;
+    height: 8px;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: #41BC5E;
+  }
+  
+  .fourcompare {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 19.36px;
+    letter-spacing: 0%;
+    color: #213036;
+  }
+  
+  .vcpu2 {
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    align-self: flex-start;
+    text-align: left;
+    line-height: 14.52px;
+    letter-spacing: 0%;
+    color: #213036;
+  }
+  
+  .vimg1 {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  
+  .raccompare1 {
+    width: 235px;
+    height: 8px;
+    border-radius: 8px;
+    margin-top: 12px;
+    background: #B3CDFF;
+  }
+  
+  .raccompare2 {
+    width: 359px;
+    height: 8px;
+    border-radius: 8px;
+    background: #B3CDFF;
+  }
+  
+  .raccompare3 {
+    width: 414px;
+    height: 8px;
+    border-radius: 8px;
+    background: #B3CDFF;
+  }
+  
+  .raccompare4 {
+    width: 536px;
+    height: 8px;
+    border-radius: 8px;
+    background: #B3CDFF;
+  }
+  
+  .circlecompare1 {
+    width: 47px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #88B0FF;
+  }
+  
+  .circlecompare2 {
+    width: 47px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #88B0FF;
+  }
+  
+  .circlecompare3 {
+    width: 47px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #88B0FF;
+  }
+  
+  .circlecompare4 {
+    width: 47px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #393CFF;
+  }
+  
+  @media (max-width: 1024px) {
+    .comparepricemain {
+      width: 95%;
+      padding: 30px;
+    }
+  
+    .comparepricesub1,
+    .comparepricesub2,
+    .comparepricesub3 {
+      width: 100%;
+      height: auto;
+      gap: 30px;
+    }
+  
+    .comparepricesubpar2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    .comparepricesubpar3 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  
+    .comparepricesub31 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .raccompare,
+    .raccompare1,
+    .raccompare2,
+    .raccompare3,
+    .raccompare4 {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .comparepricemain {
+      padding: 20px;
+      align-items: center;
+    }
+  
+    .comparepricesubpar2 {
+      font-size: 28px;
+      line-height: 36px;
+      text-align: center;
+    }
+  
+    .comparepricesubpar3 {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .comparepricesub31 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .circlecompare,
+    .circlecompare1,
+    .circlecompare2,
+    .circlecompare3,
+    .circlecompare4 {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .scompare {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .comparepricesub1 {
+      display: flex;
+      flex-direction: column;
+    }
+    .comparepricemain {
+      padding: 15px;
+      border-radius: 20px;
+    }
+  
+    .comparepricesubpar2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .comparepricesubpar3 {
+      font-size: 14px;
+    }
+  
+    .circlecompare,
+    .circlecompare1,
+    .circlecompare2,
+    .circlecompare3,
+    .circlecompare4 {
+      width: 35px;
+      height: 35px;
+    }
+    .scompare {
+      margin-top: 5px;
+    }
+  
+    .vimg1 {
+      margin-top: 5px;
+      margin-left: -5px;
+    }
+  
+    .scompare {
+      font-size: 18px;
+    }
+
+    .btnz {
+      margin: auto;
+    }
+  }
+  
+  

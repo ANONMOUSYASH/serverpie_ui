@@ -1,6 +1,6 @@
 /* Fram Main */
 .framemain {
-    width: 1036px;
+    width: 1357px;
     height: auto;
     /* Adjust height dynamically */
     margin: 50px auto;
@@ -15,7 +15,7 @@
 
 .framesub1 {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
    /* align-items: center;
@@ -24,17 +24,16 @@
 }
 
 .framesubpar1 {
-    width: 766px;
-    margin-left: -150px;
+    width: 900px;
+    margin-left: -155px;
     text-align: start;
     align-self: self-start;
     font-family: "Inter", sans-serif;
     font-size: 64px;
     font-weight: 500;
     line-height: 65px;
-    letter-spacing: -4%;
-    color: #0E2954;
-    border: #00000033;
+    letter-spacing: -6%;
+    color: #083376;
 }
 
 .framsubspan {
@@ -42,15 +41,15 @@
 }
 
 .framesubpar2 {
-  width: 766px;
+  width: 900px;
     text-align: start;
     align-self: self-start;
-    margin-left: -150px;
+    margin-left: -155px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    color: #545454;
+    color: #2D5087;
 }
 
 .framesubmainbtn {
@@ -89,7 +88,7 @@
 }
 
 .hostingprovider {
-    width: 1208px;
+    width: auto;
     /* height: 787px; */
     margin-top: 50px;
    /*Centers the container */
@@ -103,25 +102,33 @@
 
 
 .hostingsub {
-    width: 284px;
+    width: 323px;
     /* height: 787px; */
-    border-radius: 6.99px;
+    border-radius: 17px;
     border-width: 0.87px;
     background: #FFFFFF;
-    border: 0.87px solid #4E4EEB1A;
-    box-shadow: 0px 4px 19.4px 0px #AAAAAA40;
+    border: 0.87px solid #E9E9E9;
+    transition: border 1s ease-in-out, box-shadow 1s ease-in-out;
+    background: linear-gradient(360deg, #FFFFFF 58.2%, #EDF3FF 146%);
+}
+
+.hostingsub:hover {
+  border: 4px solid #3973E6;
+  box-shadow: 0px 0px 10px rgba(57, 115, 230, 0.5); /* Soft glow effect */
 }
 
 .hostingh4 {
-    width: 159px;
+    width: 237px;
     height: auto;
     margin-top: 44px;
-    margin-left: 14px;
-    font-family: "Cal Sans", serif;
+    /* margin-left: 14px; */
+    font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 17.49px;
-    line-height: 20.98px;
-    letter-spacing: 0%;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    align-items: middle;
+    letter-spacing: -3%;
     color: #0E2954;
 }
 
@@ -129,8 +136,8 @@
     width: 171px;
     height: 18px;
     /* margin-top: px; */
-    margin-left: 26.93px;
-    font-family: "Product Sans", sans-serif;
+    margin-left: 26px;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12.24px;
     line-height: 18.36px;
@@ -139,16 +146,16 @@
 }
 
 .hostingparprice {
-    width: 69px;
-    height: 20px;
+    width: 90px;
+    height: 25px;
     margin-top: 55px;
     margin-left: 26px;
-    font-family: "Cal Sans", serif;
-    font-weight: 600;
-    font-size: 22.73px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
     line-height: 34.1px;
-    letter-spacing: 0%;
-    color: #0E2954;
+    letter-spacing: -3%;
+    color: #3973E6;
 }
 
 .hostingparprice2 {
@@ -156,7 +163,7 @@
     height: 18px;
     top: 165.96px;
     margin-left: 26.93px;
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12.24px;
     line-height: 18.36px;
@@ -174,21 +181,25 @@
 }
 
 .hostingbutton {
-    width: 230px;
-    height: 36px;
+    width: 275px;
+    height: 44px;
     margin-top: 20px;
-    border-radius: 3.5px;
+    border-radius: 63px;
     border-width: 0.87px;
-    font-family: "Inter", serif;
-    font-weight: 500;
-    font-size: 12.24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
     line-height: 18.36px;
     letter-spacing: 0%;
-    color: #FFFFFF;
-    background: #3973E6;
+    color: #3973E6;
+    background: #ffffff;
     border: 0.87px solid #3973E6;
     box-shadow: -3.5px 3.5px 0px 0px #4E4EEB1A;
+}
 
+.hostingbutton:hover {
+  background-color: #3973E6;
+  color: #ffffff;
 }
 
 .hostingh5 {
@@ -197,8 +208,8 @@
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 26.93px;
-    font-family: "Inter", serif;
-    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
     font-size: 12.24px;
     line-height: 14.69px;
     letter-spacing: 0%;
@@ -375,11 +386,15 @@
     .framesubpar1 {
       font-size: 32px;
       line-height: 40px;
+      width: 400px;
+      margin: auto;
     }
   
     .framesubpar2 {
       font-size: 14px;
       line-height: 22px;
+      width: 400px;
+      margin: auto;
     }
   
     .framesubmainbtn {
@@ -401,11 +416,13 @@
     .framesubpar1 {
       font-size: 28px;
       line-height: 36px;
+      width: auto;
     }
   
     .framesubpar2 {
       font-size: 12px;
       line-height: 20px;
+      width: auto;
     }
   
     .framesubmainbtn {

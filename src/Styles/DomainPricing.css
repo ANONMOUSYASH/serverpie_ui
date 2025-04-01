@@ -1,8 +1,8 @@
 /* Hero Section Styles */
 .hero {
-    width: auto;
+    width: 1445pxx;
     height: auto;
-    margin-top: 200px;
+    margin-top: 120px;
     /* margin-left: auto;
     margin-right: auto; */
     /* gap: 80px; */
@@ -10,14 +10,17 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%);
+
     /* Centers text */
   }
   
   .heropar1 {
     width: auto;
-    height: 38px;
-    margin-left: auto;
-    margin-right: auto;
+    /* height: 38px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: left;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -28,7 +31,7 @@
   
   .herohead1 {
     width: 604px;
-    height: 224px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     font-family: "Inter", sans-serif;
@@ -36,7 +39,7 @@
     font-weight: 500;
     line-height: 73px;
     letter-spacing: -6%;
-    text-align: center;
+    text-align: left;
     color: #083376;
   }
   
@@ -44,7 +47,7 @@
   .herohs,
   .herohe {
     width: 750px;
-    height: 125px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     font-family: "Inter", sans-serif;
@@ -60,14 +63,14 @@
   
   .heropar2 {
     width: auto;
-    height: 57px;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     font-family: "Inter", sans-serif;
     font-size: 19px;
     font-weight: 400;
     line-height: 36px;
-    text-align: center;
+    text-align: left;
     color: #2D5087;
   }
   
@@ -515,39 +518,126 @@
     color: #ffffff;
   }
   
-  @media (max-width: 768px) {
-    .domainprice {
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero {
+      margin-top: 150px;
+      padding: 0 20px;
+  }
+
+  .herohead1 {
+      font-size: 64px;
+      line-height: 68px;
+  }
+
+  .heropar2 {
+      font-size: 18px;
+  }
+
+  .herobtn {
+      width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      margin-top: 100px;
+      text-align: center;
+  }
+
+  .herohead1 {
+      font-size: 48px;
+      line-height: 50px;
+  }
+
+  .heropar2 {
+      font-size: 16px;
+      line-height: 28px;
+  }
+
+  .sectionherosub {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .subdomainbox, .subdomainbox1 {
+  }
+
+  .heroinput1 {
+      width: 90%;
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .herobtn {
+      width: 140px;
+      font-size: 14px;
+  }
+
+  .domainprice {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .subdomainbox {
       max-width: 90%;
       height: auto;
       padding: 15px;
-    }
-  
-    .com {
-      font-size: 18px;
-    }
-  
-    .starting1 {
-      font-size: 18px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .subdomainbox, .subdomainbox1 {
+
+  .com {
+      font-size: 18px;
+  }
+
+  .starting1 {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+  }
+
+
+ .boxes {
+  margin-left: auto;
+  margin-right: auto;
+ }
+  .herohead1 {
+      font-size: 32px;
+      line-height: 40px;
+  }
+
+  .heropar2 {
+      font-size: 14px;
+  }
+
+  .heroinput1 {
+      font-size: 12px;
+  }
+
+  .herobtn {
+      width: 120px;
+      font-size: 12px;
+  }
+
+  .boxes {
+    width: auto;
+  }
+
+  .subdomainbox {
       max-width: 100%;
       padding: 10px;
-    }
-    
-    .com {
-      font-size: 16px;
-    }
-  
-    .starting1 {
-      font-size: 16px;
-    }
   }
+
+  .com {
+      font-size: 16px;
+  }
+
+  .starting1 {
+      font-size: 16px;
+  }
+}
+
+
   

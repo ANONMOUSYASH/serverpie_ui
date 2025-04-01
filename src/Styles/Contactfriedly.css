@@ -350,6 +350,11 @@
   }
   
   @media (max-width: 480px) {
+
+    .frammain9{
+      display: flex;
+      flex-direction: column;
+    }
     .conpar {
       font-size: 28px;
       line-height: 32px;

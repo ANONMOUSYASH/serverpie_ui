@@ -110,36 +110,74 @@
     text-align: start;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .attackpar1 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 50px;
+        line-height: 1.2;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .attackpar2 {
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .subattack3 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .attackbox1 {
+        width: 48%;
+    }
+}
+
+@media (max-width: 992px) {
+    .Attackmain {
+        padding: 40px 5%;
+        align-items: center;
+    }
+
+    .attackpar1 {
+        font-size: 42px;
+        text-align: center;
+        width: 100%;
     }
 
     .attackpar2 {
         font-size: 14px;
-        width: 90%;
+        width: 95%;
+        text-align: center;
+    }
+
+    .subattacksub3,
+    .subattacksub4 {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .attackbox1 {
-        width: 45%;
+        width: 80%;
     }
 }
 
 @media (max-width: 768px) {
     .Attackmain {
-        padding: 40px 5%;
+        padding: 30px 5%;
     }
 
     .attackpar1 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 32px;
+        text-align: center;
     }
 
     .attackpar2 {
         font-size: 13px;
-        width: 100%;
+        text-align: center;
     }
 
     .subattacksub3,
@@ -149,26 +187,56 @@
     }
 
     .attackbox1 {
-        width: 80%;
+        width: 90%;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .Attackmain {
-        padding: 30px 5%;
+        padding: 20px 5%;
     }
 
     .attackpar1 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 26px;
+        line-height: 1.3;
     }
 
     .attackpar2 {
         font-size: 12px;
+        width: 100%;
     }
 
     .attackbox1 {
-        width: 90%;
+        width: auto;
+        height: auto;
+    }
+
+    .attackboxpar1 {
+        font-size: 16px;
+    }
+
+    .attackboxpar2 {
+        font-size: 12px;
+    }
+
+    .subattackbox1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .attackicon1 {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .attackpar1 {
+        font-size: 22px;
+    }
+
+    .attackpar2 {
+        font-size: 11px;
     }
 
     .attackboxpar1 {
@@ -179,13 +247,8 @@
         font-size: 12px;
     }
 
-    .subattackbox1 {
-        width: 60px;
-        height: 60px;
-    }
-
-    .attackicon1 {
-        width: 35px;
-        height: 35px;
+    .attackbox1 {
+        width: 100%;
     }
 }
+
