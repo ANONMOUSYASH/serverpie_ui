@@ -1,0 +1,547 @@
+.Envatomain {
+  width: 705px;
+  height: 779px;
+  margin: 50px auto;
+  gap: 69px;
+}
+
+.Envatosub1 {
+  width: 598px;
+  height: 131px;
+  gap: 17px;
+}
+
+.Envatosub2 {
+  width: 705px;
+  height: 579px;
+  margin-top: 60px;
+  display: flex; /* Enables gap */
+  flex-direction: column; /* Ensures vertical spacing */
+  gap: 16px;
+}
+
+.processenvato {
+  width: 75px;
+  height: 28px;
+  margin: auto;
+  border-radius: 32px;
+  gap: 10px;
+  padding: 10px;
+  background: #fff4e5;
+}
+
+.Envatopar {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14.52px;
+  letter-spacing: 0%;
+  color: #da2f00;
+}
+
+.Envatosub11 {
+  width: 598px;
+  height: 86px;
+  margin: 20px auto;
+  gap: 17px;
+}
+
+.Envatopar1 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  line-height: 38.73px;
+  letter-spacing: 0%;
+  color: #213036;
+}
+
+.Envattopar2 {
+  width: 505px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: auto;
+  line-height: 14.52px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4b5875;
+}
+
+.Envatosub21 {
+  width: 705px;
+  /* height: 122px; */
+  border-radius: 100.5px;
+  padding-top: 18px;
+  padding-right: 14px;
+  padding-bottom: 18px;
+  padding-left: 14px;
+  gap: 10px;
+  border-width: 1px;
+  border: 1px solid #e4e4e4;
+}
+
+.Envatosub22 {
+  display: flex;
+  width: 426px;
+  height: 102px;
+  gap: 32px;
+}
+.Envatosub222 {
+    display: flex;
+    width: 426px;
+    margin-left: 250px;
+    height: 102px;
+    gap: 32px;
+    text-align: right;
+    flex-direction: row-reverse; 
+    justify-content: flex-end;
+}
+
+.Envatosub23 {
+  width: 102px;
+  height: 102px;
+  /* margin-top: -10px; */
+  border-radius: 51px;
+  padding-top: 30px;
+  padding-right: 31px;
+  padding-bottom: 30px;
+  padding-left: 31px;
+  gap: 10px;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.73px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  background: #25a75b;
+}
+
+.Envatosub24 {
+  width: 292px;
+  height: 69px;
+  gap: 8px;
+}
+
+.Envatosubpar25 {
+  font-family: 'Inter',serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.05px;
+  letter-spacing: 0%;
+}
+
+.Envatosubpar26 {
+    font-family: 'Inter',serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 16.94px;
+letter-spacing: 0%;
+color: #213036;
+}
+
+@media (max-width: 1024px) {
+  .Envatomain {
+    width: 90%;
+    height: auto;
+  }
+
+  .Envatosub1,
+  .Envatosub11 {
+    width: 100%;
+  }
+
+  .Envatosub2 {
+    width: 100%;
+    margin-top: 40px;
+    gap: 12px;
+  }
+
+  .Envattopar2 {
+    width: 90%;
+  }
+
+  .Envatosub21 {
+    width: 100%;
+    padding: 15px;
+    border-radius: 80px;
+  }
+
+  .Envatosub22,
+  .Envatosub222 {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Envatosub23 {
+    width: 90px;
+    height: 90px;
+    font-size: 28px;
+    padding: 20px;
+  }
+
+  .Envatosub24 {
+    width: auto;
+    text-align: center;
+  }
+
+  .Envatosubpar25 {
+    font-size: 20px;
+  }
+
+  .Envatosubpar26 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Envatosub2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Envatosub23 {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+
+  .Envatosubpar25 {
+    font-size: 18px;
+  }
+
+  .Envatosubpar26 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Envatomain {
+    margin: 30px auto;
+    gap: 40px;
+  }
+
+  .Envatosub1 {
+    gap: 10px;
+  }
+
+  .Envatosub2 {
+    margin-top: 80px;
+  }
+
+  .Envatosub23 {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .Envatosubpar25 {
+    font-size: 16px;
+  }
+
+  .Envatosubpar26 {
+    font-size: 10px;
+  }
+}
+
+
+
+.Envanttosecondheromain {
+  width: 1151px;
+height: 334px;
+margin: 50px auto;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+border-width: 1px;
+padding-top: 61px;
+padding-right: 86px;
+padding-bottom: 61px;
+padding-left: 86px;
+background: linear-gradient(90deg, #DBFFE4 0%, #FFFFFF 90.26%);
+border: 1px solid;
+border-image-source: linear-gradient(90deg, #A1FFC8 0%, #FFFFFF 100%);
+}
+
+.Envanttosecondheromain1 {
+  width: 948px;
+height: 175px;
+display: flex;
+gap: 134px;
+}
+
+.Envanttosecondheromain11 {
+  width: 458px;
+height: 175px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.Envantosuvpar1 {
+  font-family: 'Inter',serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 14.52px;
+letter-spacing: 0%;
+color: #25A75B;
+}
+
+.envantosuvpar2 {
+  width: 400px;
+  font-family: 'Inter',serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+letter-spacing: -1%;
+color: #0E2954;
+border: #00000033;
+}
+
+.envantosubbtnhero2 {
+  width: 217px;
+height: 35px;
+display: flex;
+gap: 10px;
+
+}
+
+.envantohero21, .envantohero22 {
+  width: 113px;
+height: 35px;
+border-radius: 9px;
+gap: 10px;
+padding: 10px;
+font-family: 'Inter',serif;
+font-weight: 600;
+font-size: 12px;
+line-height: 14.52px;
+letter-spacing: 0%;
+color: #FFFFFF;
+background: #25A75B;
+}
+
+.Envanttosecondheromain12 {
+  margin: 50px auto;
+}
+
+.img2enventohosr1 {
+  padding-top: 15px;
+}
+
+.img2enventohosr12 {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  .Envanttosecondheromain {
+    width: 90%;
+    padding: 40px 30px;
+  }
+  
+  .Envanttosecondheromain1 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Envanttosecondheromain11 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .envantosubbtnhero2 {
+    justify-content: center;
+    width: 42%;
+  }
+}
+
+@media (max-width: 768px) {
+  .envantosuvpar2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .envantohero21, .envantohero22 {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .img2enventohosr1, .img2enventohosr12 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Envanttosecondheromain {
+    padding: 30px 15px;
+    width: 100%;
+    height: 460px;
+  }
+
+  .envantosuvpar2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .Envanttosecondheromain12 {
+    margin-left: 10px;
+  }
+  .Envantosuvpar1 {
+    width: 44%;
+  }
+
+  .envantohero21, .envantohero22 {
+    width: 90px;
+    font-size: 10px;
+  }
+
+  .Envatosub23 {
+    margin-top: -10px;
+  }
+
+  .Envatosub24 {
+    margin-top: -20px;
+  }
+
+  .Envatosubpar26 {
+    margin-top: -20px;
+  }
+}
+
+
+
+.timecommain {
+  display: flex;
+  width: auto;
+  height: 209px;
+  margin: 50px auto;
+  gap: 94px;
+}
+
+.timecommainbox1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 270px;
+  height: 209px;
+  gap: 20px;
+}
+
+.timesubbox1 {
+  width: 85px;
+  height: 85px;
+  margin: auto;
+  border-radius: 22px;
+  background-color: #EFEFEF;
+}
+
+.timesubboxpar1 {
+  display: flex;
+  flex-direction: column;
+  /* width: 270px; */
+  text-align: center;
+  height: 104px;
+  gap: 8px;
+}
+
+.timepar1 {
+  font-family: 'Inter',serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 38.73px;
+letter-spacing: 0%;
+text-align: center;
+color: #213036;
+}
+
+.timepar2 {
+  font-family: 'Inter',serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 19.36px;
+letter-spacing: 0%;
+text-align: center;
+color: #4B5875;
+}
+
+@media (max-width: 1024px) {
+  .timecommain {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    height: auto;
+  }
+
+  .timecommainbox1 {
+    width: 220px;
+    height: auto;
+    gap: 15px;
+  }
+
+  .timesubbox1 {
+    width: 75px;
+    height: 75px;
+  }
+
+  .timepar1 {
+    font-size: 28px;
+  }
+
+  .timepar2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timecommain {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .timecommainbox1 {
+    width: 200px;
+  }
+
+  .timesubbox1 {
+    width: 65px;
+    height: 65px;
+  }
+
+  .timepar1 {
+    font-size: 24px;
+  }
+
+  .timepar2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timecommainbox1 {
+    width: 180px;
+  }
+
+  .timesubbox1 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .timepar1 {
+    font-size: 20px;
+  }
+
+  .timepar2 {
+    font-size: 10px;
+  }
+}

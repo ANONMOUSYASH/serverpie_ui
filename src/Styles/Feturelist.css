@@ -1,0 +1,124 @@
+.subcontainer {
+  width: 619px;
+height: 166px;
+gap: 24px;
+margin: 50px auto ;
+}
+
+.headingsee {
+  /* width: 619px;
+height: 108px; */
+font-family: "Cal Sans", serif;
+font-weight: 600;
+font-size: 48px;
+line-height: 54px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.parbetter {
+  font-family: "Inter", serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 34px;
+letter-spacing: 0%;
+text-align: center;
+color: #254354;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  /* text-align: center; */
+}
+.comparison-table th {
+  font-family: "Font 1", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.72px;
+  text-align: center;
+  color: #ffffff;
+}
+.serverpie {
+  background: #25a75b;
+}
+.namecheap {
+  background: #fc5e05;
+}
+.hostinger {
+  background: #47366b;
+
+
+}
+.check1 {
+  color: green;
+  font-weight: bold;
+  background: #F3FFF6;
+  text-align: center;
+}
+.check2 {
+  font-weight: bold;
+  
+  text-align: center;
+  background: #FFF4F3;
+}
+
+.check3 {
+  font-weight: bold;
+  text-align: center;
+  background: #F3F4FF;
+}
+.title1 {
+  width: 380px;
+}
+
+.rightcheckk {
+  color: #34C759;
+}
+
+.cross1 {
+  color: #42526E4D;
+}
+
+.limited {
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+}
+
+.limited1 {
+  font-family: 'Font 1', sans-serif;
+  font-weight: 400;
+  margin: 5px;
+  font-size: 11px;
+  line-height: 27px;
+  letter-spacing: -0.54px;
+}
+
+.title2 {
+  text-align: left;
+  font-family: "Font 1", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.72px;
+  color:#091e42;
+}
+
+.title3 {
+  font-family: "Font 1", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.54px;
+  color: #253858;
+  padding: 10px;
+}

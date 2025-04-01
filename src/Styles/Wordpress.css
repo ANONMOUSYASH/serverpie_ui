@@ -1,0 +1,211 @@
+.wordpressheroimgmain {
+    width: 1148px;
+    height: 632px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    gap: 48px;
+  }
+  
+  .wordpressheroimgsub1 {
+    width: 1148px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .wordpressheroimgpar1 {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48.41px;
+    letter-spacing: -1%;
+    text-align: center;
+    color: #213036;
+  }
+  
+  .subwordpressspan {
+    color: #25a75b;
+  }
+  
+  .wordpressheroimgpar2 {
+    /* width: 961px; */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #4b5875;
+  }
+  
+  .wordpressheroimgsub2 {
+    display: flex;
+    width: 1148px;
+    height: 470px;
+    gap: 24px;
+  }
+  
+  /* .wprdpressheroimgimg1 {
+  } */
+  
+  .wordpressheroimg22 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  /* .wordpresssubmini {} */
+  
+  .subwordpressimg {
+    display: flex;
+    gap: 5px;
+  }
+  
+  /* .iconwordpress {
+  } */
+  
+  .iconwordpress1 {
+    color: #25a75b;
+  }
+  
+  .subwordpresspar1 {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.78px;
+    letter-spacing: 0%;
+    color: #25a75b;
+  }
+  
+  .subwordpresspar2 {
+    width: 400px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    letter-spacing: 0%;
+    color: #213036;
+  }
+  
+  .subwordpresshr {
+    width: 506px;
+    margin-top: 20px;
+    border-width: 1px;
+    border: 1px solid #e8efeb;
+  }
+  
+  /* Tablet View (1024px and below) */
+  @media (max-width: 1024px) {
+    .wordpressheroimgmain {
+      width: 90%;
+      height: auto;
+      margin: 40px auto;
+      gap: 32px;
+    }
+  
+    .wordpressheroimgsub1 {
+      width: 100%;
+      height: auto;
+      gap: 14px;
+    }
+  
+    .wordpressheroimgpar1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    .wordpressheroimgpar2 {
+      font-size: 18px;
+      line-height: 22px;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .wordpressheroimgsub2 {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .subwordpresspar2 {
+      width: 90%;
+    }
+  
+    .subwordpresshr {
+      width: 90%;
+    }
+  }
+  
+  /* Mobile View (768px and below) */
+  @media (max-width: 768px) {
+    .wordpressheroimgmain {
+      width: 100%;
+      margin: 30px auto;
+      gap: 24px;
+    }
+  
+    .wordpressheroimgpar1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .wordpressheroimgpar2 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .wordpressheroimgsub2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subwordpresspar2 {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  
+  /* Small Mobile View (480px and below) */
+  @media (max-width: 480px) {
+    .wordpressheroimgmain {
+      width: 100%;
+      padding: 20px 10px;
+      gap: 16px;
+    }
+  
+    .wordpressheroimgpar1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .wordpressheroimgpar2 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    .wordpressheroimgsub2 {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .subwordpresspar1 {
+      font-size: 16px;
+    }
+  
+    .subwordpresspar2 {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .subwordpresshr {
+      width: 100%;
+    }
+  }
+  

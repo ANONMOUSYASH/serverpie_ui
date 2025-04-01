@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+    .tech-box-container {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    .tech-boxes {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tech-box-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .tech-boxes {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .tech-box {
+      width: auto;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tech-box {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

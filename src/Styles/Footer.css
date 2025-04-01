@@ -4,43 +4,49 @@
   min-height: 414px;
   display: flex;
   align-items: center;
+  text-align: center;
+  border-radius: 37px;
   justify-content: center;
-  background: #25a75b;
+  background: #3973E6;
   padding: 20px;
   text-align: center;
 }
 
 .subfooter1 {
   max-width: 1008px;
-  width: 90%;
+  width: 60%;
+
 }
 
 .subfooter1 p {
-  font-family: var(--fontfamilyFont1);
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.4;
+  width: 580px;
+  font-family: "Inter",sans-serif;
+  font-size: 48px;
+  text-align: start;
+  font-weight: 400;
+  line-height: 49px;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 /* Footer Button */
 .subfooter1 button {
   padding: 12px 24px;
-  border-radius: 5px;
-  background: #4b865c;
-  font-family: var(--fontfamilyFont1);
-  font-size: 1rem;
+  border-radius: 46px;
+  background: #FFFFFF;
+  font-family: "Inter",sans-serif;
+  font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: #3984E6;
   border: none;
   cursor: pointer;
+  margin-left: -85%;
   transition: background 0.3s ease-in-out;
 }
 
 /* Button Hover Effect */
 .subfooter1 button:hover {
-  background: #367a48;
+  background: #3984E6;
+  color: #ffffff;
 }
 
 /* Responsive Styles */
@@ -88,7 +94,7 @@
   
   .subfooter2 {
     width: 1014.23px;
-    height: 380.82px;
+    height: auto;
     max-width: 1086.67px;
     display: flex;
     justify-content: space-between;
@@ -236,6 +242,7 @@
     width: 240px;
     height: 55px;
     gap: 0px;
+    padding-top: 10px;
     opacity: 0px;
     font-family: var(--fontfamilyFont1);
     font-size: 12.07px;
@@ -352,8 +359,8 @@
   }
   
   .inputmail{
-    width: 270px;
-  height: 36.22px;
+    width: 278px;
+  height: 36px;
   border-width: 0;
   font-family: var(--fontfamilyFont1);
   font-size: 12.07px;
@@ -371,7 +378,7 @@
   }
   
   .mailsend {
-  height: 38px;
+  height: 36px;
   border-width: 0;
   color: #4B865C;
   background: var(--color-azure-13, #1B2128);
@@ -388,18 +395,75 @@
       margin-top: 15px;
   }
   
+ /* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .subfooter2 {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .maininputmail {
+    flex-wrap: wrap;
+  }
+  
+  .inputmail, .mailsend {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer2 {
+    padding: 40px 5%;
+  }
+  
+  .subfooter2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subbox1 {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .boxpar2, .boxpar3, .boxcom3, .subparmail, .subparmail2 {
+    text-align: center;
+  }
+  
+  .maininputmail {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer2 {
+    padding: 30px 5%;
+  }
+  
+  .subbox1 {
+    max-width: 100%;
+  }
+  
+  .humanimg {
+    width: 70px;
+  }
+}
+
+  
   
   
   
 /* Actual Footer */
 
 .footer3 {
-    background: var(--color-azure-13, #1B2128);
+    background: #153662;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    height: auto;
   }
   
   .subfooter3 {
@@ -407,6 +471,7 @@
     max-width: 100%;
     padding: 0px 36.22px;
     display: flex;
+    gap: 15px;
     justify-content: space-between; /* Space between columns */
     align-items: flex-start;
     flex-wrap: wrap; /* Wrap items for smaller screens */
@@ -415,8 +480,9 @@
   .foot {
     list-style: none;
     padding: 0;
-    margin: 0 20px; /* Adds spacing between columns */
-  }
+   margin: 5px 0;
+    display: inline-block; /* Ensures elements are spaced properly */
+}
   
   .foot li {
     margin-bottom: 10px;

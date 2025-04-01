@@ -1,0 +1,262 @@
+.hostingplanmaian {
+    width: 1352px;
+    height: 648px;
+    margin: 50px auto;
+    border-radius: 24px;
+    padding: 59px 162px 59px 162px;
+    gap: 10px;
+    background: #fcfcfc;
+  }
+  
+  .hostingplansub {
+    width: 1027px;
+    height: 530px;
+    gap: 66px;
+  }
+  
+  .hostingplansub1 {
+    width: 885px;
+    height: 101px;
+    gap: 13px;
+  }
+  
+  .hostingplansub2 {
+    width: 1027px;
+    height: 363px;
+    gap: 55px;
+  }
+  
+  .hostingplansubpar1 {
+    width: 900px;
+    font-family: "Inter", serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58.09px;
+    letter-spacing: 0%;
+    color: #0e2954;
+    border: #00000033;
+  }
+  
+  .youget {
+    color: #25a75b;
+  }
+  
+  .hostingplansubpar12 {
+    width: 620px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 20px auto;
+    line-height: 14.52px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #2d5087;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: inherit;
+    margin-top: 20px;
+  }
+  .column {
+    width: 30%;
+    text-align: left;
+  }
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .column ul li {
+    margin-top: 20px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    letter-spacing: 0%;
+    color: #0e2654;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+  }
+  .column ul li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    border-width: 4px;
+    background: #ffffff;
+    border: 4px solid #25a75b;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+  }
+  
+  .lihr {
+    width: 215px;
+    margin-top: 8px;
+    border-width: 1px;
+    border: 1px solid #e8efeb;
+  }
+
+  /* Responsive Design for .hostingplanmaian */
+@media (max-width: 1200px) {
+  .hostingplanmaian {
+      width: 95%;
+      padding: 40px;
+  }
+
+  .hostingplansub {
+      width: 100%;
+      gap: 40px;
+  }
+
+  .hostingplansub1 {
+      width: 100%;
+  }
+
+  .hostingplansub2 {
+      width: 100%;
+      gap: 30px;
+  }
+
+  .hostingplansubpar1 {
+      font-size: 42px;
+      line-height: 50px;
+      text-align: center;
+  }
+
+  .hostingplansubpar12 {
+      font-size: 14px;
+  }
+
+  .features {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+  }
+
+  .column {
+      width: auto;
+      text-align: left;
+  }
+
+  .column ul li {
+      font-size: 14px;
+      padding-left: 18px;
+  }
+
+  .column ul li::before {
+      width: 12px;
+      height: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hostingplanmaian {
+      width: 98%;
+      padding: 30px;
+  }
+
+  .hostingplansubpar1 {
+      font-size: 36px;
+      line-height: 44px;
+  }
+
+  .hostingplansubpar12 {
+      font-size: 13px;
+  }
+
+  .features {
+      gap: 15px;
+  }
+
+  .column ul li {
+      font-size: 12px;
+      padding-left: 16px;
+  }
+
+  .column ul li::before {
+      width: 10px;
+      height: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hostingplanmaian {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .hostingplansubpar1 {
+      font-size: 32px;
+      line-height: 38px;
+  }
+
+  .hostingplansubpar12 {
+      font-size: 12px;
+  }
+
+  .features {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+  }
+
+  .column {
+      width: auto;
+      min-width: 200px;
+  }
+
+  .column ul li {
+      font-size: 11px;
+      padding-left: 14px;
+  }
+
+  .column ul li::before {
+      width: 8px;
+      height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hostingplanmaian {
+      padding: 15px;
+  }
+
+  .hostingplansubpar1 {
+      font-size: 26px;
+      line-height: 32px;
+      width: 100%;
+  }
+
+  .hostingplansubpar12 {
+      font-size: 11px;
+      width: 100%;
+  }
+
+  .features {
+      overflow-x: auto;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      gap: 5px;
+  }
+
+  .column {
+      min-width: 180px;
+  }
+
+  .column ul li {
+      font-size: 10px;
+  }
+
+  .column ul li::before {
+      width: 6px;
+      height: 6px;
+  }
+}
+

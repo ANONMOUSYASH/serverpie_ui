@@ -1,0 +1,145 @@
+/* General Styles */
+.mainserve {
+  width: 90%;
+  max-width: 1276px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 41px;
+  position: relative;
+}
+
+.subserve {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.minihr {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #b8ffd5;
+  border: none;
+}
+
+.circlezero {
+  width: 26px;
+  height: 26px;
+  border-width: 6px;
+  border-radius: 50%;
+  border: 6px solid #25a75b;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minisubserve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.subminiservebox1 {
+  flex: 1 1 calc(25% - 24px);
+  max-width: 301px;
+  min-height: 313px;
+  border-radius: 26px;
+  padding: 46px 32px;
+  border: 1px solid #e7e6e6;
+  background: #ffffff;
+  box-shadow: 0px 4px 23.5px 0px #c5c5c540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.earthserve {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25a75b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webearth {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+}
+
+.servepar1 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #0e2954;
+}
+
+.servepar2 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #2d5087;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mainserve {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .subserve {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .minisubserve {
+    gap: 16px;
+  }
+
+  .subminiservebox1 {
+    flex: 1 1 calc(50% - 24px);
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subserve {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .minisubserve {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subminiservebox1 {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subserve {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subminiservebox1 {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+  }
+}

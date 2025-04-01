@@ -1,0 +1,146 @@
+.migrationmain {
+    display: flex;
+    width: 95%;
+    max-width: 1122px;
+    margin: 50px auto;
+    height: auto;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+}
+
+.submigration {
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+}
+
+.submigration1 {
+    width: 100%;
+    max-width: 727px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Title */
+.migratpar1 {
+    max-width: 494px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1%;
+    color: #0E2954;
+}
+
+.migratspan {
+    color: #25A75B;
+}
+
+/* Description */
+.migratpar2,
+.migratpar3 {
+    max-width: 530px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2D5087;
+}
+
+/* Button */
+.migratbtn {
+    width: 194px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #25A75B;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.migratbtn:hover {
+    background-color: #1e8f4e;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .migrationmain {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .submigration {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .submigration1 {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .migratpar1 {
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 100%;
+    }
+
+    .migratpar2,
+    .migratpar3 {
+        font-size: 14px;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .migratbtn {
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .submigration {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .migratpar1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .migratpar2,
+    .migratpar3 {
+        font-size: 13px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .migrationmain {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .migratpar1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .migratpar2,
+    .migratpar3 {
+        font-size: 12px;
+    }
+
+    .migratbtn {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

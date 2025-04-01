@@ -1,0 +1,281 @@
+.minifram6 {
+    width: 867px;
+    text-align: center;
+  }
+  
+  .minisubfram7 {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .happy {
+    margin-bottom: 20px;
+  }
+  
+  .faq {
+    width: 55px;
+    height: 30px;
+    /* margin-bottom: 50px; */
+    font-family: "Bricolage Grotesque", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #8b8b8b;
+  }
+  
+  .miniframpar7 {
+    width: 720px;
+    font-size: 64px;
+    line-height: 63px;
+    /* margin: 0 auto; */
+    /* Centers the block horizontally */
+    text-align: start;
+    /* Centers the text */
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #0E2954;
+    border: #00000033;
+  }
+  
+  .serve {
+    color: #3973E6;
+  }
+  
+  .minifram7 {
+    width: 100%;
+    max-width: 928px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 12px;
+    border: 1px solid #CBE2FF;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-item.is {
+    border: 2px solid #3973E6;
+    background: #3973E6#3973E6;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .faq-text {
+    flex: 1;
+    font-size: 18px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #555;
+    padding-left: 5px;
+  }
+  
+  .doib,
+  .doib1 {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #3973E6;
+    background: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .doib:hover {
+    background: #e0e0e0;
+  }
+  
+  .doib1 {
+    background: #3973E6;
+    border: none;
+  }
+  
+  .plus {
+    width: 16px;
+    height: 16px;
+    color: #3973E6;
+  }
+  
+  .plus1 {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .frammain6 {
+      width: 100%;
+      padding: 40px 20px;
+      margin: 40px auto;
+      gap: 40px;
+    }
+  
+    .minifram6 {
+      width: 100%;
+      max-width: 867px;
+    }
+  
+    .miniframpar7 {
+      width: 100%;
+      max-width: 736px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  
+    .minifram7 {
+      width: 100%;
+      max-width: 928px;
+    }
+  
+    .doi,
+    .what,
+    .is,
+    .does {
+      padding: 12px;
+    }
+  
+    .doip,
+    .whatp,
+    .isp,
+    .doesp {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .frammain6 {
+      gap: 30px;
+      padding: 30px 15px;
+    }
+  
+    .minifram6 {
+      width: 100%;
+    }
+  
+    .minisubfram7 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .faq {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  
+    .miniframpar7 {
+      font-size: 24px;
+      line-height: 32px;
+      padding: 0 10px;
+    }
+  
+    .minifram7 {
+      width: 100%;
+      gap: 12px;
+    }
+  
+    .doi,
+    .what,
+    .is,
+    .does {
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .doisub,
+    .subwhat,
+    .subis,
+    .subdoes {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .doip,
+    .whatp,
+    .isp,
+    .doesp {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    .doib,
+    .doib1 {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .plus,
+    .plus1 {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .frammain6 {
+      padding: 20px 10px;
+    }
+  
+    .miniframpar7 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    .doi,
+    .what,
+    .is,
+    .does {
+      padding: 8px;
+    }
+  
+    .doip,
+    .whatp,
+    .isp,
+    .doesp {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    .doib,
+    .doib1 {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .plus,
+    .plus1 {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  

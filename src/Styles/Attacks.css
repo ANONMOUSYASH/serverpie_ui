@@ -1,0 +1,191 @@
+.Attackmain {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 13px;
+    padding: 50px 5%;
+    background-color: #3973E6;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.subattack1 {
+    width: 100%;
+    /* max-width: 1145px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.attackpar1 {
+    width: 866px;
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    font-weight: 500;
+    margin-left: -12%;
+    font-size: 64px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.attackpar2 {
+    width: 830px;
+    text-align: start;
+    margin: 20px auto;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-left: -12%;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.subattack3 {
+    width: 1181px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+/* Flex container for attack boxes */
+.subattacksub3,
+.subattacksub4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    max-width: 1120px;
+}
+
+.attackbox1 {
+    width: 345px;
+    height: 374px;
+    border-radius: 31px;
+    padding: 37px 31px 37px 31px;
+    background-color: #FFFFFF;
+}
+
+/* Icon box */
+.subattackbox1 {
+    width: 68px;
+    height: 68px;
+    margin: 0 0 15px; /* Remove auto to prevent centering */
+    border-radius: 11px;
+    background: #3378FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.attackicon1 {
+    width: 40px;
+    height: 40px;
+    color: #FFFFFF;
+}
+
+.attackboxpar1 {
+    width: 250px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #083376;
+    text-align: start;
+}
+
+.attackboxpar2 {
+    width: 290px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #2D5087;
+    text-align: start;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .attackpar1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .attackpar2 {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .attackbox1 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Attackmain {
+        padding: 40px 5%;
+    }
+
+    .attackpar1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .attackpar2 {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .subattacksub3,
+    .subattacksub4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attackbox1 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Attackmain {
+        padding: 30px 5%;
+    }
+
+    .attackpar1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .attackpar2 {
+        font-size: 12px;
+    }
+
+    .attackbox1 {
+        width: 90%;
+    }
+
+    .attackboxpar1 {
+        font-size: 14px;
+    }
+
+    .attackboxpar2 {
+        font-size: 12px;
+    }
+
+    .subattackbox1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .attackicon1 {
+        width: 35px;
+        height: 35px;
+    }
+}

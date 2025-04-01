@@ -1,0 +1,128 @@
+/* Default Styling */
+.hostingsolmain {
+    width: 90%;
+    max-width: 1368px;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 13px;
+    padding: 60px;
+    background-color: #1A3625;
+  }
+  
+  .hostingsol1 {
+    max-width: 1145px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .hostingsolpar1 {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+  
+  .hostingsolpar2 {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 60%;
+    margin: 20px auto;
+    color: #FFFFFF;
+  }
+  
+  /* Flexbox for the 6 Boxes */
+  .subhostingsolsub3,
+  .subhostingsolsub4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  /* Box Styling */
+  .hostingsolbox1 {
+    width: 30%; /* Ensuring 2 boxes per row */
+    max-width: 400px;
+    min-width: 280px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .subhostingsolbox1 {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 11px;
+    background: #25A75B;
+  }
+  
+  .hostingsolboxpar1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 15px;
+  }
+  
+  .hostingsolboxpar2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    .hostingsolmain {
+      width: 95%;
+      padding: 40px;
+    }
+  
+    .subhostingsolsub3,
+    .subhostingsolsub4 {
+      gap: 30px;
+    }
+  
+    .hostingsolbox1 {
+      width: 45%; /* Two per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .subhostingsolsub3,
+    .subhostingsolsub4 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hostingsolbox1 {
+      width: 90%; /* Single box per row */
+    }
+  
+    .subhostingsolbox1 {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hostingsolmain {
+      padding: 20px;
+    }
+  
+    .hostingsolpar1 {
+      font-size: 30px;
+    }
+  
+    .hostingsolpar2 {
+      font-size: 14px;
+      width: 90%;
+    }
+  
+    .hostingsolbox1 {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  

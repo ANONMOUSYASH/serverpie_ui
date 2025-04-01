@@ -1,0 +1,448 @@
+/* Fram Main */
+.framemain {
+    width: 1036px;
+    height: auto;
+    /* Adjust height dynamically */
+    margin: 50px auto;
+    /*Centers the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+     text-align: center;
+    gap: 20px;
+    /* Adds spacing */
+}
+
+.framesub1 {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+   /* align-items: center;
+    text-align: center;  */
+    gap: 20px;
+}
+
+.framesubpar1 {
+    width: 766px;
+    margin-left: -150px;
+    text-align: start;
+    align-self: self-start;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 65px;
+    letter-spacing: -4%;
+    color: #0E2954;
+    border: #00000033;
+}
+
+.framsubspan {
+    color: #bababa;
+}
+
+.framesubpar2 {
+  width: 766px;
+    text-align: start;
+    align-self: self-start;
+    margin-left: -150px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #545454;
+}
+
+.framesubmainbtn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.framesubbtn1 {
+    width: 130px;
+    height: 42px;
+    border-radius: 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #25a75b;
+    border: none;
+    cursor: pointer;
+}
+
+.framesubbtn2,
+.framesubbtn3,
+.framesubbtn4 {
+    width: 101px;
+    height: 42px;
+    border-radius: 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #747474;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    cursor: pointer;
+}
+
+.hostingprovider {
+    width: 1208px;
+    /* height: 787px; */
+    margin-top: 50px;
+   /*Centers the container */
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+    text-align: center;
+    /* margin-left: 134px; */
+    gap: 23.61px;
+}
+
+
+.hostingsub {
+    width: 284px;
+    /* height: 787px; */
+    border-radius: 6.99px;
+    border-width: 0.87px;
+    background: #FFFFFF;
+    border: 0.87px solid #4E4EEB1A;
+    box-shadow: 0px 4px 19.4px 0px #AAAAAA40;
+}
+
+.hostingh4 {
+    width: 159px;
+    height: auto;
+    margin-top: 44px;
+    margin-left: 14px;
+    font-family: "Cal Sans", serif;
+    font-weight: 600;
+    font-size: 17.49px;
+    line-height: 20.98px;
+    letter-spacing: 0%;
+    color: #0E2954;
+}
+
+.hostingpar {
+    width: 171px;
+    height: 18px;
+    /* margin-top: px; */
+    margin-left: 26.93px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #2D5087;
+}
+
+.hostingparprice {
+    width: 69px;
+    height: 20px;
+    margin-top: 55px;
+    margin-left: 26px;
+    font-family: "Cal Sans", serif;
+    font-weight: 600;
+    font-size: 22.73px;
+    line-height: 34.1px;
+    letter-spacing: 0%;
+    color: #0E2954;
+}
+
+.hostingparprice2 {
+    width: 170px;
+    height: 18px;
+    top: 165.96px;
+    margin-left: 26.93px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #2D5087;
+}
+
+.hostinghr {
+    width: 230px;
+    height: 1px;
+    margin-top: 25px;
+    margin-left: 26.93px;
+    border-width: 0.87px;
+    border: 0.87px solid #4E4EEB1A;
+}
+
+.hostingbutton {
+    width: 230px;
+    height: 36px;
+    margin-top: 20px;
+    border-radius: 3.5px;
+    border-width: 0.87px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    background: #3973E6;
+    border: 0.87px solid #3973E6;
+    box-shadow: -3.5px 3.5px 0px 0px #4E4EEB1A;
+
+}
+
+.hostingh5 {
+    width: 80px;
+    height: 14px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 26.93px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 14.69px;
+    letter-spacing: 0%;
+    color: #2D5087;
+}
+
+.hostingh51 {
+    width: 150px;
+    height: 14px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 26.93px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 14.69px;
+    letter-spacing: 0%;
+    color: #2D5087;
+}
+
+.hostingminipar001 {
+    display: flex;
+    /* margin-top: 20px; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.rightcircle {
+    width: 15;
+    height: 15;
+    color: #3973E6;
+}
+
+.questinghost {
+    width: 15px;
+    height: 15px;
+    border-radius: 7.87px;
+    color: #72FA9B1A;
+}
+
+.hostingpar01 {
+   
+    /* margin-top: 20px; */
+    margin-left: 10px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #0E2954;
+    
+}
+
+.hostingminipar002 {
+    display: flex;
+    
+}
+
+.rightcircle1 {
+    width: 15;
+    height: 15;
+    color: #25A75B;
+    margin-left: 27px;
+}
+
+.questinghost {
+    width: 15px;
+    height: 15px;
+    border-radius: 7.87px;
+    background: #72FA9B1A;
+    color: #25A75B;
+
+}
+
+.hostingpar02 {
+    width: 113px;
+    margin-left: 10px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #0E2954;
+}
+.hostingminipar003 {
+    display: flex;
+    margin-left: 27px;
+}
+
+.questinghost {
+    width: 15px;
+    height: 15px;
+    border-radius: 7.87px;
+    background: #72FA9B1A;
+    color: #25A75B;
+
+}
+
+.hostingpar03 {
+    width: 97.13px;
+    margin-left: 10px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #0E2954;
+}
+
+.hostingpar04 {
+    width: 97.13px;
+    margin-left: 10px;
+    font-family: "Product Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12.24px;
+    line-height: 18.36px;
+    letter-spacing: 0%;
+    color: #0E2954;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .framemain, .hostingprovider {
+      width: 90%;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .framesub1 {
+      max-width: 100%;
+      text-align: center;
+      gap: 16px;
+    }
+  
+    .framesubpar1 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  
+    .framesubpar2 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .framesubmainbtn {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .framesubbtn1, .framesubbtn2, .framesubbtn3, .framesubbtn4 {
+      width: 100%;
+      max-width: 200px;
+      height: 42px;
+    }
+  
+    .hostingprovider {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      flex-direction: column;
+    }
+  
+    .hostingsub {
+      width: 45%;
+      min-width: 280px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .framesubpar1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    .framesubpar2 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    .framesubmainbtn {
+      flex-direction: column;
+    }
+  
+    .framesubbtn1, .framesubbtn2, .framesubbtn3, .framesubbtn4 {
+      width: 100%;
+      max-width: 180px;
+    }
+  
+    .hostingsub {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .framesubpar1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .framesubpar2 {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+    .framesubmainbtn {
+      gap: 8px;
+      width: 127px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hostingh4 {
+      width: auto;
+    }
+
+    .hostingpar {
+      width: auto;
+    }
+  
+    .framesubbtn1, .framesubbtn2, .framesubbtn3, .framesubbtn4 {
+      width: 100%;
+      max-width: 160px;
+    }
+  
+    .hostingprovider {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .hostingsub {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

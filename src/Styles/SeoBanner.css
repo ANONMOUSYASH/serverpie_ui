@@ -1,0 +1,124 @@
+.seobanner {
+  width: 1267px;
+  height: 455px;
+  margin-top: 43px;
+  margin-left: -400px;
+  gap: 20px;
+  border-radius: 17px;
+  padding-top: 82px;
+  padding-right: 52px;
+  padding-bottom: 82px;
+  padding-left: 52px;
+  background: #3973E6;
+}
+
+.seobanner1 {
+  display: flex;
+  margin: auto;
+  width: 1031px;
+  height: 272px;
+ justify-content: space-between;
+}
+
+.seobannermini1 {
+  width: 567px;
+  height: 271px;
+  margin-left: 30px;
+  gap: 28px;
+}
+
+.seobannerminipar1 {
+  width: 677px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 52%;
+  color: #3973E6;
+}
+
+.seobannerminipar2 {
+width: 660px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 62px;
+  letter-spacing: -5%;
+  color: #0B2143;
+}
+
+.seobannerminipar3 {
+  width: 677px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #2D5087;
+}
+
+.seobannermini2 {
+  width: 272px;
+  height: 272px;
+  border-radius: 24px;
+  background: #25a75b;
+}
+
+@media (max-width: 1024px) {
+  .seobanner {
+    width: 90%;
+    height: auto;
+    padding: 50px 30px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .seobanner1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .seobannermini1 {
+    width: 100%;
+  }
+  .seobannermini2 {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .seobanner {
+    padding: 40px 20px;
+  }
+  .seobanner1 {
+    width: 100%;
+  }
+  .seobannerminipar2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .seobannerminipar3 {
+    font-size: 14px;
+  }
+  .seobannermini2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seobanner {
+    padding: 30px 15px;
+  }
+  .seobannerminipar2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .seobannerminipar3 {
+    font-size: 12px;
+  }
+  .seobannermini2 {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,553 @@
+/* Hero Section Styles */
+.hero {
+    width: auto;
+    height: auto;
+    margin-top: 200px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* gap: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Centers text */
+  }
+  
+  .heropar1 {
+    width: auto;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: #3973E6;
+  }
+  
+  .herohead1 {
+    width: 604px;
+    height: 224px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 84px;
+    font-weight: 500;
+    line-height: 73px;
+    letter-spacing: -6%;
+    text-align: center;
+    color: #083376;
+  }
+  
+  .herohd,
+  .herohs,
+  .herohe {
+    width: 750px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: -0.02em;
+  }
+  
+  .herohd {
+    color: #25a75b;
+  }
+  
+  .heropar2 {
+    width: auto;
+    height: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #2D5087;
+  }
+  
+  
+  .sectionherosub {
+    display: flex;
+    width: 660px;
+    margin-top: -30px;
+    /* height: 50px; */
+    justify-content: space-between;
+  }
+  
+  .sectionherosub2 {
+    display: flex;
+    margin-top: 22px;
+  }
+  
+  .heroinput1 {
+    flex: 1;
+    width: 138px;
+    height: 36px;
+    margin-left: -25px;
+    padding: 8px 12px 8px 35px;
+    border: none;
+    outline: none;
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #969696;
+  }
+  
+  .herohr {
+    height: 30px;
+    width: 1px;
+    background: #dadada;
+    margin: 0 10px;
+  }
+  
+  .select-container {
+    width: 86px;
+    height: 38px;
+    padding: 10px;
+    gap: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #cfcfcf;
+    background: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .heroearth {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    color: #25a75b;
+  } */
+  
+  .heroselect {
+    width: 62px;
+    height: 19px;
+    /* margin-right: 20px; */
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Cal Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .hr1 {
+    width: 650px;
+  }
+  
+  .startingpar {
+    width: auto;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #5a7e93;
+  }
+  
+  .dollarp {
+    width: 72.7px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #25a75b;
+  }
+  
+  /* Centered Button */
+  .herobtn {
+    width: 170px;
+    height: 50px;
+    margin-top: 22px;
+    padding: 6px 27px 6px 27px;
+    border-radius: 15px;
+    border: 1px;
+    font-family: "Cal Sans", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #6b6b6b;
+    /* border: 1px solid #25a75b; */
+    background: #f1f1f1;
+  }
+  
+  .herobtn:hover {
+    color: #ffffff;
+    background: #25a75b;
+    /* Darker shade for hover effect */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+  }
+  
+  .herobtn:active {
+    color: #ffffff;
+    background: #1a2245;
+    /* Even darker on click */
+    transform: translateY(0);
+  }
+  
+  /* Mobile Responsive Styling */
+  @media (max-width: 768px) {
+    .hero {
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+      padding: 0 15px;
+    }
+  
+    .heropar1,
+    .herohead1,
+    .heropar2 {
+      width: 100%;
+    }
+  
+    .herohead1 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  
+    .heroinput {
+      width: 100%;
+      max-width: 90%;
+      height: auto;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .heroinputsearch {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .input-container {
+      width: 100%;
+      margin-left: 10px;
+    }
+  
+    .heroinput1 {
+      width: 100%;
+      font-size: 14px;
+      padding-left: 10px;
+      text-align: center;
+    }
+  
+    .sectionherosub {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .heroselect {
+      width: 100px;
+      font-size: 16px;
+    }
+  
+    .herobtn {
+      width: 100%;
+      max-width: 200px;
+      height: 50px;
+      margin-top: -17px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Mobile Responsive Styling */
+  @media (max-width: 768px) {
+    .hero {
+      width: 100%;
+      height: auto;
+      margin-top: 80px;
+      padding: 0 15px;
+      text-align: center;
+    }
+  
+    .heropar1,
+    .herohead1,
+    .heropar2 {
+      width: 100%;
+    }
+  
+    .herohead1 {
+      font-size: 42px;
+      line-height: 48px;
+    }
+  
+    .heropar1 {
+      font-size: 14px;
+    }
+  
+    .heropar2 {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  
+    .heroinput {
+      width: 100%;
+      max-width: 90%;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .heroinputsearch {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .input-container {
+      width: 100%;
+    }
+  
+    .heroinput1 {
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 10px;
+      text-align: center;
+    }
+  
+    .select-container {
+      width: 100%;
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  
+    .heroselect {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .hr1 {
+      width: 100%;
+      max-width: 80%;
+    }
+  
+    .sectionherosub {
+      width: 100%;
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .herobtn {
+      width: 100%;
+      max-width: 200px;
+      height: 50px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      margin-top: 50px;
+      padding: 0 10px;
+    }
+  
+    .herohead1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    .heropar1,
+    .heropar2 {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  
+    .heropar2 {
+      margin-top: 65px;
+    }
+  
+    .heroinput {
+      width: 95%;
+    }
+  
+    .heroinput1 {
+      font-size: 12px;
+      padding: 6px 8px;
+    }
+  
+    .select-container {
+      max-width: 100px;
+    }
+  
+    .heroselect {
+      font-size: 14px;
+    }
+  
+    .herobtn {
+      width: 100%;
+  
+      max-width: 160px;
+      height: 45px;
+      font-size: 12px;
+    }
+  }
+  
+  .domainprice {
+    display: flex;
+    width: 1022px;
+    height: auto;
+    margin: 40px;
+    /* margin-left: 195px; */
+    gap: 18px;
+  }
+  
+  .subdomainbox {
+    width: 190px;
+    height: 124px;
+    border-radius: 10px;
+    padding: 11px 16px 11px 16px;
+    background: #ffffff;
+    box-shadow: 0px 4px 24px 0px #baceda40;
+  }
+  
+  .subdomainbox1 {
+    width: 190px;
+    height: 124px;
+    border-radius: 10px;
+    padding: 11px 16px 11px 16px;
+    background: #ffffff;
+    box-shadow: 0px 4px 24px 0px #baceda40;
+    border: 1px solid #25a75b;
+  }
+  .minidomain {
+    width: 149px;
+    height: 95px;
+  }
+  
+  .com {
+    /* width: 54px;
+    height: 31px; */
+    font-family: "Cal Sans", serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26.4px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  
+  .starting {
+    /* width: 72px;
+    height: 21px; */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #5a7e93;
+  }
+  
+  .subminidomain2 {
+    display: flex;
+    margin-top: -15px;
+    margin-left: 30px;
+    justify-content: space-between;
+  }
+  
+  .starting1 {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #25a75b;
+  }
+  
+  .arrowrightmain {
+    width: 21px;
+    height: 21px;
+    border-radius: 10.5px;
+    padding: 4px;
+    gap: 10px;
+  }
+  
+  .arrowright {
+    width: 12px;
+    height: 12px;
+    color: #969696;
+  }
+  
+  .arrowrightmain1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    /* padding: 4px; */
+    gap: 10px;
+    background-color: #25a75b;
+  }
+  
+  .arrowright1 {
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .domainprice {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subdomainbox, .subdomainbox1 {
+      max-width: 90%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .com {
+      font-size: 18px;
+    }
+  
+    .starting1 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .subdomainbox, .subdomainbox1 {
+      max-width: 100%;
+      padding: 10px;
+    }
+    
+    .com {
+      font-size: 16px;
+    }
+  
+    .starting1 {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+.custom-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.custom-range::-moz-range-track {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2px solid #25A75B;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Green progress track */
+.custom-range::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  background: #25A75B;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: var(--progress-width, 0%);
+  z-index: 1;
+}
+
+.range-input {
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #25A75B;
+  border-radius: 4px;
+  background: white;
+}

@@ -1,3 +1,27 @@
 * {
     font-family: "Montserrat", serif;
 }
+
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+/* 
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
+
+  /* @import "tailwindcss"; */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }

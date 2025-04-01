@@ -1,0 +1,392 @@
+.frammain9 {
+    width: 1144px;
+    height: 448px;
+    margin: 50px auto;
+    gap: 56px;
+    opacity: 0px;
+  }
+  
+  .submainfram9 {
+    width: 558px;
+    height: 89px;
+    /* margin-left: 250px; */
+    gap: 14px;
+    opacity: 0px;
+  }
+  
+  .conpar {
+    width: 878px;
+    height: 51px;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 51px;
+    text-align: start;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  /* .team {
+    color: #b2b2b2;
+  } */
+  
+  .letp {
+    width: 878px;
+    height: 84px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: start;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #254354;
+  }
+  
+  .submainfram92 {
+    display: inline-flex;
+    width: 1144px;
+    height: 303px;
+    margin-top: 80px;
+    gap: 24px;
+    opacity: 0px;
+  }
+  
+  .subbox91 {
+    width: 268px;
+    height: 303px;
+    padding: 25px;
+    gap: 10px;
+    border-radius: 27px;
+    border: 1px 0px 0px 0px;
+    opacity: 1;
+    border: 1px solid #E7E7E7;
+  }
+
+  .subbox91:hover {
+    border: 3px solid #3984E6;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    padding: 14px 15px 14px 15px;
+    gap: 10px;
+    border-radius: 30px;
+    opacity: 1;
+    background: #25a75b;
+  }
+  
+  .livep {
+    width: 146px;
+    margin-top: 20px;
+    font-family: "Cal Sans", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: -3%;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0E2954;
+  }
+  
+  .speak {
+    width: 193px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #2D5087;
+  }
+  
+  .chat {
+    width: 217.5px;
+    height: 42px;
+    padding: 12px 66px 12px 66px;
+    gap: 10px;
+    border-radius: 36px;
+    border: 1px;
+    opacity: 1;
+    /* border: 1px solid #bebebe; */
+    font-family: "Inter",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3973E6;
+    background-color: #EDF5FF;
+  }
+
+  .chat:hover {
+    background-color: #3984E6;
+    color: #ffffff;
+  }
+  
+  /* .subbox911 {
+    width: 268px;
+    height: 303px;
+    padding: 21px 25px 21px 25px;
+    gap: 10px;
+    border-radius: 27px;
+    opacity: 1;
+    background: #289957;
+  }
+  
+  .circle1 {
+    width: 60px;
+    height: 60px;
+    padding: 14px 15px 14px 15px;
+    gap: 10px;
+    border-radius: 30px;
+    opacity: 1;
+    background: #ffffff;
+  }
+  
+  .livep1 {
+    width: 193px;
+    height: 24px;
+    margin-top: 20px;
+    font-family: "Cal Sans", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  
+  .speak1 {
+    width: 193px;
+    height: 54px;
+    font-family: "Inter", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  
+  .chat1 {
+    width: 217.5px;
+    height: 42px;
+    padding: 12px 66px 12px 66px;
+    gap: 10px;
+    border-radius: 36px;
+    border: 1px;
+    opacity: 1;
+    font-family: "Inter", serif;
+    border: 1px solid #bebebe;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #ffffff;
+    border: 1px solid #25a75b;
+    color: #25a75b;
+  } */
+  
+  .msg {
+    width: 29px;
+    height: 29px;
+    opacity: 1;
+    color: #ffffff;
+  }
+  
+  .msg1 {
+    width: 29px;
+    height: 29px;
+    opacity: 1;
+    color: #25a75b;
+  }
+  
+  @media (max-width: 1200px) {
+    .frammain9 {
+      width: 100%;
+      height: auto;
+      /* Ensure it adjusts dynamically */
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+  
+    .submainfram9 {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .conpar {
+      font-size: 42px;
+      width: 100%;
+    }
+  
+    .letp {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    .submainfram92 {
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+      /* Prevents wrapping */
+      justify-content: space-between;
+      gap: 20px;
+    }
+  
+    .subbox91,
+    .subbox911 {
+      flex: 1;
+      /* Ensures equal width */
+      min-height: 100%;
+      /* Full height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* Ensures content is properly spaced */
+      align-items: center;
+      text-align: center;
+      padding: 25px;
+    }
+  
+    .chat,
+    .chat1 {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .submainfram92 {
+      flex-wrap: wrap;
+      /* Allows wrapping on smaller screens */
+    }
+  
+    .subbox91,
+    .subbox911 {
+      width: 48%;
+      min-height: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .frammain9 {
+      margin-top: 100px;
+      padding: 0 15px;
+    }
+  
+    .submainfram9 {
+      text-align: center;
+    }
+  
+    .conpar {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  
+    .letp {
+      font-size: 18px;
+    }
+  
+    .submainfram92 {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /* Keeps them in one row */
+      width: 100%;
+      overflow-x: auto;
+      /* Allows scrolling if needed */
+    }
+  
+    .subbox91,
+    .subbox911 {
+      flex: 1;
+      min-height: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .livep,
+    .livep1 {
+      font-size: 18px;
+    }
+  
+    .speak,
+    .speak1 {
+      font-size: 16px;
+    }
+  
+    .chat,
+    .chat1 {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .circle,
+    .circle1 {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .msg,
+    .msg1 {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .conpar {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  
+    .letp {
+      font-size: 16px;
+    }
+  
+    .submainfram92 {
+      flex-wrap: wrap;
+      /* Allows wrapping on very small screens */
+    }
+  
+    .subbox91,
+    .subbox911 {
+      width: 100%;
+      min-height: 100%;
+    }
+  
+    .chat,
+    .chat1 {
+      font-size: 14px;
+    }
+  
+    .circle,
+    .circle1 {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .msg,
+    .msg1 {
+      margin-left: -2px;
+      margin-bottom: 10px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  

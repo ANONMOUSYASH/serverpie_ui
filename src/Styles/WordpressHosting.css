@@ -1,0 +1,648 @@
+.wordpresshero {
+  width: 1302px;
+  height: 615px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding: 50px 20px;
+  margin: 50px auto;
+  border-width: 1px;
+  border: 1px solid #f1f1f1;
+}
+
+.wordpresshero1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.wordpressheropar1 {
+  width: 688px;
+  font-family: "Cal Sans", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.wordpressheropar2 {
+  width: 848px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18.36px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.wordpressherobtn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.wordpressherobttn1,
+.wordpressherobtn2 {
+  height: 50px;
+  border-width: 1px;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 6px 27px;
+  font-family: "Product Sans", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.wordpressherobttn1 {
+  width: 226px;
+  color: #ffffff;
+  background: #25a75b;
+  border: 1px solid #25a75b;
+}
+
+.wordpressherobtn2 {
+  width: 226px;
+  color: #25a75b;
+  background: transparent;
+  border: 1px solid #25a75b;
+}
+
+/* Tablet View (1024px and below) */
+@media (max-width: 1024px) {
+  .wordpresshero {
+    width: 95%;
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .wordpressheropar1 {
+    width: 90%;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .wordpressheropar2 {
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .wordpressherobttn1,
+  .wordpressherobtn2 {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile View (768px and below) */
+@media (max-width: 768px) {
+  .wordpresshero {
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 30px auto;
+  }
+
+  .wordpressheropar1 {
+    font-size: 36px;
+    line-height: 42px;
+    width: 100%;
+  }
+
+  .wordpressheropar2 {
+    font-size: 14px;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .wordpressherobtn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .wordpressherobttn1,
+  .wordpressherobtn2 {
+    width: 90%;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .wordpresshero {
+    width: 100%;
+    padding: 20px 5px;
+  }
+
+  .wordpressheropar1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .wordpressheropar2 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .wordpressherobttn1,
+  .wordpressherobtn2 {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+Shared Hosting Hero Section
+.sharedhosthero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.sharedhostherosub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sharedhostingheropar1 {
+  max-width: 1051px;
+  font-family: "Cal Sans", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 66px;
+  text-align: center;
+  margin: auto;
+}
+
+.sharedhostingheropar2 {
+  max-width: 671px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Buttons Section */
+.sharehostherobtn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.sharedhostingbtn1,
+.sharedhostingbtn2 {
+  height: 50px;
+  border-width: 1px;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 6px 27px;
+  font-family: "Product Sans", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.sharedhostingbtn1 {
+  width: 226px;
+  color: #ffffff;
+  background: #25a75b;
+  border: 1px solid #25a75b;
+}
+
+.sharedhostingbtn2 {
+  width: 183px;
+  color: #25a75b;
+  background: transparent;
+  border: 1px solid #25a75b;
+}
+
+/* Boost Component */
+.boostcompmain {
+  width: 1440px;
+  height: 291px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12.94px;
+  border-radius: 27.17px;
+  padding: 80.22px 256.17px;
+  background: #fafafa;
+}
+
+.boostcompmain1 {
+  width: 1168px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 54.34px;
+}
+
+.boostcompmain2 {
+  width: 1168px;
+  height: 38px;
+}
+
+.boostmainpar1 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 31.05px;
+  line-height: 37.58px;
+  letter-spacing: 0%;
+  margin: auto;
+  text-align: center;
+  color: #213036;
+}
+
+.boostcompmain3 {
+  width: 1168px;
+  height: 58px;
+  display: flex;
+  gap: 130px;
+}
+
+.boostcompmain33 {
+  width: 180px;
+  height: 58px;
+  display: flex;
+  gap: 16px;
+}
+
+.boostrecmain {
+  width: 58px;
+  height: 58px;
+  border-radius: 15px;
+  background-color: #e7e7e7;
+}
+
+.subboostpar2 {
+  width: 120px;
+  height: 50px;
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 20.7px;
+  line-height: 25.05px;
+  letter-spacing: 0%;
+  color: #213036;
+}
+
+/* Tablet View (1024px and below) */
+@media (max-width: 1024px) {
+  .boostcompmain {
+    width: 90%;
+    height: auto;
+    padding: 50px 100px;
+    gap: 10px;
+  }
+
+  .boostcompmain1 {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .boostcompmain2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .boostmainpar1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .boostcompmain3 {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .boostcompmain33 {
+    width: 160px;
+    height: auto;
+  }
+
+  .boostrecmain {
+    width: 50px;
+    height: 50px;
+  }
+
+  .subboostpar2 {
+    width: auto;
+    font-size: 18px;
+  }
+}
+
+/* Mobile View (768px and below) */
+@media (max-width: 768px) {
+  .boostcompmain {
+    width: 100%;
+    padding: 40px 40px;
+    gap: 8px;
+  }
+
+  .boostcompmain1 {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .boostmainpar1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .boostcompmain3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .boostcompmain33 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .boostrecmain {
+    width: 45px;
+    height: 45px;
+  }
+
+  .subboostpar2 {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .boostcompmain {
+    width: 100%;
+    padding: 30px 20px;
+    gap: 6px;
+    height: 403px;
+  }
+
+  .boostmainpar1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .boostcompmain3 {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .boostcompmain33 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .boostrecmain {
+    width: 40px;
+    height: 40px;
+  }
+
+  .subboostpar2 {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+.planningcommain {
+  width: 1440px;
+  height: auto;
+  margin: 50px auto;
+  border-width: 1.16px;
+  gap: 11.58px;
+  border-radius: 16.21px;
+  padding-top: 50.93px;
+  padding-right: 40.52px;
+  padding-bottom: 50.93px;
+  padding-left: 40.52px;
+  background-color: #ffffff;
+  border: 1.16px solid #e6e6e6;
+  box-shadow: 0px 4.63px 47.34px 0px #b2becc40;
+}
+
+.planningcommain1 {
+  display: flex;
+  width: 1243px;
+  height: 133px;
+  gap: 82px;
+}
+
+.planningcommain2 {
+  display: flex;
+  width: 979px;
+  height: 133px;
+  gap: 30px;
+}
+
+.planningcommain3 {
+  width: 133px;
+  height: 133px;
+  border-radius: 18px;
+  background-color: #edfef4;
+}
+
+.planningcommain4 {
+  display: flex;
+  flex-direction: column;
+  width: 816px;
+  height: 85px;
+  gap: 18.52px;
+}
+
+.plaanningcompar1 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 37.04px;
+  line-height: 44.83px;
+  letter-spacing: 0%;
+}
+
+.spanplanningcom1 {
+    color: #25A75B;
+}
+
+.planningcompar2 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 18.52px;
+  line-height: 22.41px;
+  letter-spacing: 0%;
+  color: #4b5875;
+}
+
+.planningcom5 {
+  margin: auto;
+}
+
+.planningcombtn1 {
+  width: 182px;
+  height: 57px;
+  gap: 11.58px;
+  border-radius: 5.79px;
+  padding: 11.58px;
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 18.52px;
+  line-height: 21.26px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #25a75b;
+  border: none;
+}
+
+/* Tablet View (1024px and below) */
+@media (max-width: 1024px) {
+  .planningcommain {
+    width: 90%;
+    padding: 40px 30px;
+  }
+
+  .planningcommain1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .planningcommain2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  .planningcommain3 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .planningcommain4 {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .plaanningcompar1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .planningcompar2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .planningcom5 {
+    text-align: center;
+  }
+
+  .planningcombtn1 {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile View (768px and below) */
+@media (max-width: 768px) {
+  .planningcommain {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .planningcommain1 {
+    gap: 30px;
+  }
+
+  .planningcommain2 {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .planningcommain3 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .plaanningcompar1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .planningcompar2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .planningcombtn1 {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .planningcommain {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .planningcommain1 {
+    gap: 20px;
+  }
+
+  .planningcommain2 {
+    gap: 10px;
+  }
+
+  .planningcommain3 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .plaanningcompar1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .planningcompar2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .planningcombtn1 {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
