@@ -17,15 +17,20 @@ const WordpressHosting = () => {
     </nav>
     <main>
       {/* Herro Section */}
+
       <div className="wordpresshero">
         <div className="wordpresshero1">
           <p className="wordpressheropar1">Fast, Secure & Managed
           WordPress Hosting</p>
           <p className="wordpressheropar2">Supercharge your WordPress website with our high-speed, secure, and fully optimized hosting.</p>
-        </div>
-        <div className="wordpressherobtn">
-          <button className="wordpressherobttn1">View Plans</button>
+          <div className="wordpressherobtn">
+          <button className="wordpressherobttn1">Buy Now</button>
           <button className="wordpressherobtn2">Connect With Expert</button>
+        </div>
+        </div>
+       
+        <div>
+        <img src="computer1.png" alt="" />
         </div>
       </div>
       {/* Hero Section End */}
@@ -67,19 +72,14 @@ const WordpressHosting = () => {
 
       {/* Wordpress siter com */}
       <div className="planningcommain">
-      <div className="planningcommain1">
-      <div className="planningcommain2">
-      <div className="planningcommain3"></div>
+     
       <div className="planningcommain4">
-        <p className="plaanningcompar1">Planning to create <span className='spanplanningcom1'>WordPress</span> sites?</p>
+        <p className="plaanningcompar1">planning to create wordPress sites?</p>
         <p className="planningcompar2">You can now build WordPress sites in just 1-click.</p>
-      </div>
-      </div>
-      <div className="planningcom5">
         <button className="planningcombtn1">order now</button>
       </div>
       </div>
-      </div>
+      
        {/* Wordpress siter com End */}
 
         {/* Faq Com */}

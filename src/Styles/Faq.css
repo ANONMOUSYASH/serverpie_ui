@@ -61,18 +61,18 @@
   .faq-item {
     width: 100%;
     padding: 15px 16px;
-    border-radius: 12px;
-    border: 1px solid #CBE2FF;
-    background: #ffffff;
+    /* border-radius: 12px; */
+    /* border: 1px solid #CBE2FF;
+    background: #ffffff; */
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
   }
   
-  .faq-item.is {
+  /* .faq-item.is {
     border: 2px solid #3973E6;
     background: #3973E6#3973E6;
-  }
+  } */
   
   .faq-question {
     display: flex;
@@ -95,6 +95,20 @@
     font-family: "Inter", sans-serif;
     color: #555;
     padding-left: 5px;
+  }
+  
+  .faq-divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 12px 0;
+    width: auto;
+    border: 1px solid #CBE2FF;
+  }
+
+  .faq-divider.is {
+    border: 2px solid #3973E6;
+    background: #3973E6#3973E6;
   }
   
   .doib,

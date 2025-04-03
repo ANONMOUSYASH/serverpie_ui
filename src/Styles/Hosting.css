@@ -7,8 +7,8 @@
     /*Centers the container */
     display: flex;
     flex-direction: column;
-    align-items: center; 
-     text-align: center;
+    align-items: left; 
+     text-align: start;
     gap: 20px;
     /* Adds spacing */
 }
@@ -25,7 +25,7 @@
 
 .framesubpar1 {
     width: 900px;
-    margin-left: -155px;
+    /* margin-left: -155px; */
     text-align: start;
     align-self: self-start;
     font-family: "Inter", sans-serif;
@@ -44,7 +44,7 @@
   width: 900px;
     text-align: start;
     align-self: self-start;
-    margin-left: -155px;
+    /* margin-left: -155px; */
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -100,22 +100,39 @@
     gap: 23.61px;
 }
 
+@keyframes stableBlink {
+  0% {
+      border-color: #E9E9E9;
+      box-shadow: 0px 0px 0px rgba(57, 115, 230, 0);
+  }
+  50% {
+      border-color: #3973E6;
+      box-shadow: 0px 0px 15px rgba(57, 115, 230, 0.6);
+  }
+  100% {
+      border-color: #3973E6;
+      box-shadow: 0px 0px 15px rgba(57, 115, 230, 0.6);
+  }
+}
 
 .hostingsub {
-    width: 323px;
-    /* height: 787px; */
-    border-radius: 17px;
-    border-width: 0.87px;
-    background: #FFFFFF;
-    border: 0.87px solid #E9E9E9;
-    transition: border 1s ease-in-out, box-shadow 1s ease-in-out;
-    background: linear-gradient(360deg, #FFFFFF 58.2%, #EDF3FF 146%);
+  width: 323px;
+  border-radius: 17px;
+  background: #FFFFFF;
+  border: 0.87px solid #E9E9E9;
+  background: linear-gradient(360deg, #FFFFFF 58.2%, #EDF3FF 146%);
+  transition: all 0.5s ease-in-out;
 }
 
 .hostingsub:hover {
-  border: 4px solid #3973E6;
-  box-shadow: 0px 0px 10px rgba(57, 115, 230, 0.5); /* Soft glow effect */
+  animation: stableBlink 1.5s forwards ease-in-out; /* Runs once and stays */
 }
+
+
+/* .hostingsub:hover {
+  border: 4px solid #3973E6;
+  box-shadow: 0px 0px 10px rgba(57, 115, 230, 0.5); 
+} */
 
 .hostingh4 {
     width: 237px;

@@ -103,6 +103,7 @@ const Testimonial = () => {
             Real Stories, Real Success—Powering Businesses{" "}
             <span className="like">Like Yours</span>
           </p>
+          {/* <p>Our platform is fully equipped with the features you’ll need so you never have to worry about </p> */}
         </div>
 
         {/* First Row - Scroll Right */}
@@ -115,11 +116,11 @@ const Testimonial = () => {
                     <img className="yash" src="yash1.jpg" alt="User" />
                     <p className="yashpar">{item.name}</p>
                   </div>
-                  <p className="yashpar2">@serverpie</p>
+                  <p className="yashpar2">@ui ux designer at goodtech</p>
                   <hr className="fullhr" />
                   <div className="subframbox44">
                     <div className="mainstar41">
-                      {[...Array(4)].map((_, i) => (
+                      {[...Array(5)].map((_, i) => (
                         <div key={i} className="substar1">
                           <IoMdStar className="iso" />
                         </div>
@@ -129,7 +130,7 @@ const Testimonial = () => {
                   </div>
                   <div className="subframbox45">
                     <p className="their">
-                      Their support is crazy fast and amazing.
+                    looks like an angel to me
                     </p>
                     <p className="their2">
                       The team is really responsive and always available to
@@ -155,7 +156,7 @@ const Testimonial = () => {
                     <img className="yash" src="yash1.jpg" alt="User" />
                     <p className="yashpar">{item.name}</p>
                   </div>
-                  <p className="yashpar2">@serverpie</p>
+                  <p className="yashpar2">@ui ux designer at goodtech</p>
                   <hr className="fullhr" />
                   <div className="subframbox44">
                     <div className="mainstar41">
@@ -169,7 +170,7 @@ const Testimonial = () => {
                   </div>
                   <div className="subframbox45">
                     <p className="their">
-                      Their support is crazy fast and amazing.
+                    looks like an angel to me
                     </p>
                     <p className="their2">
                       The team is really responsive and always available to

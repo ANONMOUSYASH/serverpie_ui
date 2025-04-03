@@ -1,61 +1,57 @@
 .wordpresshero {
-  width: 1302px;
-  height: 615px;
+  width: 1240px;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  text-align: center;
+  /* flex-direction: column; */
+  align-items: left;
+  gap: 70px;
+  text-align: left;
   padding: 50px 20px;
   margin: 50px auto;
-  border-width: 1px;
-  border: 1px solid #f1f1f1;
 }
 
 .wordpresshero1 {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  align-items: center;
+  gap: 40px;
+  align-items: left;
 }
 
 .wordpressheropar1 {
-  width: 688px;
-  font-family: "Cal Sans", serif;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: 0%;
-  text-align: center;
+  width: 750px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 84px;
+  line-height: 88px;
+  letter-spacing: -6%;
+  text-align: left;
+  color: #083376;
 }
 
 .wordpressheropar2 {
-  width: 848px;
-  font-family: "Poppins", serif;
+  width: 650px;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 18.36px;
+  line-height: 25px;
   letter-spacing: 0%;
-  text-align: center;
+  text-align: left;
+  color: #2D5087;
 }
 
 .wordpressherobtn {
   display: flex;
-  justify-content: center;
   gap: 16px;
   margin-top: 20px;
 }
 
 .wordpressherobttn1,
 .wordpressherobtn2 {
-  height: 50px;
   border-width: 1px;
-  gap: 10px;
-  border-radius: 15px;
-  padding: 6px 27px;
-  font-family: "Product Sans", serif;
+  border-radius: 5px;
+  font-family: "Inter", serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: 0%;
   cursor: pointer;
@@ -63,16 +59,18 @@
 
 .wordpressherobttn1 {
   width: 226px;
+  height: 72px;
   color: #ffffff;
-  background: #25a75b;
-  border: 1px solid #25a75b;
+  background: #3973E6;
+  border: 1px solid #3973E6;
 }
 
 .wordpressherobtn2 {
   width: 226px;
-  color: #25a75b;
+  height: 72px;
+  color: #3973E6;
   background: transparent;
-  border: 1px solid #25a75b;
+  border: 1px solid #3973E6;
 }
 
 /* Tablet View (1024px and below) */
@@ -430,73 +428,51 @@ Shared Hosting Hero Section
 
 
 .planningcommain {
-  width: 1440px;
-  height: auto;
-  margin: 50px auto;
-  border-width: 1.16px;
-  gap: 11.58px;
-  border-radius: 16.21px;
-  padding-top: 50.93px;
-  padding-right: 40.52px;
-  padding-bottom: 50.93px;
-  padding-left: 40.52px;
-  background-color: #ffffff;
-  border: 1.16px solid #e6e6e6;
-  box-shadow: 0px 4.63px 47.34px 0px #b2becc40;
-}
-
-.planningcommain1 {
+  width: 1334px;
+  height: 334px;
   display: flex;
-  width: 1243px;
-  height: 133px;
-  gap: 82px;
+  margin: auto;
+  border-radius: 19px;
+  background-color: #3973E6;
 }
 
-.planningcommain2 {
-  display: flex;
-  width: 979px;
-  height: 133px;
-  gap: 30px;
-}
-
-.planningcommain3 {
-  width: 133px;
-  height: 133px;
-  border-radius: 18px;
-  background-color: #edfef4;
-}
 
 .planningcommain4 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   width: 816px;
   height: 85px;
-  gap: 18.52px;
+  gap: 25px;
 }
 
 .plaanningcompar1 {
-  font-family: "Inter", serif;
-  font-weight: 700;
-  font-size: 37.04px;
-  line-height: 44.83px;
-  letter-spacing: 0%;
-}
+  width: 1100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -7%;
+  text-align: center;
+  color: #ffffff;
 
-.spanplanningcom1 {
-    color: #25A75B;
 }
 
 .planningcompar2 {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18.52px;
-  line-height: 22.41px;
+  line-height: 100%;
   letter-spacing: 0%;
-  color: #4b5875;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .planningcom5 {
   margin: auto;
+ 
 }
 
 .planningcombtn1 {
@@ -511,8 +487,8 @@ Shared Hosting Hero Section
   line-height: 21.26px;
   letter-spacing: 0%;
   text-align: center;
-  color: #ffffff;
-  background-color: #25a75b;
+  color: #3973E6;
+  background-color: #ffffff;
   border: none;
 }
 

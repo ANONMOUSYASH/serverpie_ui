@@ -40,6 +40,7 @@ const Home = () => {
               you never have to worry about speed,security, and support for your
               websites, boost your digital experience with us.
             </p>
+            <button className="btnprod">Protect domain <span className="arrowp">→</span></button>
           </div>
           <div className="framechiled3">
             <div className="framechildbox1">
@@ -105,7 +106,7 @@ const Home = () => {
           <p className="herohead2">
             From top performance to constant support, we’ve got you covered.
           </p>
-          <p className="w-[408px] font-normal text-[#2D5087] text-[12px] text-2xl text-center justify-center pt-[50px]" style={{fontFamily: "'Inter',sans-serif"}} >
+          <p className="w-[408px] font-normal text-[#2D5087] text-[12px] text-2xl  justify-center pt-[20px] " style={{fontFamily: "'Inter',sans-serif", textAlign: "left"}} >
             Host your websites closer to your audience with our worldwide server
             locations, including London, New York, Sydney, Singapore, and more.
             Improve speed, reliability, and SEO rankings with optimized server
@@ -113,7 +114,7 @@ const Home = () => {
           </p>
           </div>
           <div className="herorec2 ">
-            <div className="herorec3 ml-[-58%]">
+            <div className="herorec3 ml-[-60%]">
               <button className="herohead4">Performance</button>
             </div>
             <button className="herohead5">Security</button>
@@ -137,7 +138,7 @@ const Home = () => {
             <div className="herobox1">
               <div className="herosubbox1">
                 <div className="herosubearth1">
-                <img src="05.svg" className="herosubearth2" />
+                <img src="05.svg" className="herosubearth2 "  />
                 </div>
                 <h4 className="heroboxhead1">Faster Load Times</h4>
                 <p className="heroboxpar1">
@@ -187,7 +188,7 @@ const Home = () => {
               <button className="w-[121px] h-[44px] rounded-[5px] p-[10px] bg-[#ffffff] text-[#3973E6] font-bold text-[12px]" style={{fontFamily: "'Intter',sans-serif"}}>Host Now →</button>
             </div>
             <div className="framsubpart2">
-              <img src="girl.png" alt="" />
+              <img src="jio.svg" alt="" />
               {/* <div className="framsub3box">
                 <img className="costomer" src="costomer.png" alt="" />
                 <h4 className="customerhead">24x7 Support</h4>

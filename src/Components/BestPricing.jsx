@@ -23,7 +23,7 @@ const BestPricing = () => {
                   </p>
                   <button
       className="btnz w-[226px] h-[72px] rounded-[5px] border-[1px] border-[#3973E6] text-[#ffffff] bg-[#3973E6] 
-                 font-inter font-bold text-[20px] leading-[36px] tracking-[0%] align-middle capitalize"
+                 font-inter font-bold text-[20px] leading-[36px] tracking-[0%] align-middle capitalize" style={{ borderRadius: "5px"}}
       onClick={handleClick}
     >
       Buy Now
