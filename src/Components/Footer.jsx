@@ -14,73 +14,9 @@ const Footer = () => {
       <p className=' w-auto' style={{fontFamily: "'Inter',sans-serif", fontWeight: "500", fontSize: "20px"}}>What data centers does ServerPie use, and where are they located?</p>
       <button>Connect</button>
     </div>
-    <img src="girl1.png" alt="" />
+    <img src="footer1.svg" alt="" />
   </div>
-  {/* <div class="footer2">
-  <div class="subfooter2">
-    <div class="subbox1">
-      <div class="minisubbox1">
-        <div class="mini2">
-          <h3>ServerPie</h3>
-          <img class="img1" src="Vector.png" alt="Logo" />
-        </div>
-        <p class="para1">Client satisfaction with issue resolution</p>
-        <div class="minibox">
-          <div class="stars">★★★★★</div>
-          <div class="minipar1">
-            <p class="minipar">Customer satisfaction rating</p>
-            <p class="minipar2">99,42%</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="subbox1">
-      <div class="boxpar2"><p>Collaboration Process Overview</p></div>
-      <div class="boxpar3">
-        <div class="rectengle"></div>
-        <div class="boxcom3">
-          <h4 class="boxhead">Book a Consultation</h4>
-          <p class="boxp">Contact us via email or phone to 
-          schedule a convenient time.</p>
-        </div>
-      </div>
-      <div class="boxpar3">
-        <div class="rectengle"></div>
-        <div class="boxcom3">
-          <h4 class="boxhead">Customized Solution Proposal.</h4>
-          <p class="boxp">We’ll discuss your needs and 
-          suggest a tailored solution.</p>
-        </div>
-      </div>
-      <div class="boxpar3">
-        <div class="rectengle"></div>
-        <div class="boxcom3">
-          <h4 class="boxhead">Effortless Deployment</h4>
-          <p class="boxp">Once approved, we’ll execute the
-          plan efficiently for a smooth transition.</p>
-        </div>
-      </div>
-    </div>
-    <div class="subbox1">
-      <div class="boxcontact3"><p>Contact Us</p></div>
-      <div class="parabox3">
-        <div class="subpar1">
-          <p class="childpar1">Phone:</p>
-          <p class="childpar2">+91 70810 06397</p>
-        </div>
-        <hr />
-        <h2 class="subparmail">E-mail: support@serverpie.com</h2>
-        <hr />
-        <p class="subparmail2">Leave us your email, and we will get back to you.</p>
-        <div class="maininputmail">
-          <input class="inputmail" type="email" placeholder="E-mail" />
-          <button class="mailsend">SEND</button>
-        </div>
-        <img class="humanimg" src="human.png" alt="Support" />
-      </div>
-    </div>
-  </div>
-</div> */}
+ 
       <div className="footer3">
   <div className="subfooter3">
     <ul className="foot">

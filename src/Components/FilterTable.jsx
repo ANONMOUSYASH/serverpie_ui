@@ -308,7 +308,7 @@ const FilterTable = () => {
               </tr>
             </tbody>
           </table>
-          <nav>
+          <div className='pagination-container'>
             <ul className="pagination">
               <li className="page-item disabled"><a className="page-link" href="#">Previous</a></li>
               <li className="page-item active"><a className="page-link"style={{background: "#25A75B"}} href="#">1</a></li>
@@ -316,7 +316,7 @@ const FilterTable = () => {
               <li className="page-item"><a className="page-link" href="#">3</a></li>
               <li className="page-item"><a className="page-link" href="#">Next</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
     </div>

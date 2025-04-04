@@ -22,6 +22,7 @@ import SeoBanner from "../Components/SeoBanner";
 import Contactfriedly from "../Components/Contactfriedly";
 import TryoutServices from "../Components/TryoutServices";
 import DomainPricing from "../Components/DomainPricing";
+import ScrollToTop from "../Components/ScrollToToButton";
 
 const Home = () => {
   return (

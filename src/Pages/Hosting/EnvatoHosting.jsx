@@ -13,10 +13,10 @@ import Contactfriedly from "../../Components/Contactfriedly";
 const EnvatoHosting = () => {
   return (
     <div>
-      <nav>{/* <Navbar /> */}</nav>
       <main>
+      
         {/* Envvanto Hosting Hero Section */}
-        <div className="max-w-[1352px] w-full h-auto mx-auto rounded-[22px] bg-gradient-to-b from-[#F4FFF7] to-[#FFFFFF] flex flex-col items-center justify-center p-6 md:p-10 lg:h-[541px]">
+        <div className="max-w-[1352px] w-full mt-[10%] h-auto mx-auto rounded-[22px] bg-gradient-to-b from-[#F4FFF7] to-[#FFFFFF] flex flex-col items-center justify-center p-6 md:p-10 lg:h-[541px]">
   <div className="max-w-[930px] w-full h-auto flex flex-col items-center gap-6">
     <div className="w-full h-auto flex flex-col items-center justify-center gap-4 text-center">
       <p className="max-w-[800px] w-full text-[32px] sm:text-[40px] md:text-[48px] lg:text-[64px] font-bold leading-tight text-[#0E2954] font-[Inter]">

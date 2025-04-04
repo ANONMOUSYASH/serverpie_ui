@@ -14,9 +14,8 @@ import BestPricing from "../../Components/BestPricing";
 const VpsServer = () => {
   return (
     <div>
-      <nav>{/* <Navbar /> */}</nav>
       <main>
-        <div className="w-full font-Inter max-w-[1413px] h-auto mx-auto rounded-[28px] bg-[#229F57] flex items-center justify-center p-6 md:p-12">
+        <div className="w-full font-Inter max-w-[1413px] h-auto mx-auto mt-[10%] rounded-[28px] bg-[#229F57] flex items-center justify-center p-6 md:p-12">
           <div className="w-full max-w-[650px] h-auto flex flex-col gap-[20px] md:gap-[38px] text-center">
             <p className="text-[32px] md:text-[48px] font-extrabold leading-[40px] md:leading-[54px] text-white" style={{ fontFamily: "'Inter',serif", }}>
               Blazing Fast VPS Hosting with 1 Gbps Port & 99.99% Uptime

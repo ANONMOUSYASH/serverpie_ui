@@ -4,7 +4,7 @@ import { ScrollPanel } from "primereact/scrollpanel";
 
 const HostingSolution = () => {
   return (
-    <div className="hostingsolmain-main">
+    <div className="hostingsolmain-main ">
       <div class="right">
         <div className="subattack2  h-auto flex flex-col ">
           <p className="hostingsolpar1">

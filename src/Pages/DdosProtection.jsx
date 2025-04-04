@@ -11,11 +11,16 @@ import WorkingStaps from "../Components/WorkingSteps";
 const DdosProtection = () => {
   return (
     <div>
-      <nav>{/* <Navbar /> */}</nav>
       <main>
-        <div className="w-auto h-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-[40px] m-auto text-start pt-[50px] px-4 lg:px-0">
-          <div className="flex flex-col gap-4 lg:gap-[15px] w-full lg:w-[780px]">
-            <p className="font-medium text-3xl md:text-4xl lg:text-[64px] leading-[40px] md:leading-[50px] lg:leading-[66px] tracking-[-3%] capitalize text-[#083376] text-start lg:text-start">
+        <div
+          className="w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-[40px] m-auto text-start pt-[100px] px-4 lg:px-0"
+          style={{
+            background:
+              "linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%)",
+          }}
+        >
+          <div className="flex flex-col mt-[8%] gap-4 lg:gap-[15px] w-[802px]  ml[10%] text-start ml-[13%]">
+            <p className="font-medium  text-3xl md:text-4xl lg:text-[64px] leading-[40px] md:leading-[50px] lg:leading-[66px] tracking-[-3%] capitalize text-[#083376] text-left lg:text-start">
               Get enterprise-grade DDoS protection
             </p>
             <p className="w-full md:w-[520px] font-normal text-sm md:text-base leading-5 md:leading-[25px] text-start text-[#2D5087]">
@@ -32,10 +37,10 @@ const DdosProtection = () => {
               </button>
             </div>
           </div>
-          <div className=" flex items-center justify-center bg-gradient-to-r from-[#ECF2FF] to-white">
-            <img src="chim.png" alt="" className="w-full md:w-auto h-auto" />
-          </div>
+       
         </div>
+
+        {/* Hero End */}
 
         <WorkingStaps />
 

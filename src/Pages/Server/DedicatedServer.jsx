@@ -11,10 +11,9 @@ import ResellerOptions from "../../Components/Reselleroptions";
 const DedicatedServer = () => {
   return (
     <div>
-      <nav>{/* <Navbar /> */}</nav>
       <main>
         {/* Hero Start */}
-        <div className="w-full max-w-[1197px] h-auto mx-auto flex flex-col lg:flex-row gap-[40px] lg:gap-[82px] px-4 lg:px-0">
+        <div className="w-full max-w-[1197px] h-auto mx-auto mt-[10%] flex flex-col lg:flex-row gap-[40px] lg:gap-[82px] px-4 lg:px-0">
           <div className="w-full lg:w-[658px] h-auto flex flex-col gap-[20px] lg:gap-[39px]">
             <div className="w-full lg:w-[658px] h-auto flex flex-col gap-[15px] lg:gap-[25px]">
               <p className="font-normal text-[#2D5087]"

@@ -3,6 +3,7 @@ import { FaPlus } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import "../Styles/DomainPricing.css";
 import axios from "axios";
+import Git from "./Git";
 
 const DomainPricing = () => {
   const [domain, setDomain] = useState("");
@@ -129,6 +130,7 @@ const DomainPricing = () => {
   return (
     <div className="mainhero">
       <div className="hero ">
+        <div className="flex flex-row">
         <div className="hero1 flex flex-col gap-[22px] ">
           <p className="heropar1">India's Leading Hosting Provider</p>
           <p className="herohead1">Your Dream Domain Awaits Start Today!</p>
@@ -137,7 +139,7 @@ const DomainPricing = () => {
           </p>
         </div>
         <div
-          className="boxes border-[1px] border-[#FFFFFF] bg-white p-6 rounded-2xl shadow-lg w-[531px] h-auto flex flex-col justify-center items-center ml-[10%]"
+          className="boxes border-[1px] border-[#FFFFFF] bg-white p-6 rounded-2xl shadow-lg w-[531px] h-[330px] flex flex-col justify-center items-center ml-[10%]"
           style={{ boxShadow: "0px 4px 23.5px 0px #BBCCD880" }}
         >
           <p
@@ -221,53 +223,10 @@ const DomainPricing = () => {
               </div>
             </>
           )}
-        </div>
+        </div></div>
+        <Git />
       </div>
-      <div className="w-auto   pl-[15%]  flex flex-col gap-4 ">
-        <p
-          className="font-normal text-lg text-[#B6C4D7] text-left"
-          style={{ fontFamily: "'Inter', serif" }}
-        >
-          Trusted by the best front-end teams
-        </p>
-        <div className="flex flex-wrap  gap-6 sm:gap-10 md:gap-12 lg:gap-16 w-[1211px]   text-left">
-          <img
-            src="github.svg"
-            alt="Git"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-          <img
-            src="openai.svg"
-            alt="AI"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-          <img
-            src="nasa.svg"
-            alt="NASA"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-          <img
-            src="google.svg"
-            alt="Google"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-          <img
-            src="fedora.svg"
-            alt="Fedora"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-          <img
-            src="gitlab.svg"
-            alt="GitLab"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-          <img
-            src="upwork.svg"
-            alt="Upwork"
-            className="w-16 sm:w-20 md:w-24 lg:w-28"
-          />
-        </div>
-      </div>
+    
     </div>
   );
 };

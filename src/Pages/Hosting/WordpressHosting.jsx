@@ -12,13 +12,9 @@ import Wordpress from '../../Components/Wordpress';
 const WordpressHosting = () => {
   return (
     <div>
-    <nav>
-      {/* <Navbar /> */}
-    </nav>
     <main>
       {/* Herro Section */}
-
-      <div className="wordpresshero">
+      <div className="wordpresshero pt-[10%]">
         <div className="wordpresshero1">
           <p className="wordpressheropar1">Fast, Secure & Managed
           WordPress Hosting</p>
