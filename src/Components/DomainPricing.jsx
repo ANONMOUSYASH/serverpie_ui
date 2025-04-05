@@ -6,6 +6,9 @@ import axios from "axios";
 import Git from "./GitIcons";
 import GitIcons from "./GitIcons";
 
+import Git from "./Git";
+
+
 const DomainPricing = () => {
   const [domain, setDomain] = useState("");
   const [mainpricing, setMainPricing] = useState(0);
@@ -129,8 +132,13 @@ const DomainPricing = () => {
   };
 
   return (
+
     <div className="mainhero flex flex-column">
       <div className="hero ">
+
+    <div className="mainhero">
+      <div className="hero ">
+        <div className="flex flex-row">
         <div className="hero1 flex flex-col gap-[22px] ">
           <p className="heropar1">India's Leading Hosting Provider</p>
           <p className="herohead1">Your Dream Domain Awaits Start Today!</p>
@@ -139,7 +147,11 @@ const DomainPricing = () => {
           </p>
         </div>
         <div
+
           className=" boxes border-[1px] border-[#FFFFFF] bg-white p-6 rounded-2xl shadow-lg w-[531px] h-auto flex flex-col justify-center items-center ml-[10%]"
+
+          className="boxes border-[1px] border-[#FFFFFF] bg-white p-6 rounded-2xl shadow-lg w-[531px] h-[330px] flex flex-col justify-center items-center ml-[10%]"
+
           style={{ boxShadow: "0px 4px 23.5px 0px #BBCCD880" }}
         >
           <p
@@ -223,9 +235,16 @@ const DomainPricing = () => {
               </div>
             </>
           )}
+
         </div>
       </div>
       <GitIcons />
+
+        </div></div>
+        <Git />
+      </div>
+    
+
     </div>
   );
 };

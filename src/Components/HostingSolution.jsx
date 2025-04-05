@@ -40,7 +40,11 @@ const HostingSolution = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
      <div ref={sectionRef} className="hostingsolmain-main">
+=======
+    <div className="hostingsolmain-main ">
+>>>>>>> 05788358a9bbc2a994b3e9a8eef27eaf22428e6c
       <div class="right">
         <div className="subattack2  h-auto flex flex-col ">
           <p className="hostingsolpar1">

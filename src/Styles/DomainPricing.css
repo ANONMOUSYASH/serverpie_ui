@@ -1,23 +1,39 @@
 /* Hero Section Styles */
 .mainhero {
+<<<<<<< HEAD
   width: auto;
   height: 100vh;
+=======
+  width: 100%;
+  height: auto;
+>>>>>>> 05788358a9bbc2a994b3e9a8eef27eaf22428e6c
   margin-top: 5%;
   background: linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%);
 }
 .hero {
     width: auto;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    height: auto;
+>>>>>>> 05788358a9bbc2a994b3e9a8eef27eaf22428e6c
     padding-top: 120px;
     /* margin-left: auto;
     margin-right: auto; */
     /* gap: 80px; */
     display: flex;
+<<<<<<< HEAD
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     text-align: center;
     background: linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%);
+=======
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+>>>>>>> 05788358a9bbc2a994b3e9a8eef27eaf22428e6c
     
    
   }
