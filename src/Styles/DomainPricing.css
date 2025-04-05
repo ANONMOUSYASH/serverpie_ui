@@ -1,24 +1,22 @@
 /* Hero Section Styles */
 .mainhero {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin-top: 5%;
   background: linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%);
 }
 .hero {
     width: auto;
-    height: auto;
+    height: 100vh;
     padding-top: 120px;
     /* margin-left: auto;
     margin-right: auto; */
     /* gap: 80px; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     text-align: center;
-    
-   
   }
   
   .heropar1 {
@@ -218,208 +216,8 @@
     transform: translateY(0);
   }
   
-  /* Mobile Responsive Styling */
-  @media (max-width: 768px) {
-    .hero {
-      width: 100%;
-      height: auto;
-      margin-top: 100px;
-      padding: 0 15px;
-    }
+
   
-    .heropar1,
-    .herohead1,
-    .heropar2 {
-      width: 100%;
-    }
-  
-    .herohead1 {
-      font-size: 48px;
-      line-height: 50px;
-    }
-  
-    .heroinput {
-      width: 100%;
-      max-width: 90%;
-      height: auto;
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    .heroinputsearch {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .input-container {
-      width: 100%;
-      margin-left: 10px;
-    }
-  
-    .heroinput1 {
-      width: 100%;
-      font-size: 14px;
-      padding-left: 10px;
-      text-align: center;
-    }
-  
-    .sectionherosub {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .heroselect {
-      width: 100px;
-      font-size: 16px;
-    }
-  
-    .herobtn {
-      width: 100%;
-      max-width: 200px;
-      height: 50px;
-      margin-top: -17px;
-      font-size: 14px;
-    }
-  }
-  
-  /* Mobile Responsive Styling */
-  @media (max-width: 768px) {
-    .hero {
-      width: 100%;
-      height: auto;
-      margin-top: 80px;
-      padding: 0 15px;
-      text-align: center;
-    }
-  
-    .heropar1,
-    .herohead1,
-    .heropar2 {
-      width: 100%;
-    }
-  
-    .herohead1 {
-      font-size: 42px;
-      line-height: 48px;
-    }
-  
-    .heropar1 {
-      font-size: 14px;
-    }
-  
-    .heropar2 {
-      font-size: 16px;
-      line-height: 28px;
-    }
-  
-    .heroinput {
-      width: 100%;
-      max-width: 90%;
-      height: auto;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .heroinputsearch {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .input-container {
-      width: 100%;
-    }
-  
-    .heroinput1 {
-      width: 100%;
-      font-size: 14px;
-      padding: 8px 10px;
-      text-align: center;
-    }
-  
-    .select-container {
-      width: 100%;
-      max-width: 120px;
-      margin: 0 auto;
-    }
-  
-    .heroselect {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .hr1 {
-      width: 100%;
-      max-width: 80%;
-    }
-  
-    .sectionherosub {
-      width: 100%;
-      max-width: 80%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .herobtn {
-      width: 100%;
-      max-width: 200px;
-      height: 50px;
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero {
-      margin-top: 50px;
-      padding: 0 10px;
-    }
-  
-    .herohead1 {
-      font-size: 32px;
-      line-height: 40px;
-    }
-  
-    .heropar1,
-    .heropar2 {
-      font-size: 12px;
-      line-height: 24px;
-    }
-  
-    .heropar2 {
-      margin-top: 65px;
-    }
-  
-    .heroinput {
-      width: 95%;
-    }
-  
-    .heroinput1 {
-      font-size: 12px;
-      padding: 6px 8px;
-    }
-  
-    .select-container {
-      max-width: 100px;
-    }
-  
-    .heroselect {
-      font-size: 14px;
-    }
-  
-    .herobtn {
-      width: 100%;
-  
-      max-width: 160px;
-      height: 45px;
-      font-size: 12px;
-    }
-  }
   
   .domainprice {
     display: flex;
@@ -524,126 +322,160 @@
     color: #ffffff;
   }
   
-  /* Responsive Styles */
-@media (max-width: 1024px) {
-  .hero {
-      margin-top: 150px;
-      padding: 0 20px;
-  }
-
-  .herohead1 {
-      font-size: 64px;
-      line-height: 68px;
-  }
-
-  .heropar2 {
-      font-size: 18px;
-  }
-
-  .herobtn {
-      width: 150px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-      margin-top: 100px;
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding-top: 80px;
       text-align: center;
-  }
-
-  .herohead1 {
+    }
+  
+    .herohead1,
+    .herohd,
+    .herohs,
+    .herohe {
+      width: 100%;
       font-size: 48px;
-      line-height: 50px;
-  }
-
-  .heropar2 {
-      font-size: 16px;
-      line-height: 28px;
-  }
-
-  .sectionherosub {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .heroinput1 {
-      width: 90%;
-      font-size: 14px;
+      line-height: 56px;
       text-align: center;
-  }
-
-  .herobtn {
-      width: 140px;
+    }
+  
+    .heropar1,
+    .heropar2 {
       font-size: 14px;
-  }
-
-  .domainprice {
+      line-height: 28px;
+      text-align: center;
+      padding: 0 20px;
+    }
+  
+    .sectionherosub {
+      width: 90%;
       flex-direction: column;
       align-items: center;
-  }
-
-  .subdomainbox {
-      max-width: 90%;
+      gap: 15px;
+    }
+  
+    .sectionherosub2 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .heroinput1 {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      margin-left: 0;
+    }
+  
+    .hr1 {
+      width: 90%;
+    }
+  
+    .herobtn {
+      width: 150px;
+      height: 45px;
+      font-size: 13px;
+      padding: 6px 20px;
+    }
+  
+    .domainprice {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .subdomainbox,
+    .subdomainbox1 {
+      width: 160px;
       height: auto;
       padding: 15px;
-  }
-
-  .com {
+    }
+  
+    .minidomain {
+      width: 100%;
+      height: auto;
+    }
+  
+    .com {
       font-size: 18px;
-  }
-
-  .starting1 {
+    }
+  
+    .starting {
+      font-size: 13px;
+    }
+  
+    .starting1 {
       font-size: 18px;
+    }
+  
+    .subminidomain2 {
+      margin-left: 0;
+      justify-content: center;
+    }
   }
-}
-
-@media (max-width: 480px) {
-  .hero {
-      margin-top: 50px;
-      display: flex;
+  
+  @media (max-width: 480px) {
+    .hero {
+      margin-top: 10%;
+    }
+    .boxes {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .herohead1,
+    .herohd,
+    .herohs,
+    .herohe {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  
+    .heropar1,
+    .heropar2 {
+      font-size: 13px;
+      padding: 0 10px;
+    }
+  
+    .herobtn {
+      width: 140px;
+      height: 42px;
+      font-size: 12px;
+    }
+  
+    .sectionherosub,
+    .sectionherosub2 {
       flex-direction: column;
-  }
-
-
- .boxes {
-  margin-left: auto;
-  margin-right: auto;
- }
-  .herohead1 {
-      font-size: 32px;
-      line-height: 40px;
-  }
-
-  .heropar2 {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .select-container {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .heroinput1 {
+      font-size: 16px;
+    }
+  
+    .domainprice {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .subdomainbox,
+    .subdomainbox1 {
+      width: 90%;
+      max-width: 320px;
+    }
+  
+    .startingpar,
+    .dollarp {
+      text-align: center;
       font-size: 14px;
+    }
   }
-
-  .heroinput1 {
-      font-size: 12px;
-  }
-
-  .herobtn {
-      width: 120px;
-      font-size: 12px;
-  }
-
-  .boxes {
-    width: auto;
-  }
-
-  .subdomainbox {
-      max-width: 100%;
-      padding: 10px;
-  }
-
-  .com {
-      font-size: 16px;
-  }
-
-  .starting1 {
-      font-size: 16px;
-  }
-}
-
-
   

@@ -107,7 +107,7 @@ const Home = () => {
           <p className="herohead2">
             From top performance to constant support, we’ve got you covered.
           </p>
-          <p className="w-[408px] font-normal text-[#2D5087] text-[12px] text-2xl  justify-center pt-[20px] " style={{fontFamily: "'Inter',sans-serif", textAlign: "left"}} >
+          <p className="parhost w-[408px] font-normal text-[#2D5087] text-[12px] text-2xl  justify-center pt-[20px] " style={{fontFamily: "'Inter',sans-serif", textAlign: "left"}} >
             Host your websites closer to your audience with our worldwide server
             locations, including London, New York, Sydney, Singapore, and more.
             Improve speed, reliability, and SEO rankings with optimized server

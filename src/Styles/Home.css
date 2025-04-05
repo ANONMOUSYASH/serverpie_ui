@@ -254,6 +254,10 @@ color: #2D5087;
     line-height: 34px;
   }
 
+  .parhost {
+    padding-left: 5%;
+  }
+
   .herorec2 {
     flex-direction: column;
     align-items: center;
@@ -801,11 +805,21 @@ margin-left: 26.35px;
   .framechildpar1 {
     font-size: 32px;
     line-height: 40px;
+    width: 90%;
   }
 
   .framechildpar2 {
     font-size: 14px;
     line-height: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  .btnprod {
+    margin: auto;
+  }
+
+  .framechiled3 {
+    padding-top: 35%;
   }
 
   .framechildbox1,

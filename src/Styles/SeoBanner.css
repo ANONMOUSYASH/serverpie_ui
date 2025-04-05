@@ -88,7 +88,9 @@ width: 660px;
 
 @media (max-width: 480px) {
   .seobanner {
-    padding: 30px;
+    padding: 23%;
+    width: auto;
+    height: auto;
   }
 
   .seobannerminipar2 {
@@ -98,6 +100,7 @@ width: 660px;
 
   .seobannerminipar3 {
     font-size: 12px;
+    padding-left: 30%;
   }
 
   .btnyt{

@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .git-icons-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .par234 {
+        padding-left: 5%;
+    }
+  
+    .git-icons-scroll {
+      display: flex;
+      width: max-content;
+      animation: scroll-right 25s linear infinite;
+      gap: 2rem;
+    }
+  
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+  

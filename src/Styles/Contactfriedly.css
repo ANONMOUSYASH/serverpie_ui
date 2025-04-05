@@ -211,9 +211,7 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     .frammain9 {
       width: 100%;
       height: auto;
-      /* Ensure it adjusts dynamically */
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       padding: 0 20px;
     }
   
@@ -236,25 +234,21 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     .submainfram92 {
       display: flex;
       width: 100%;
-      flex-wrap: nowrap;
-      /* Prevents wrapping */
+      flex-wrap: wrap; /* ✅ Wrap to prevent scrolling */
       justify-content: space-between;
       gap: 20px;
     }
   
     .subbox91,
     .subbox911 {
-      flex: 1;
-      /* Ensures equal width */
-      min-height: 100%;
-      /* Full height */
+      flex: 1 1 48%; /* ✅ Responsive equal width */
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      /* Ensures content is properly spaced */
       align-items: center;
       text-align: center;
       padding: 25px;
+      box-sizing: border-box;
     }
   
     .chat,
@@ -265,27 +259,10 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
   }
   
-  @media (max-width: 992px) {
-    .submainfram92 {
-      flex-wrap: wrap;
-      /* Allows wrapping on smaller screens */
-    }
-  
-    .subbox91,
-    .subbox911 {
-      width: 48%;
-      min-height: 100%;
-    }
-  }
-  
   @media (max-width: 768px) {
     .frammain9 {
       margin-top: 100px;
       padding: 0 15px;
-    }
-  
-    .submainfram9 {
-      text-align: center;
     }
   
     .conpar {
@@ -298,22 +275,14 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
   
     .submainfram92 {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      /* Keeps them in one row */
-      width: 100%;
-      overflow-x: auto;
-      /* Allows scrolling if needed */
+      flex-wrap: wrap; /* ✅ Allows wrapping on smaller screens */
+      gap: 15px;
     }
   
     .subbox91,
     .subbox911 {
-      flex: 1;
-      min-height: 100%;
+      width: 100%; /* ✅ Full width on smaller screens */
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
   
     .livep,
@@ -346,11 +315,12 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   }
   
   @media (max-width: 480px) {
-
-    .frammain9{
+    .frammain9 {
       display: flex;
       flex-direction: column;
+      height: 1500px;
     }
+  
     .conpar {
       font-size: 28px;
       line-height: 32px;
@@ -362,18 +332,19 @@ linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   
     .submainfram92 {
       flex-wrap: wrap;
-      /* Allows wrapping on very small screens */
+      gap: 10px;
     }
   
     .subbox91,
     .subbox911 {
       width: 100%;
-      min-height: 100%;
+      padding: 15px;
     }
   
     .chat,
     .chat1 {
       font-size: 14px;
+      text-align: center;
     }
   
     .circle,

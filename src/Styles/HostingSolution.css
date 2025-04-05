@@ -80,6 +80,13 @@
     border-radius: 10px;
     text-align: center;
   }
+
+  
+  .animate-scroll {
+    animation: autoScroll 20s linear infinite;
+  }
+  
+  
   
   .subhostingsolbox1 {
     width: 60px;
