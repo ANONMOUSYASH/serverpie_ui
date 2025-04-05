@@ -13,12 +13,8 @@ import Wordpress from '../../Components/Wordpress';
 const DomainReg = () => {
   return (
     <div>
-      <nav>
-        {/* <Navbar /> */}
-      </nav>
       <main>
         <DomainPricing/>
-        <div className='mt-[25px]'></div>
         <HostingSolution />
         <Wordpress />
        

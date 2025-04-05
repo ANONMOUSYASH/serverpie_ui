@@ -65,9 +65,9 @@ const Navbar = () => {
       </div>
       <button className="loginbtn" onClick={() => handleClick('/login')}>Login</button>
     </nav>
-     <div className=' h-[40px]  bg-[#FFE59D] items-center'>
+     {/* <div className=' h-[40px]  bg-[#FFE59D] items-center'>
      <p className='text-4xl font-normal text-[14px] align-middle ml-[95px] pt-[10px]' style={{fontFamily: "'Inter',sans-serif"}}>Launch your website today with a domain that works for you!</p>
-   </div>
+   </div> */}
    </>
   );
 };

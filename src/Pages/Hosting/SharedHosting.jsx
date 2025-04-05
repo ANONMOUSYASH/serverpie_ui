@@ -16,11 +16,10 @@ import BestPricing from '../../Components/BestPricing';
 const SharedHosting = () => {
   return (
     <div>
-    <nav>
-      {/* <Navbar /> */}
-    </nav>
+  
     <main>
-      <div className='sharedhosthero'>
+      
+      <div className='sharedhosthero '>
         <div className="sharedhostherosub">
           <p className='sharedhostingheropar1 text-start font-medium'>Fast & Secure Hosting Go Live Instantly!</p>
           <p className='sharedhostingheropar2 text-start pl-[30px] text-[#2D5087]'>Affordable, reliable, and optimized for speed – Perfect for blogs, startups, 
@@ -34,6 +33,7 @@ const SharedHosting = () => {
           <img src="computer1.png" alt="" />
         </div>
       </div>
+    
       <WorkingStaps />
       <Hosting />
         <HostingSolution />

@@ -1,15 +1,19 @@
 /* Start Footer */
+.mainfooter {
+  width: auto;
+}
 .footer1 {
   width: 100%;
-  min-height: 414px;
+  height: 638px;
   display: flex;
   align-items: center;
-  text-align: center;
-  border-radius: 37px;
   justify-content: center;
-  background: #3973E6;
-  padding: 20px;
   text-align: center;
+  background: #3973E6;
+  border-radius: 37px 37px 0 0 ; /* Rounded bottom corners only */
+  padding: 20px;
+  overflow: hidden; /* Prevents content overflow */
+  position: relative;
 }
 
 .subfooter1 {

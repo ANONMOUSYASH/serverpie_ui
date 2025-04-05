@@ -1,10 +1,17 @@
 /* Navbar Styling */
 nav {
+  position: fixed; /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff; /* White background */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  z-index: 1000; /* Ensures navbar is above other elements */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 100px;
-  position: relative;
+  padding: 10px 20px;
 }
 
 .mainnav1 {
@@ -12,6 +19,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
 }
 
 .logo {
@@ -86,11 +94,6 @@ nav {
   background-color: #218c4e;
 }
 
-/* Dropdown Menu Styling */
-.dropdown {
-  position: relative;
-}
-
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -118,7 +121,6 @@ nav {
   background: #f0f0f0;
 }
 
-/* Show dropdown when open */
 .dropdown .dropdown-menu.open {
   display: block;
 }
@@ -135,35 +137,58 @@ nav {
   width: 30px;
   height: 4px;
   background-color: #25a75b;
+  transition: all 0.3s ease;
+}
+
+/* Rotate hamburger lines on open */
+.hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Responsive Styling */
 @media (max-width: 1024px) {
   nav {
-    padding: 20px 30px;
+    height: auto;
+    padding: 10px 20px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .mainnav1 {
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
   }
 
   .logo {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .hamburger {
     display: flex;
+    margin-left: auto;
   }
 
   .nav1 {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
     display: none;
-    align-items: center;
+    padding: 15px 0;
+    background-color: #fff;
+    margin-right: 0;
+    align-items: flex-start;
+    border-top: 1px solid #eee;
+  }
+
+  .nav1 li {
+    width: 100%;
+    padding: 10px 20px;
   }
 
   .nav1.show {
@@ -171,18 +196,20 @@ nav {
   }
 
   .loginbtn {
-    margin-top: 20px;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 
   .dropdown-menu {
-    position: absolute;
-    right: 0;
-    width: 200px;
-    display: none;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-top: 5px;
   }
 
-  .dropdown .dropdown-menu.open {
-    display: block;
+  .dropdown-menu li {
+    padding: 10px 20px;
   }
 }

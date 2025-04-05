@@ -1,10 +1,31 @@
-import React from "react";
-import { PiChatsCircleFill } from "react-icons/pi";
-import { PiChatCircleTextFill } from "react-icons/pi";
-import { FaPhoneVolume } from "react-icons/fa6";
+import React, { useEffect, useRef } from "react";
 import "../Styles/Contactfriedly.css";
 
 const Contactfriedly = () => {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile || !container) return;
+
+    let scrollDirection = 1;
+
+    const autoScroll = () => {
+      if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+        scrollDirection = -1;
+      } else if (container.scrollLeft <= 0) {
+        scrollDirection = 1;
+      }
+
+      container.scrollLeft += scrollDirection * 1.5; // scroll speed
+    };
+
+    const intervalId = setInterval(autoScroll, 20); // interval time
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="frammain9">
       <div className="submainfram9">
@@ -16,11 +37,9 @@ const Contactfriedly = () => {
           placement.
         </p>
       </div>
-      <div className="submainfram92">
+      <div className="submainfram92" ref={scrollRef}>
         <div className="subbox91">
-            {/* <div className="circle"> */}
-            <img src="call.svg" alt="" />
-          {/* </div> */}
+          <img src="call.svg" alt="" />
           <p className="livep">Live Chat with Sales</p>
           <p className="speak">
             Speak directly to our expert sales team for instant assistance
@@ -28,9 +47,7 @@ const Contactfriedly = () => {
           <button className="chat">Chat Now</button>
         </div>
         <div className="subbox91">
-          {/* <div className="circle"> */}
           <img src="whats.svg" alt="" />
-          {/* </div> */}
           <p className="livep">Whatsapp Support</p>
           <p className="speak">
             Connect with our friendly support team on WhatsApp for quick help.
@@ -38,9 +55,7 @@ const Contactfriedly = () => {
           <button className="chat">Whatsapp</button>
         </div>
         <div className="subbox91">
-          {/* <div className="circle"> */}
-            <img src="whats1.svg" alt="" />
-          {/* </div> */}
+          <img src="whats1.svg" alt="" />
           <p className="livep">Raise a Support Ticket</p>
           <p className="speak">
             Need help? Submit a ticket, and our team will respond promptly.
@@ -48,9 +63,7 @@ const Contactfriedly = () => {
           <button className="chat">Raise Ticket</button>
         </div>
         <div className="subbox91">
-           {/* <div className="circle"> */}
-           <img src="call1.svg" alt="" />
-          {/* </div> */}
+          <img src="call1.svg" alt="" />
           <p className="livep">Connect on call</p>
           <p className="speak">
             Get in touch with our team directly for assistance over the phone.

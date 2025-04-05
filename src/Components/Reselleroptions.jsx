@@ -4,11 +4,11 @@ const ResellerOptions = () => {
     return (
         <section className="w-auto h-[auto] m-auto flex flex-col md:flex-row items-start gap-20 px-8 py-16">
             {/* Left Side */}
-            <div className="max-w-md w-[500px]">
+            <div className=" w-[500px]">
                 <p className="text-xs font-semibold text-blue-500 uppercase font-[Inter] ">
                     Why Choose Our Services
                 </p>
-                <p className=" text-[#083376] text-[64px] w-auto" style={{
+                <p className="w-[478px] text-[#083376] text-[64px]" style={{
                     lineHeight: '65px',
                     letterSpacing: "-4%",
                     fontFamily: "'Inter',sans-serif",
@@ -26,7 +26,7 @@ const ResellerOptions = () => {
             </div>
 
             {/* Right Side - Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[30px]">
                 {/* Hosting Reseller */}
                 <div className="p-6 bg-[#E8F0FF] rounded-lg shadow-sm w-[240px] h-[230px]" style={{ borderRadius: "20px" }}>
                     <p className="text-[#3973E6] font-inter font-medium text-[32px] leading-[32px] tracking-[0%] align-middle">
@@ -36,7 +36,7 @@ const ResellerOptions = () => {
                     <p className="w-[165px] text-[#3973E6] font-inter font-medium text-[11.06px] leading-[16.59px] tracking-[0%] align-middle">
                         Sell your own whitelable hosting to your client
                     </p>
-                    <div className=" w-[38px] h-[38px] bg-[#3973E6] mt-[30px]" style={{ borderRadius: "56px" }}><p className="text-[#ffffff] p-[10px]">↗</p></div>
+                    <div className=" w-[38px] h-[38px] bg-[#3973E6] mt-[30px]" style={{ borderRadius: "56px" }}><p className="text-[#ffffff] p-[10px]"><img src="arrow1.svg" alt="" /></p></div>
                 </div>
 
                 {/* Domain Reseller */}
@@ -48,7 +48,7 @@ const ResellerOptions = () => {
                     <p className="w-[165px] text-[#BA6F07] font-inter font-medium text-[11.06px] leading-[16.59px] tracking-[0%] align-middle">
                     Sell your own whitelable hosting to your client 
                     </p>
-                    <div className=" w-[38px] h-[38px] bg-[#3973E6] mt-[30px]" style={{ borderRadius: "56px" }}><p className="text-[#ffffff] p-[10px]">↗</p></div>
+                    <div className=" w-[38px] h-[38px] bg-[#FFF6EF] mt-[30px]" style={{ borderRadius: "56px", border:"1px solid #BA6F07" }}><p className="text-[#ffffff] p-[10px]"><img src="arrow2.svg" alt="" /></p></div>
                 </div>
 
                 {/* Server Reseller */}
@@ -60,7 +60,7 @@ const ResellerOptions = () => {
                     <p className="w-[165px] text-[#245D18] font-inter font-medium text-[11.06px] leading-[16.59px] tracking-[0%] align-middle">
                     Sell your own whitelable hosting to your client 
                     </p>
-                    <div className=" w-[38px] h-[38px] bg-[#3973E6] mt-[30px]" style={{ borderRadius: "56px" }}><p className="text-[#ffffff] p-[10px]">↗</p></div>
+                    <div className=" w-[38px] h-[38px] bg-[#ECFFF4] mt-[30px]" style={{ borderRadius: "56px", border:"1px solid #3B8C2C" }}><p className="text-[#ffffff] p-[10px]"><img src="arrow3.svg" alt="" /></p></div>
                 </div>
             </div>
         </section>

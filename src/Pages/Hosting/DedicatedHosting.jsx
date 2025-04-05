@@ -10,11 +10,12 @@ import Hostingplans from "../../Components/Hostingplans";
 import TryoutServices from "../../Components/TryoutServices";
 import Contactfriedly from "../../Components/Contactfriedly";
 import { IoEarthOutline } from "react-icons/io5";
+import ScrollToTopButton from "../../Components/ScrollToToButton";
 
 const DedicatedHosting = () => {
   return (
     <div>
-      <nav>{/* <Navbar /> */}</nav>
+      
       <main>
         {/* Hero Contant */}
         <div className="dedicatedhostmain">

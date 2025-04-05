@@ -2,11 +2,12 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
+import ScrollToTop from './Components/ScrollToToButton'; // Import the ScrollToTop component
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Import all pages
-import Home from './Pages/Home';;
+import Home from './Pages/Home';
 import DomainReg from './Pages/Domain/DomainReg';
 import SharedHosting from './Pages/Hosting/SharedHosting';
 import DedicatedHosting from './Pages/Hosting/DedicatedHosting';
@@ -19,11 +20,13 @@ import DdosProtection from './Pages/DdosProtection';
 import ContactUs from './Pages/ContactUs';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import ScrollToTopButton from './Components/ScrollToToButton';
 
 function App() {
   return (
     <Router>
-      <Navbar /> {/* Navbar will be persistent across all pages */}
+      <ScrollToTopButton /> {/* Ensures every page starts from the top */}
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

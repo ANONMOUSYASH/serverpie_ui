@@ -14,8 +14,11 @@ const TryoutServices = () => {
         </p>
       </div>
       <button className="subframb81">
-        <TbSquareRoundedArrowRightFilled className="tryicon" /> Try Now
-      </button>
+  <div className="icon-wrapper">
+    <img src='svga.svg' className="tryicon" />
+  </div>
+  Try Now
+</button>
     </div>
   </div>
   )

@@ -18,10 +18,15 @@ const FAQItem = ({ question, answer }) => {
           )}
         </button>
       </div>
+      
       {isOpen && <p className="faq-answer need">{answer}</p>}
+
+      {/* ✅ Add an <hr> line after each question-answer block */}
+      <hr className="faq-divider" />
     </div>
   );
 };
+
 const Faq = () => {
   const faqs = [
     {
@@ -30,40 +35,32 @@ const Faq = () => {
     },
     {
       question: "How do I migrate my website to ServerPie?",
-      answer:
-        "Instapay supports various platforms including web and mobile applications.",
+      answer: "Instapay supports various platforms including web and mobile applications.",
     },
     {
       question: "How fast is ServerPie’s hosting speed?",
-      answer:
-        "Do I need to pay to Instapay even when there is no transaction going on in my business Do I need to pay to Instapay even when there is no transaction going on in my business need to pay to Instapay even when there is no transaction going on in my business?",
+      answer: "Do I need to pay to Instapay even when there is no transaction going on in my business?",
     },
     {
-      question:
-        "What data centers does ServerPie use, and where are they located?",
-      answer:
-        "Yes, Instapay supports international payments in multiple currencies.",
+      question: "What data centers does ServerPie use, and where are they located?",
+      answer: "Yes, Instapay supports international payments in multiple currencies.",
     },
   ];
 
   return (
     <div className="frammain6">
       <div className="minifram6">
-        {/* <div className="minisubfram7">
-        <img className="happy" src="happy.png" alt="" />
-        <p className="faq">F.A.Q</p>
-      </div> */}
         <p className="miniframpar7">
-          Here Are The Some Common Question About{" "}
-          <span className="serve">Serverpie</span>
+          Here Are Some Common Questions About <span className="serve">ServerPie</span>
         </p>
-        <p className="font-normal text-[12px] text-[#2D5087] text-2xl text-start" style={{fontFamily: "'Inter',sans-serif"}}>
-          Host your websites closer to your audience with our worldwide server
-          locations, including London, New York, Sydney, Singapore, and more.
-          Improve speed, reliability, and SEO rankings with optimized server
-          placement.
+        <p 
+          className="font-normal text-[12px] text-[#2D5087] text-2xl text-start"
+          style={{ fontFamily: "'Inter', sans-serif" }}
+        >
+          Host your websites closer to your audience with our worldwide server locations, including London, New York, Sydney, Singapore, and more. Improve speed, reliability, and SEO rankings with optimized server placement.
         </p>
       </div>
+      
       <div className="minifram7">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />

@@ -64,18 +64,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  /* Space between icon and text */
+  gap: 10px; /* Space between icon and text */
   white-space: nowrap;
   border: none;
   cursor: pointer;
 }
 
+.icon-wrapper {
+  width: 36px; /* Adjust size */
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Makes the background circular */
+  background: #3973E6; /* Background color for the circle */
+}
+
 .tryicon {
   font-size: 24px;
-  color:#3973E6;
-
+  color: #ffffff; /* Make the icon white for better contrast */
 }
+
 
 /* Responsive Design */
 @media (max-width: 1280px) {

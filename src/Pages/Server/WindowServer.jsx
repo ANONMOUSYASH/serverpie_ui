@@ -5,9 +5,7 @@ import Footer from '../../Components/Footer';
 const WindowServer = () => {
   return (
     <div>
-    <nav>
-      {/* <Navbar /> */}
-    </nav>
+   
     <main></main>
     <footer>
       <Footer />
