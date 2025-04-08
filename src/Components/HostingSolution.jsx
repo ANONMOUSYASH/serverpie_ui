@@ -1,51 +1,94 @@
-import React, { useEffect, useRef } from "react";
-import "../Styles/HostingSolution.css";
+import React, { useEffect, useRef, useState } from "react";
 import { ScrollPanel } from "primereact/scrollpanel";
+import "../Styles/HostingSolution.css";
 
 const HostingSolution = () => {
   const scrollPanelRef = useRef(null);
   const sectionRef = useRef(null);
-  const lastScrollY = useRef(0);
+  const [isSectionInView, setIsSectionInView] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && scrollPanelRef.current) {
-          const content = scrollPanelRef.current.content;
-          window.addEventListener("scroll", syncScroll);
+    const handleScroll = () => {
+      const sectionElement = sectionRef.current;
+      if (!sectionElement) return;
+
+      const sectionRect = sectionElement.getBoundingClientRect();
+      const newIsSectionInView =
+        sectionRect.top < window.innerHeight && sectionRect.bottom > 0;
+
+      setIsSectionInView(newIsSectionInView);
+
+      if (newIsSectionInView) {
+        // If section is in view, check ScrollPanel boundaries
+        const scrollPanelContent = scrollPanelRef.current?.content;
+        if (scrollPanelContent) {
+          const isAtTop = scrollPanelContent.scrollTop === 0;
+          const isAtBottom =
+            scrollPanelContent.scrollHeight - scrollPanelContent.scrollTop <=
+            scrollPanelContent.clientHeight + 1; // Add small tolerance
+
+          if (isAtTop || isAtBottom) {
+            // At boundary, allow main scroll
+            document.body.style.overflow = "";
+          } else {
+            // In the middle, prevent main scroll, and scroll panel
+             document.body.style.overflow = "hidden";
+          }
         } else {
-          window.removeEventListener("scroll", syncScroll);
+           document.body.style.overflow = "hidden";
         }
-      },
-      {
-        threshold: 0.3, // Adjust visibility trigger point
-      }
-    );
-
-    observer.observe(sectionRef.current);
-
-    const syncScroll = () => {
-      const content = scrollPanelRef.current?.content;
-      if (content) {
-        // Detect scroll delta
-        const delta = window.scrollY - lastScrollY.current;
-        content.scrollTop += delta; // Sync inner scroll with main scroll
-        lastScrollY.current = window.scrollY;
+      } else {
+        // Section not in view, allow main scroll
+        document.body.style.overflow = "";
       }
     };
 
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener("scroll", syncScroll);
+      window.removeEventListener("scroll", handleScroll);
+      document.body.style.overflow = ""; // Clean up on unmount
     };
   }, []);
 
+  useEffect(() => {
+    const handleWheel = (e) => {
+      const sectionElement = sectionRef.current;
+      const scrollPanelContent = scrollPanelRef.current?.content;
+
+      if (!sectionElement || !scrollPanelContent) {
+        return;
+      }
+
+      const sectionRect = sectionElement.getBoundingClientRect();
+      const isSectionInViewLocal =
+        sectionRect.top < window.innerHeight && sectionRect.bottom > 0;
+
+      if (isSectionInViewLocal) {
+        e.preventDefault();
+        scrollPanelContent.scrollTop += e.deltaY;
+      }
+    }
+
+    const scrollPanelElement = scrollPanelRef.current?.content;
+
+     if (scrollPanelElement) {
+        scrollPanelElement.addEventListener("wheel", handleWheel, { passive: false });
+     }
+
+      return () => {
+         if (scrollPanelElement) {
+            scrollPanelElement.removeEventListener("wheel", handleWheel);
+         }
+      }
+  }, []);
+
   return (
-     <div ref={sectionRef} className="hostingsolmain-main">
-      <div class="right">
-        <div className="subattack2  h-auto flex flex-col ">
+    <div ref={sectionRef} className="hostingsolmain-main" style={{ position: 'relative' }}>
+      <div className="right">
+        <div className="subattack2 h-auto flex flex-col">
           <p className="hostingsolpar1">
-            We Have a <span className="text-[96px]">Hosting Solution</span> For
-            You
+            We Have a <span className="text-[96px]">Hosting Solution</span> For You
           </p>
           <p className="hostingsolpar2">
             ServerPie Shared Hosting – Power, Speed & Security in One!
@@ -54,9 +97,10 @@ const HostingSolution = () => {
           </p>
         </div>
       </div>
-      <div class="hostingsolmain">
+      <div className="hostingsolmain">
         <div className="subhostingsol3 w-[100%] h-[654px] flex flex-col gap-[20px]">
           <ScrollPanel
+            ref={scrollPanelRef}
             style={{
               width: "100%",
               height: "654px",
@@ -66,7 +110,7 @@ const HostingSolution = () => {
             className="custom-scroll"
             tabIndex={0}
           >
-            <div className="subhostingsolsub3 animate-scroll">
+            <div className="subhostingsolsub3 animate-scroll" style={{ position: 'relative', zIndex: 1 }}>
               <div className="hostingsolbox1 w-[311px] h-[300px] bg-[#ffffff] rounded-[27px]">
                 <div className="subhostingsolbox1">
                   <img className="time1" src="vec0.svg" alt="" />
@@ -91,7 +135,7 @@ const HostingSolution = () => {
                 </p>
               </div>
             </div>
-            <div className="subattack4">
+            <div className="subattack4" style={{ position: 'relative', zIndex: 1 }}>
               <div className="subhostingsolsub4">
                 <div className="hostingsolbox1 w-[311px] h-[300px] bg-[#ffffff] rounded-[27px]">
                   <div className="subhostingsolbox1">
@@ -144,8 +188,6 @@ const HostingSolution = () => {
         </div>
       </div>
     </div>
-
-  
   );
 };
 

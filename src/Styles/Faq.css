@@ -186,6 +186,32 @@
       font-size: 16px;
     }
   }
+
+ /* Blue blinking effect for <hr> */
+.blink-blue {
+  animation: blink-blue-line 1s ease-in-out;
+  border-color: #007bff !important;
+}
+
+@keyframes blink-blue-line {
+  0% {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #007bff;
+  }
+  50% {
+    border-color: transparent;
+  }
+  75% {
+    border-color: #007bff;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+
   
   @media (max-width: 768px) {
     .frammain6 {

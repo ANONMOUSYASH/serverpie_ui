@@ -170,10 +170,11 @@ color: #2D5087;
 .herosubearth2 {
   width: 24px;
   height: 24px;
+  color: #ffffff;
 }
 
 .herosubearth2:hover {
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 

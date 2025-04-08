@@ -116,7 +116,7 @@ const Testimonial = () => {
                     <img className="yash" src="yash1.jpg" alt="User" />
                     <p className="yashpar">{item.name}</p>
                   </div>
-                  <p className="yashpar2">@ui ux designer at goodtech</p>
+                  {/* <p className="yashpar2">@ui ux designer at goodtech</p> */}
                   <hr className="fullhr" />
                   <div className="subframbox44">
                     <div className="mainstar41">
@@ -126,15 +126,16 @@ const Testimonial = () => {
                         </div>
                       ))}
                     </div>
-                    <p className="yeshdate">Jan 28, 2025</p>
+                    {/* <p className="yeshdate">Jan 28, 2025</p> */}
                   </div>
                   <div className="subframbox45">
                     <p className="their">
                     looks like an angel to me
                     </p>
                     <p className="their2">
-                      The team is really responsive and always available to
-                      help!
+                    Their support is crazy fast and amazing. <br /><br />
+                    They are very understand and able to help <br /><br />
+                    24/7. Its just in another league.
                     </p>
                   </div>
                   <div className="subbox46">
@@ -156,25 +157,26 @@ const Testimonial = () => {
                     <img className="yash" src="yash1.jpg" alt="User" />
                     <p className="yashpar">{item.name}</p>
                   </div>
-                  <p className="yashpar2">@ui ux designer at goodtech</p>
+                  {/* <p className="yashpar2">@ui ux designer at goodtech</p> */}
                   <hr className="fullhr" />
                   <div className="subframbox44">
                     <div className="mainstar41">
-                      {[...Array(4)].map((_, i) => (
+                      {[...Array(5)].map((_, i) => (
                         <div key={i} className="substar1">
                           <IoMdStar className="iso" />
                         </div>
                       ))}
                     </div>
-                    <p className="yeshdate">Jan 28, 2025</p>
+                    {/* <p className="yeshdate">Jan 28, 2025</p> */}
                   </div>
                   <div className="subframbox45">
                     <p className="their">
                     looks like an angel to me
                     </p>
                     <p className="their2">
-                      The team is really responsive and always available to
-                      help!
+                    Their support is crazy fast and amazing. <br /><br />
+                    They are very understand and able to help <br /><br />
+                    24/7. Its just in another league.
                     </p>
                   </div>
                   <div className="subbox46">
@@ -231,6 +233,33 @@ const Testimonial = () => {
             ))}
           </div>
         </div> */}
+        <div className="mt-[20px]">
+        <div
+  className="w-[266px] h-[63px] m-auto  bg-white flex justify-center items-center"
+  style={{
+    border: "1px solid #07C07E",
+    borderRadius: "2px",
+    fontFamily: "Inter",
+    fontWeight: 400,
+    fontSize: "15.95px",
+    lineHeight: "100%",
+    letterSpacing: "0%",
+  }}
+>
+  <p className="flex items-center pt-[15px] gap-1 text-black">
+    Review us on{" "}
+    <a
+      href="https://www.trustpilot.com/review/serverpie.com"
+      className="flex items-center underline text-black no-underline hover:underline"
+      style={{ textDecoration: "none", color: "inherit"  }}
+    >
+      <img src="Star2.svg" alt="" className="mr-1" />
+      Trustpilot
+    </a>
+  </p>
+</div>
+
+        </div>
       </div>
     </div>
   );

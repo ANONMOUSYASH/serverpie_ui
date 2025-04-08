@@ -5,27 +5,37 @@ import "../Styles/Faq.css";
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [blink, setBlink] = useState(false);
+
+  const handleClick = () => {
+    if (!isOpen) {
+      setBlink(true);
+      setTimeout(() => setBlink(false), 1000); // Remove blink after 1s
+    }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className={`faq-item ${isOpen ? "is" : ""}`}>
-      <div className="faq-question" onClick={() => setIsOpen(!isOpen)}>
-        <p className="faq-text">{question}</p>
-        <button className={isOpen ? "doib1" : "doib"}>
-          {isOpen ? (
-            <RiSubtractFill className="plus1" />
-          ) : (
-            <FaPlus className="plus" />
-          )}
-        </button>
-      </div>
-      
-      {isOpen && <p className="faq-answer need">{answer}</p>}
-
-      {/* ✅ Add an <hr> line after each question-answer block */}
-      <hr className="faq-divider" />
+    <div className="faq-question" onClick={handleClick}>
+      <p className="faq-text">{question}</p>
+      <button className={isOpen ? "doib1" : "doib"}>
+        {isOpen ? (
+          <RiSubtractFill className="plus1" />
+        ) : (
+          <FaPlus className="plus" />
+        )}
+      </button>
     </div>
-  );
+
+    {isOpen && <p className="faq-answer need">{answer}</p>}
+
+    {/* ✅ Apply blink-blue here */}
+    <hr className={`faq-divider ${blink ? "blink-blue" : ""}`} />
+  </div>
+);
 };
+
 
 const Faq = () => {
   const faqs = [
