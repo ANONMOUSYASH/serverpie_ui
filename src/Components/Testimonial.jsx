@@ -3,6 +3,7 @@ import { IoMdStar } from "react-icons/io";
 import gsap from "gsap";
 import "../Styles/Testimonial.css";
 import Slider from "react-slick";
+import TrustBoxWithButton from "./TrustBoxWithButton";
 
 const useDeviceType = () => {
   const [deviceType, setDeviceType] = useState("large"); // Default to large screen
@@ -233,7 +234,7 @@ const Testimonial = () => {
             ))}
           </div>
         </div> */}
-        <div className="mt-[20px]">
+        {/* <div className="mt-[20px]">
         <div
   className="w-[266px] h-[63px] m-auto  bg-white flex justify-center items-center"
   style={{
@@ -259,7 +260,8 @@ const Testimonial = () => {
   </p>
 </div>
 
-        </div>
+        </div> */}
+        <TrustBoxWithButton />
       </div>
     </div>
   );

@@ -1,80 +1,72 @@
+/* ========================
+   General Layout & Spacing
+=========================== */
 .mainclass {
-  display: flex; /* or use display: grid; */
-  flex-direction: column; /* Stack elements vertically */
-  gap: 40px; /* Adds 30px space between child elements */
-}
-
-
-.herorec {
-  /* width: 1108px; */
-  /* height: 401px; */
-  margin: 90px auto;
-  /* Centers the rectangle horizontally */
-  display: flex;
-  /* justify-content: center; */
-  /* Centers content horizontally */
-  /* align-items: center; */
-  /* Centers content vertically */
-  /* border-radius: 30px; */
-  /* background: #f6f6f6; */
-  /* text-align: center; */
-}
-
-
-
-/* Centering the entire heroheadmain2 container */
-.heroheadmain2 {
-  width: auto;
-  height: auto;
-  /* Adjust height dynamically */
-  margin:50px auto;
-  /* Centers the section horizontally */
   display: flex;
   flex-direction: column;
-  align-items: left;
-  /* Centers content */
-  text-align: start;
+  gap: 40px;
 }
 
-/* Headline Text */
+/* ========================
+   Hero Section Containers
+=========================== */
+.herorec {
+  margin: 90px auto;
+  display: flex;
+}
+
+.heroheadmain2 {
+  width: 1273px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* ========================
+   Headline
+=========================== */
 .herohead2 {
   width: 700px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 64px;
   font-weight: 500;
   line-height: 64px;
-  letter-spacing: -4%;
   color: #0E2954;
-  border: #00000033;
-  text-align: left;
   text-transform: capitalize;
+  text-align: left;
 }
 
-/* Centering the herorec2 box */
+.parhost {
+  width: 408px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #2D5087;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+/* ========================
+   Tabs Section
+=========================== */
 .herorec2 {
-    display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center;
-    margin: 40px auto 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 40px auto 0;
+  gap: 10px;
 }
 
-/* Active tab in the selection */
 .herorec3 {
-  /* width: 160px;
-  height: 40px; */
   border-radius: 9px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Tabs inside herorec2 */
-.herohead4,
-.herohead5 {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 10px;
 }
 
 .herohead4 {
@@ -82,44 +74,41 @@
   color: white;
   width: 130px;
   height: 42px;
-  gap: 10px;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 0 10px;
-  /* padding: 10px; */
   border-radius: 9px;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
+  text-align: center;
 }
 
 .herohead5 {
-  width: 101;
-height: 42;
-border-radius: 9px;
-gap: 10px;
-padding: 10px;
-border-width: 1px;
-background: #FFFFFF;
-border: 1px solid #DEDEDE;
-color: #2D5087;
-
+  background: #ffffff;
+  color: #2D5087;
+  width: 101px;
+  height: 42px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 9px;
+  border: 1px solid #dedede;
+  text-align: center;
+  padding: 10px;
 }
 
-/* Centering the main boxes */
+/* ========================
+   Feature Boxes
+=========================== */
 .heromainbox {
   display: flex;
-  /* Correcting the display property */
   justify-content: center;
-  /* Centers the boxes */
   align-items: center;
   flex-wrap: wrap;
-  /* Makes it responsive */
   gap: 20px;
-  /* Ensures spacing between boxes */
   margin-top: 60px;
   width: 100%;
 }
 
-/* Individual feature boxes */
 .herobox1,
 .herobox2,
 .herobox3 {
@@ -128,7 +117,7 @@ color: #2D5087;
   padding: 51px 37px;
   border-radius: 15px;
   border: 1px solid #e2e2e2;
-  background: #FFFFFF;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,23 +127,17 @@ color: #2D5087;
 
 .herobox1:hover,
 .herobox2:hover,
-.herobox3:hover,
-.herobox4:hover {
-  border: 3px solid #3973E6; /* Blue border on hover */
+.herobox3:hover {
+  border: 3px solid #3973E6;
 }
 
-
-/* Highlighted box */
-/* .herobox2 {
-  border: 1px solid #25a75b;
-} */
-
-/* Icon inside each box */
+/* ========================
+   Feature Icons
+=========================== */
 .herosubearth1 {
   width: 56px;
   height: 56px;
   margin: 0 auto;
-  /* Centers the earth icon */
   border-radius: 28px;
   background: #edfff5;
   display: flex;
@@ -164,7 +147,6 @@ color: #2D5087;
 
 .herosubearth1:hover {
   background: #3973E6;
-  color: #ffffff;
 }
 
 .herosubearth2 {
@@ -173,12 +155,9 @@ color: #2D5087;
   color: #ffffff;
 }
 
-.herosubearth2:hover {
-  color: #ffffff;
-}
-
-
-/* Feature box headings */
+/* ========================
+   Box Text
+=========================== */
 .heroboxhead1,
 .heroboxhead2 {
   font-family: "Inter", sans-serif;
@@ -186,7 +165,6 @@ color: #2D5087;
   font-weight: 600;
 }
 
-/* Feature box paragraph */
 .heroboxpar1,
 .heroboxpar2 {
   font-family: "Inter", sans-serif;
@@ -196,7 +174,9 @@ color: #2D5087;
   color: #797979;
 }
 
-/* Responsive Styles */
+/* ========================
+   Responsive Styles
+=========================== */
 @media (max-width: 1024px) {
   .herohead2 {
     width: 90%;
@@ -209,22 +189,23 @@ color: #2D5087;
     align-items: center;
   }
 
-  .herohead4, .herohead5 {
+  .herohead4,
+  .herohead5 {
     width: 100%;
     max-width: 200px;
-    text-align: center;
   }
 
   .heromainbox {
-    flex-wrap: wrap;
     gap: 15px;
   }
 
-  .herobox1, .herobox2, .herobox3 {
+  .herobox1,
+  .herobox2,
+  .herobox3 {
     width: 90%;
     max-width: 320px;
-    height: auto;
     padding: 30px;
+    height: auto;
   }
 }
 
@@ -238,7 +219,9 @@ color: #2D5087;
     flex-direction: column;
   }
 
-  .herobox1, .herobox2, .herobox3 {
+  .herobox1,
+  .herobox2,
+  .herobox3 {
     width: 100%;
     padding: 25px;
   }
@@ -246,253 +229,38 @@ color: #2D5087;
 
 @media (max-width: 480px) {
   .heroheadmain2 {
-    width: auto;
     display: flex;
     flex-direction: column;
   }
+
   .herohead2 {
     font-size: 28px;
     line-height: 34px;
   }
 
-  .parhost {
-    padding-left: 5%;
-  }
-
   .herorec2 {
     flex-direction: column;
     align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
   }
 
   .herorec3 {
-    margin-left: 10px;
     width: 200px;
+    margin-left: 10px;
   }
 
-  .herohead4, .herohead5 {
+  .herohead4,
+  .herohead5 {
     font-size: 14px;
     width: 90%;
   }
 
-  .herobox1, .herobox2, .herobox3 {
+  .herobox1,
+  .herobox2,
+  .herobox3 {
     width: 100%;
     padding: 20px;
   }
-}
-
-/* .card-container {
-  display: ruby;  delete
-  width: 1036px; delete
-  height: 734px; delete
-  gap: 15px;  delete
-   opacity: 0px; 
-} */
-
-/* .card-container-bg {
-  background-image: url("/Picture1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 65%;
-} */
-
-/* .card {
-  display: flex; delete
-  width: 100%;
-  height: 351px;
-  padding: 35px 32px 35px 32px;
-
-  border-radius: 30px;
-  border: 1px 0px 0px 0px;
-  background: #ffffff;
-  border: 1px solid #dddddd;
-  box-shadow: 0px 4px 40.6px 0px #a6a6a640;
-} */
-
-/* .card-icon {
-  width: 54px;
-  height: 54px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 35%;   delete
-  padding: 11.08px;
-  gap: 6.92px;
-  border-radius: 60.92px;
-  opacity: 0px;
-  background: #25a75b;
-} */
-
-/* .icon {
-  width: 29.08px;
-  height: 29.08px;
-  color: #ffffff;
-} */
-
-/* .card-title {
-  width: 282px;
-  height: 45px;
-  font-family: "Montserrat", serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: -0.02em;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #000000;
-} */
-
-/* .card-description {
-  width: 262px;
-  height: 118px;
-  font-family: "Montserrat", serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #656565;
-} */
-
-@media (max-width: 1024px) {
-  .framemain {
-    width: 90%;
-    margin: 40px auto;
-  }
-
-  .framesub1 {
-    max-width: 100%;
-  }
-
-  .framesubpar1 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .framesubpar2 {
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .framesubmainbtn {
-    display: contents;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .framesubbtn1,
-  .framesubbtn2,
-  .framesubbtn3 {
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-  }
-
-  /* .card-container-bg {
-    background-size: 80%;
-  }
-
-  .card {
-    margin: 50px auto;
-    height: auto;
-    padding: 30px;
-  }
-
-  .card-title {
-    font-size: 22px;
-  }
-
-  .card-description {
-    font-size: 13px;
-    line-height: 20px;
-  } */
-}
-
-@media (max-width: 768px) {
-  .framesubpar1 {
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-  .framesubpar2 {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .framesubmainbtn {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .framesubbtn1,
-  .framesubbtn2,
-  .framesubbtn3 {
-    width: 90%;
-    font-size: 14px;
-  }
-
-  /* .card-container-bg {
-    background-size: 90%;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 90%;
-    margin-bottom: 15px;
-  }
-
-  .card-title {
-    font-size: 20px;
-  }
-
-  .card-description {
-    font-size: 13px;
-  } */
-}
-
-@media (max-width: 480px) {
-  .framemain {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .framesubpar1 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-
-  .framesubpar2 {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  .framesubbtn1,
-  .framesubbtn2,
-  .framesubbtn3 {
-    width: 100%;
-    font-size: 13px;
-  }
-
-  /* .card-container-bg {
-    background-size: 100%;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .card-title {
-    font-size: 18px;
-  }
-
-  .card-description {
-    font-size: 12px;
-  } */
 }
 
 /* Framemain2 */

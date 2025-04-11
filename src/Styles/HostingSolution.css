@@ -8,14 +8,16 @@
   background-color: #3973E6;
 }
 
+
+
 .hostingsolmain {
   display: flex;
 }
-.left {
+/* .left {
   padding: 5%;
   flex: 1;
 
-}
+} */
 .right {
   display: flex;
   align-items: center;
@@ -27,10 +29,10 @@
   align-items: center;
   margin-left: 50px;
 }
-.hostingsolmain-main {
+/* .hostingsolmain-main {
 position: relative;
 
-} 
+}  */
 
 .hostingsol1 {
   width: auto;
@@ -62,23 +64,23 @@ position: relative;
 }
 
 /* Flexbox for the 6 Boxes */
-.subhostingsolsub3,
+ .subhostingsolsub3,
 .subhostingsolsub4 {
   display: flex;
-  flex-wrap: wrap;
-  
-  justify-content: center;
-  /* gap: 20px; */
-  margin-top: 30px;
-}
+  justify-content: end;
+} 
 
 /* Box Styling */
 .hostingsolbox1 {
-  
   padding: 20px;
   margin-right: 40px;
   border-radius: 10px;
   text-align: center;
+}
+
+.scrollingtop {
+  width: 100%;
+  justify-content: end;
 }
 
 
@@ -126,7 +128,7 @@ position: relative;
 
 .custom-scroll {
   max-width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-x: auto; 
   scrollbar-width: 0;
 }
 
@@ -317,7 +319,7 @@ display: none !important;
 }
 
 /* Smooth scrolling effect */
-/* .animate-scroll {
+.animate-scroll {
 animation: scrollUp 10s linear infinite;
 }
 
@@ -328,5 +330,14 @@ animation: scrollUp 10s linear infinite;
 100% {
   transform: translateY(-100%);
 }
-} */
+}
 
+.inner-scroll-content {
+  max-height: 1240px; /* 4 boxes height + spacing */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.hostingsolbox1 {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

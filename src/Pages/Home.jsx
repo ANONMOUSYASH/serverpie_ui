@@ -1,120 +1,114 @@
-import Footer from "../Components/Footer";
+// Importing Reusable Components and Assets
 import Navbar from "../Components/Navbar";
-import { CiSearch } from "react-icons/ci";
-import { IoEarthSharp } from "react-icons/io5";
-import { FaPlus } from "react-icons/fa6";
-import { RiSubtractFill } from "react-icons/ri";
-// import { IoMdStar } from "react-icons/io";
-import { FaArrowRight } from "react-icons/fa";
-import "../Styles/Home.css";
-import Testimonial from "../Components/Testimonial";
-import Hosting from "../Components/Hosting";
-import Feturelist from "../Components/Feturelist";
-import Faq from "../Components/Faq";
-import Steps from "../Components/Steps";
-import { LuRocket } from "react-icons/lu";
-import { MdOutlineSecurity } from "react-icons/md";
-import { MdElectricBolt } from "react-icons/md";
-import { IoEarthOutline } from "react-icons/io5";
-import { AiOutlineBarChart } from "react-icons/ai";
-import Serverinfo from "../Components/Serverinfo";
-import SeoBanner from "../Components/SeoBanner";
-import Contactfriedly from "../Components/Contactfriedly";
-import TryoutServices from "../Components/TryoutServices";
+import Footer from "../Components/Footer";
 import DomainPricing from "../Components/DomainPricing";
+import Steps from "../Components/Steps";
+import Hosting from "../Components/Hosting";
+import SeoBanner from "../Components/SeoBanner";
+import Testimonial from "../Components/Testimonial";
+import Faq from "../Components/Faq";
+import TryoutServices from "../Components/TryoutServices";
+import Contactfriedly from "../Components/Contactfriedly";
 import ScrollToTop from "../Components/ScrollToToButton";
 
+// React Icons
+import { FaArrowRight } from "react-icons/fa";
+import "../Styles/Home.css";
+
+// Main Home Component
 const Home = () => {
   return (
     <div>
+      {/* Scroll to Top Button */}
+      {/* <ScrollToTop /> */}
+
+      {/* Navbar (Header) */}
+      {/* <Navbar /> */}
+
       <main className="mainclass">
+
+        {/* Domain Pricing Section */}
         <DomainPricing />
+
+        {/* Steps Section (How it works / Get Started guide) */}
         <Steps />
 
-        <div className="framemain2">
+        {/* Anti-DDoS Features Section */}
+        <section className="framemain2">
           <div className="framechild2">
-            <p className="framechildpar1">
+            <h2 className="framechildpar1">
               Discover Our Advanced Anti-DDoS Solutions
-            </p>
+            </h2>
             <p className="framechildpar2">
               Our platform is fully equipped with the features you’ll need so
-              you never have to worry about speed,security, and support for your
+              you never have to worry about speed, security, and support for your
               websites, boost your digital experience with us.
             </p>
-            <button className="btnprod">Protect domain <span className="arrowp">→</span></button>
+            <button className="btnprod">
+              Protect domain <span className="arrowp">→</span>
+            </button>
           </div>
+
+          {/* Top 2 Features */}
           <div className="framechiled3">
             <div className="framechildbox1">
-              <div className="framechildicon">
-                <div className="w-[55px] h-[55px] bg-[#FF0808] rounded-[27px] m-[30px]">
-                <img src="01.svg" className="icon22 " />
-                </div>
-                <p className="framechildipar1">Advanced DDoS Protection</p>
-                <p className="framechildipar2">
-                  Cutting-edge tech ensures uptime even under attack.
-                </p>
-              </div>
-            </div>
-
+            <FeatureBox
+              color="#FF0808"
+              icon="01.svg"
+              title="Advanced DDoS Protection"
+              description="Cutting-edge tech ensures uptime even under attack."
+            /></div>
             <div className="framechildbox2">
-              <div className="framechildicon">
-                <div className="w-[55px] h-[55px] rounded-[27px] m-[30px] bg-[#FF8D41]">
-                  <img src="03.svg" className="icon22 " />
-                </div>
-                <p className="framechildipar1">Multi-Layered Security</p>
-                <p className="framechildipar2">
-                  Blocks volumetric, protocol, and app-layer threats.
-                </p>
-              </div>
-            </div>
+            <FeatureBox
+              color="#FF8D41"
+              icon="03.svg"
+              title="Multi-Layered Security"
+              description="Blocks volumetric, protocol, and app-layer threats."
+            /></div>
           </div>
+
+          {/* Bottom 2 Features */}
           <div className="framesubmini4box">
             <div className="framechildbox3">
-              <div className="framechildicon">
-                <div className="w-[55px] h-[55px] bg-[#25A75B] rounded-[27px] m-[30px]">
-                <img src="02.svg" className="icon22 " />
-                </div>
-                <p className="framechildipar1">Real-Time Traffic Filtering</p>
-                <p className="framechildipar2">
-                  Instantly detects and mitigates malicious traffic.
-                </p>
-              </div>
+            <FeatureBox
+              color="#25A75B"
+              icon="02.svg"
+              title="Real-Time Traffic Filtering"
+              description="Instantly detects and mitigates malicious traffic."
+            />
             </div>
             <div className="framechildbox5">
-              <div className="framechildicon">
-                <div className="w-[55px] h-[55px] bg-[#3E9CFF] rounded-[27px] m-[30px]">
-                <img src="04.svg" className="icon22 " />
-                </div>
-                <p className="framechildipar1">24/7 Monitoring & Alerts</p>
-                <p className="framechildipar2">
-                  Stay informed with real-time analytics and alerts.
-                </p>
-              </div>
-            </div>
+            <FeatureBox
+              color="#3E9CFF"
+              icon="04.svg"
+              title="24/7 Monitoring & Alerts"
+              description="Stay informed with real-time analytics and alerts."
+            /></div>
           </div>
-        </div>
+        </section>
 
-        {/* Hostig Pricing Boxes */}
-
+        {/* Hosting Plan Section */}
         <Hosting />
 
-        {/* <Serverinfo /> */}
-
+        {/* SEO Benefits Banner */}
         <SeoBanner />
 
-        <div className="heroheadmain2">
-        <div className="flex flex-col lg:flex-row w-auto gap-6 lg:gap-[86px] text-center lg:text-left items-center">
-          <p className="herohead2">
-            From top performance to constant support, we’ve got you covered.
-          </p>
-          <p className="parhost w-[408px] font-normal text-[#2D5087] text-[12px] text-2xl  justify-center pt-[20px] " style={{fontFamily: "'Inter',sans-serif", textAlign: "left"}} >
-            Host your websites closer to your audience with our worldwide server
-            locations, including London, New York, Sydney, Singapore, and more.
-            Improve speed, reliability, and SEO rankings with optimized server
-            placement.
-          </p>
+        {/* Server Feature Highlights */}
+        <section className="heroheadmain2">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-[86px] text-center lg:text-left items-center">
+            <h2 className="herohead2">
+              From top performance to constant support, we’ve got you covered.
+            </h2>
+            <p className="parhost">
+              Host your websites closer to your audience with our worldwide server
+              locations, including London, New York, Sydney, Singapore, and more.
+              Improve speed, reliability, and SEO rankings with optimized server
+              placement.
+            </p>
           </div>
-          <div className="herorec2 ">
+
+          {/* Hosting Benefits Buttons */}
+          <div className="herorec2">
             <div className="herorec3 ml-[-60%]">
               <button className="herohead4">Performance</button>
             </div>
@@ -123,142 +117,90 @@ const Home = () => {
             <button className="herohead5">Scalability</button>
             <button className="herohead5">Support</button>
           </div>
+
+          {/* Hosting Cards Grid */}
           <div className="heromainbox">
-            <div className="herobox1">
-              <div className="herosubbox1">
-                <div className="herosubearth1">
-                  <img src="05.svg" className="herosubearth2" />
-                </div>
-                <h4 className="heroboxhead1">Faster Load Times</h4>
-                <p className="heroboxpar1">
-                  Reduce latency with optimized servers for a seamless user
-                  experience, improving conversions and SEO rankings.
-                </p>
-              </div>
-            </div>
-            <div className="herobox1">
-              <div className="herosubbox1">
-                <div className="herosubearth1">
-                <img src="05.svg" className="herosubearth2 "  />
-                </div>
-                <h4 className="heroboxhead1">Faster Load Times</h4>
-                <p className="heroboxpar1">
-                  Reduce latency with optimized servers for a seamless user
-                  experience, improving conversions and SEO rankings.
-                </p>
-              </div>
-            </div>
-            <div className="herobox2">
-              <div className="herosubbox1">
-                <div className="herosubearth1">
-                <img src="05.svg" className="herosubearth2" />
-                </div>
-                <h4 className="heroboxhead2">Instant Activation</h4>
-                <p className="heroboxpar2">
-                  Launch your projects in minutes with automated provisioning,
-                  eliminating downtime.
-                </p>
-              </div>
-            </div>
-            <div className="herobox3">
-              <div className="herosubbox1">
-                <div className="herosubearth1">
-                <img src="05.svg" className="herosubearth2" />
-                </div>
-                <h4 className="heroboxhead1">High-Performance Architecture</h4>
-                <p className="heroboxpar1">
-                  NVMe SSDs and advanced caching ensure your website runs 10x
-                  faster than traditional hosting.
-                </p>
-              </div>
-            </div>
+            {Array(1).fill(
+              <HostingCard
+                icon="05.svg"
+                title="Faster Load Times"
+                description="Reduce latency with optimized servers for a seamless user experience, improving conversions and SEO rankings."
+              />
+            )}
+            <HostingCard
+              icon="05.svg"
+              title="Instant Activation"
+              description="Launch your projects in minutes with automated provisioning, eliminating downtime."
+              type="highlight"
+            />
+            {Array(2).fill(
+               <HostingCard
+               icon="05.svg"
+               title="High-Performance Architecture"
+               description="NVMe SSDs and advanced caching ensure your website runs 10x faster than traditional hosting."
+             />
+            )}
+           
           </div>
-        </div>
-        {/* Feturelist codebase */}
-        {/* <Feturelist /> */}
-        {/* Feturelist codebase */}
-        <div className="frammain3">
+        </section>
+
+        {/* Universal Tech Support Section */}
+        <section className="frammain3">
           <div className="framsubpart">
             <div className="framsubpart1">
-              <p className="framsubp1">
-              Host Any Application, Any Tech Stack
-              </p>
+              <h2 className="framsubp1">Host Any Application, Any Tech Stack</h2>
               <p className="framsubp2">
-              No matter what technology your application is built on, we provide seamless hosting solutions with top-tier performance and security
+                No matter what technology your application is built on, we provide seamless hosting solutions with top-tier performance and security
               </p>
-              <button className="w-[121px] h-[44px] rounded-[5px] p-[10px] bg-[#ffffff] text-[#3973E6] font-bold text-[12px]" style={{fontFamily: "'Intter',sans-serif"}}>Host Now →</button>
+              <button className="bg-white text-[#3973E6] font-bold">Host Now →</button>
             </div>
             <div className="framsubpart2">
-              <img src="jio.svg" alt="" />
-              {/* <div className="framsub3box">
-                <img className="costomer" src="costomer.png" alt="" />
-                <h4 className="customerhead">24x7 Support</h4>
-                <p className="customerpar">
-                  Get assistance anytime with our dedicated team, ensuring
-                  uninterrupted service for your projects
-                </p>
-              </div> */}
-              {/* <div className="framsub3box">
-                <img className="costomer" src="gov.png" alt="" />
-                <h4 className="customerhead">Backed by Indian Government</h4>
-                <p className="customerpar">
-                  Benefit from government-backed reliability and compliance,
-                  ensuring trust and credibility for your server deployment.
-                </p>
-              </div> */}
-              {/* <div className="framsub3box">
-                <img className="costomer" src="refund.png" alt="" />
-                <h4 className="customerhead">Refund Policy</h4>
-                <p className="customerpar">
-                  Enjoy peace of mind with our hassle-free 7 days refund policy,
-                  prioritizing your satisfaction.
-                </p>
-              </div> */}
+              <img src="jio.svg" alt="App Hosting" />
             </div>
           </div>
-        </div>
+        </section>
 
+        {/* Testimonials / Client Reviews Section */}
         <Testimonial />
 
-        {/* <div className="framemain5">
-          <div className="subfram5">
-            <p className="subframpara5">
-              Our <span>Trusted</span>{" "}
-              <span className="trusted">Partnerships</span>
-            </p>
-            <div className="minisubfram5">
-              <div className="minisubfram1">
-                <img src="f1.png" alt="Partner 1" />
-                <img src="f2.png" alt="Partner 2" />
-                <img src="f3.png" alt="Partner 3" />
-                <img src="f4.png" alt="Partner 4" />
-                <img src="f5.png" alt="Partner 5" />
-                <img src="f6.png" alt="Partner 6" />
-              </div>
-              <p className="minisubframpar">
-                Collaborating with industry leaders like AWS, Google Cloud, and
-                more than 30 other trusted partners to deliver top-tier
-                solutions.
-              </p>
-            </div>
-          </div>
-        </div> */}
-        {/* Faq Com */}
+        {/* FAQ Section */}
         <Faq />
-        {/* Faq Com End*/}
 
-        {/* TryOutServices Com */}
+        {/* Try Our Services - CTA Section */}
         <TryoutServices />
-        {/* TryOutServices Com End*/}
 
-        {/* ContactFriedly Com */}
+        {/* Contact Us / Friendly Support Section */}
         <Contactfriedly />
-        {/* ContactFriedly Com End*/}
-        {/* </div> */}
       </main>
+
+      {/* Footer Section */}
       <Footer />
     </div>
   );
 };
 
 export default Home;
+
+/** Utility Component for Feature Blocks **/
+const FeatureBox = ({ icon, title, description, color }) => (
+  <div className="framechildicon">
+    <div className="w-[55px] h-[55px] rounded-[27px] m-[30px]" style={{ backgroundColor: color }}>
+      <img src={icon} className="icon22" alt={title} />
+    </div>
+    <h3 className="framechildipar1">{title}</h3>
+    <p className="framechildipar2">{description}</p>
+  </div>
+);
+
+/** Utility Component for Hosting Cards **/
+const HostingCard = ({ icon, title, description, type }) => (
+  <div className={`herobox${type === "highlight" ? "2" : "1"}`}>
+    <div className="herosubbox1">
+      <div className="herosubearth1">
+        <img src={icon} className="herosubearth2" alt={title} />
+      </div>
+      <h4 className={type === "highlight" ? "heroboxhead2" : "heroboxhead1"}>{title}</h4>
+      <p className={type === "highlight" ? "heroboxpar2" : "heroboxpar1"}>{description}</p>
+    </div>
+  </div>
+);

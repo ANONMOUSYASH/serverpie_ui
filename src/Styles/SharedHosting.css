@@ -79,16 +79,20 @@
     font-size: 64px;
     line-height: 74px;
     width: 100%;
+    margin: auto;
+    padding-top: 50px;
   }
 
   .sharedhostingheropar2 {
     font-size: 16px;
     max-width: 100%;
+    margin: auto;
   }
 
   .sharehostherobtn {
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
   }
 
   .sharedhostingbtn12,
