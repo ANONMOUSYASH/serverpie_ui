@@ -1,43 +1,26 @@
-/* Hero Section Styles */
+/* ========================== */
+/*        Hero Section        */
+/* ========================== */
 .mainhero {
   width: 100%;
   height: 100vh;
   margin-top: 5%;
   background: linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%);
 }
+
 .hero {
-    width: auto;
-    height: 100vh;
-    padding-top: 120px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* gap: 80px; */
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .heropar1 {
-    width: auto;
-    /* height: 38px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    text-align: left;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0.03em;
-    color: #3973E6;
-  }
-  
+  width: auto;
+  height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
   .herohead1 {
     width: 604px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     font-family: "Inter", sans-serif;
     font-size: 84px;
     font-weight: 500;
@@ -46,436 +29,391 @@
     text-align: left;
     color: #083376;
   }
-  
-  .herohd,
-  .herohs,
-  .herohe {
+
+  .herohd, .herohs, .herohe {
     width: 750px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     font-family: "Inter", sans-serif;
     font-size: 64px;
     font-weight: 600;
     line-height: 59px;
     letter-spacing: -0.02em;
   }
-  
+
   .herohd {
     color: #25a75b;
   }
-  
-  .heropar2 {
+
+  .heropar1, .heropar2 {
     width: auto;
-    height: auto;
-    /* margin-left: auto;
-    margin-right: auto; */
     font-family: "Inter", sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
     text-align: left;
+    color: #3973E6;
+  }
+
+  .heropar2 {
+    font-size: 19px;
+    line-height: 36px;
     color: #2D5087;
   }
-  
-  
-  .sectionherosub {
-    display: flex;
-    width: 660px;
-    margin-top: -30px;
-    /* height: 50px; */
-    justify-content: space-between;
-  }
-  
-  .sectionherosub2 {
-    display: flex;
-    margin-top: 22px;
-  }
-  
-  .heroinput1 {
-    flex: 1;
-    width: 138px;
-    height: 36px;
-    margin-left: -25px;
-    padding: 8px 12px 8px 35px;
-    border: none;
-    outline: none;
-    font-family: "Be Vietnam Pro", serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #969696;
-  }
-  
-  .herohr {
-    height: 30px;
-    width: 1px;
-    background: #dadada;
-    margin: 0 10px;
-  }
-  
-  .select-container {
-    width: 86px;
-    height: 38px;
-    padding: 10px;
-    gap: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    border: 1px solid #cfcfcf;
-    background: #fefefe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* .heroearth {
-    margin-right: 5px;
-    width: 16px;
-    height: 16px;
-    color: #25a75b;
-  } */
-  
-  .heroselect {
-    width: 62px;
-    height: 19px;
-    /* margin-right: 20px; */
-    border: none;
-    outline: none;
-    background: transparent;
-    font-family: "Cal Sans", serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-    cursor: pointer;
-  }
-  
-  .hr1 {
-    width: 650px;
-  }
-  
+
   .startingpar {
-    width: auto;
-    margin-left: 5px;
-    margin-top: 10px;
+    margin: 10px 0 0 5px;
     font-family: "Inter", serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #5a7e93;
   }
-  
+
   .dollarp {
+    margin: 5px 0 0 5px;
     width: 72.7px;
     height: 30px;
-    margin-left: 5px;
-    margin-top: 5px;
     font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 800;
     line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #25a75b;
   }
-  
-  /* Centered Button */
-  .herobtn {
-    width: 170px;
-    height: 50px;
-    margin-top: 22px;
-    padding: 6px 27px 6px 27px;
-    border-radius: 15px;
-    border: 1px;
-    font-family: "Cal Sans", serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #6b6b6b;
-    /* border: 1px solid #25a75b; */
-    background: #f1f1f1;
-  }
-  
-  .herobtn:hover {
-    color: #ffffff;
-    background: #25a75b;
-    /* Darker shade for hover effect */
-    transform: translateY(-2px);
-    /* Slight lift effect */
-  }
-  
-  .herobtn:active {
-    color: #ffffff;
-    background: #1a2245;
-    /* Even darker on click */
-    transform: translateY(0);
-  }
-  
 
-  
-  
-  .domainprice {
-    display: flex;
-    width: 1022px;
-    height: auto;
-    margin: 40px;
-    /* margin-left: 195px; */
-    gap: 18px;
-  }
-  
-  .subdomainbox {
-    width: 190px;
-    height: 124px;
-    border-radius: 10px;
-    padding: 11px 16px 11px 16px;
-    background: #ffffff;
-    box-shadow: 0px 4px 24px 0px #baceda40;
-  }
-  
-  .subdomainbox1 {
-    width: 190px;
-    height: 124px;
-    border-radius: 10px;
-    padding: 11px 16px 11px 16px;
-    background: #ffffff;
-    box-shadow: 0px 4px 24px 0px #baceda40;
-    border: 1px solid #25a75b;
-  }
-  .minidomain {
-    width: 149px;
-    height: 95px;
-  }
-  
-  .com {
-    /* width: 54px;
-    height: 31px; */
-    font-family: "Cal Sans", serif;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 26.4px;
-    letter-spacing: 0%;
+/* ========================== */
+/*       Hero Input Area      */
+/* ========================== */
+
+.sectionherosub {
+  display: flex;
+  width: 660px;
+  margin-top: -30px;
+  justify-content: space-between;
+}
+
+.sectionherosub2 {
+  display: flex;
+  margin-top: 22px;
+}
+
+.heroinput1 {
+  flex: 1;
+  width: 138px;
+  height: 36px;
+  margin-left: -25px;
+  padding: 8px 12px 8px 35px;
+  border: none;
+  outline: none;
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #969696;
+}
+
+.herohr {
+  height: 30px;
+  width: 1px;
+  background: #dadada;
+  margin: 0 10px;
+}
+
+.select-container {
+  width: 86px;
+  height: 38px;
+  padding: 10px;
+  gap: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  background: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroselect {
+  width: 62px;
+  height: 19px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Cal Sans", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.hr1 {
+  width: 650px;
+}
+
+/* ========================== */
+/*          Buttons           */
+/* ========================== */
+.herobtn {
+  width: 170px;
+  height: 50px;
+  margin-top: 22px;
+  padding: 6px 27px;
+  border-radius: 15px;
+  border: 1px;
+  font-family: "Cal Sans", serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #6b6b6b;
+  background: #f1f1f1;
+}
+
+.herobtn:hover {
+  color: #ffffff;
+  background: #25a75b;
+  transform: translateY(-2px);
+}
+
+.herobtn:active {
+  color: #ffffff;
+  background: #1a2245;
+  transform: translateY(0);
+}
+
+/* ========================== */
+/*        Domain Pricing      */
+/* ========================== */
+.domainprice {
+  display: flex;
+  width: 1022px;
+  margin: 40px auto;
+  gap: 18px;
+}
+
+.subdomainbox, .subdomainbox1 {
+  width: 190px;
+  height: 124px;
+  border-radius: 10px;
+  padding: 11px 16px;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px 0px #baceda40;
+}
+
+.subdomainbox1 {
+  border: 1px solid #25a75b;
+}
+
+.minidomain {
+  width: 149px;
+  height: 95px;
+}
+
+.com {
+  font-family: "Cal Sans", serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+.starting {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #5a7e93;
+}
+
+.subminidomain2 {
+  display: flex;
+  margin-top: -15px;
+  margin-left: 30px;
+  justify-content: space-between;
+}
+
+.starting1 {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #25a75b;
+}
+
+.arrowrightmain,
+.arrowrightmain1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.arrowrightmain1 {
+  background-color: #25a75b;
+}
+
+.arrowright {
+  width: 12px;
+  height: 12px;
+  color: #969696;
+}
+
+.arrowright1 {
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+/* ========================== */
+/*        Responsive           */
+/* ========================== */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding-top: 80px;
     text-align: center;
   }
-  
-  .starting {
-    /* width: 72px;
-    height: 21px; */
-    font-family: "Inter", serif;
-    font-weight: 500;
-    margin-right: 30px;
+
+  .herohead1,
+  .herohd,
+  .herohs,
+  .herohe {
+    width: 100%;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .heropar1,
+  .heropar2 {
     font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #5a7e93;
+    line-height: 28px;
+    padding: 0 20px;
   }
-  
-  .subminidomain2 {
-    display: flex;
-    margin-top: -15px;
-    margin-left: 30px;
-    justify-content: space-between;
+
+  .sectionherosub {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
-  
+
+  .sectionherosub2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .heroinput1 {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .hr1 {
+    width: 90%;
+  }
+
+  .herobtn {
+    width: 150px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .domainprice {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .subdomainbox,
+  .subdomainbox1 {
+    width: 160px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .com {
+    font-size: 18px;
+  }
+
+  .starting {
+    font-size: 13px;
+  }
+
   .starting1 {
-    font-family: "Inter", serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
-    color: #25a75b;
+    font-size: 18px;
   }
-  
-  .arrowrightmain {
-    width: 21px;
-    height: 21px;
-    border-radius: 10.5px;
-    padding: 4px;
+
+  .subminidomain2 {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    margin-top: 10%;
+  }
+
+  .herohead1,
+  .herohd,
+  .herohs,
+  .herohe {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .heropar1,
+  .heropar2 {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .herobtn {
+    width: 140px;
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .sectionherosub,
+  .sectionherosub2 {
+    width: 100%;
+    flex-direction: column;
     gap: 10px;
   }
-  
-  .arrowright {
-    width: 12px;
-    height: 12px;
-    color: #969696;
+
+  .select-container {
+    width: 100%;
+    justify-content: flex-start;
   }
-  
-  .arrowrightmain1 {
-    width: 25px;
-    height: 25px;
-    border-radius: 10px;
-    /* padding: 4px; */
-    gap: 10px;
-    background-color: #25a75b;
+
+  .heroinput1 {
+    font-size: 16px;
   }
-  
-  .arrowright1 {
-    width: 12px;
-    height: 12px;
-    margin-top: 5px;
-    margin-left: 5px;
-    color: #ffffff;
+
+  .domainprice {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
   }
-  
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      padding-top: 80px;
-      text-align: center;
-    }
-  
-    .herohead1,
-    .herohd,
-    .herohs,
-    .herohe {
-      width: 100%;
-      font-size: 48px;
-      line-height: 56px;
-      text-align: center;
-    }
-  
-    .heropar1,
-    .heropar2 {
-      font-size: 14px;
-      line-height: 28px;
-      text-align: center;
-      padding: 0 20px;
-    }
-  
-    .sectionherosub {
-      width: 90%;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-  
-    .sectionherosub2 {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .heroinput1 {
-      width: 100%;
-      padding: 10px;
-      font-size: 18px;
-      margin-left: 0;
-    }
-  
-    .hr1 {
-      width: 90%;
-    }
-  
-    .herobtn {
-      width: 150px;
-      height: 45px;
-      font-size: 13px;
-      padding: 6px 20px;
-    }
-  
-    .domainprice {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      width: 100%;
-    }
-  
-    .subdomainbox,
-    .subdomainbox1 {
-      width: 160px;
-      height: auto;
-      padding: 15px;
-    }
-  
-    .minidomain {
-      width: 100%;
-      height: auto;
-    }
-  
-    .com {
-      font-size: 18px;
-    }
-  
-    .starting {
-      font-size: 13px;
-    }
-  
-    .starting1 {
-      font-size: 18px;
-    }
-  
-    .subminidomain2 {
-      margin-left: 0;
-      justify-content: center;
-    }
+
+  .subdomainbox,
+  .subdomainbox1 {
+    width: 90%;
+    max-width: 320px;
   }
-  
-  @media (max-width: 480px) {
-    .hero {
-      margin-top: 10%;
-    }
-    .boxes {
-      width: 90%;
-      margin: auto;
-    }
-  
-    .herohead1,
-    .herohd,
-    .herohs,
-    .herohe {
-      font-size: 36px;
-      line-height: 44px;
-    }
-  
-    .heropar1,
-    .heropar2 {
-      font-size: 13px;
-      padding: 0 10px;
-    }
-  
-    .herobtn {
-      width: 140px;
-      height: 42px;
-      font-size: 12px;
-    }
-  
-    .sectionherosub,
-    .sectionherosub2 {
-      flex-direction: column;
-      width: 100%;
-      gap: 10px;
-    }
-  
-    .select-container {
-      width: 100%;
-      justify-content: flex-start;
-    }
-  
-    .heroinput1 {
-      font-size: 16px;
-    }
-  
-    .domainprice {
-      flex-direction: column;
-      gap: 16px;
-      width: 100%;
-      align-items: center;
-    }
-  
-    .subdomainbox,
-    .subdomainbox1 {
-      width: 90%;
-      max-width: 320px;
-    }
-  
-    .startingpar,
-    .dollarp {
-      text-align: center;
-      font-size: 14px;
-    }
+
+  .startingpar,
+  .dollarp {
+    text-align: center;
+    font-size: 14px;
   }
-  
+}

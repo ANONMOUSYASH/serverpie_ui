@@ -1,3 +1,15 @@
+.frammain6 {
+  width: auto;
+  margin: auto;
+  /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  /* font-family: "Cal Sans", serif; */
+  /* Apply font */
+}
+
 .minifram6 {
     width: auto;
     text-align: center;
@@ -18,8 +30,8 @@
   }
   
   .faq {
-    width: auto;
-    height: 30px;
+    width: 880px;
+    /* height: 30px; */
     /* margin-bottom: 50px; */
     font-family: "Inter", sans-serif;
     font-size: 12px;
@@ -166,6 +178,10 @@
       font-size: 32px;
       line-height: 38px;
     }
+
+    .faq {
+      width: auto;
+    }
   
     .minifram7 {
       width: 100%;
@@ -286,6 +302,7 @@
   @media (max-width: 480px) {
     .frammain6 {
       padding: 20px 10px;
+      /* width: 90%; */
     }
   
     .miniframpar7 {

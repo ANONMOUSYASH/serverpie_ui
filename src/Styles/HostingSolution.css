@@ -1,38 +1,45 @@
-/* Default Styling */
+/* =========================================
+   LAYOUT CONTAINERS & STRUCTURE
+========================================= */
+
+/* Main container for the whole section */
 .hostingsolmain {
   width: 100%;
   height: auto;
   margin: 50px auto;
-  border-radius: 13px;
   padding: 20px;
+  border-radius: 13px;
   background-color: #3973E6;
-}
-
-
-
-.hostingsolmain {
   display: flex;
 }
-/* .left {
-  padding: 5%;
-  flex: 1;
 
-} */
+/* Main wrapper for positioning */
+.hostingsolmain-main {
+  position: relative;
+}
+
+/* Right text content (heading + description) */
 .right {
   display: flex;
   align-items: center;
-  background-size: cover;
-  position: absolute;
-  inset: auto;
-  height: 100%;
   justify-content: center;
-  align-items: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
   margin-left: 50px;
+  inset: auto;
 }
-/* .hostingsolmain-main {
-position: relative;
 
-}  */
+/* Scroll section wrapper */
+.scrollingtop {
+  width: 100%;
+  justify-content: end;
+}
+
+
+/* =========================================
+   TEXT & TYPOGRAPHY
+========================================= */
 
 .hostingsol1 {
   width: auto;
@@ -47,9 +54,9 @@ position: relative;
   font-weight: 500;
   font-size: 64px;
   line-height: 89px;
-  margin: auto;
   letter-spacing: -5%;
   color: #FFFFFF;
+  margin: auto;
 }
 
 .hostingsolpar2 {
@@ -58,97 +65,137 @@ position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  padding-bottom: 70px;
   margin: auto;
+  padding-bottom: 70px;
   color: #FFFFFF;
 }
 
-/* Flexbox for the 6 Boxes */
- .subhostingsolsub3,
+
+/* =========================================
+   BOXES & FLEX STRUCTURE
+========================================= */
+
+/* Flexbox for box groups */
+.subhostingsolsub3,
 .subhostingsolsub4 {
   display: flex;
   justify-content: end;
-} 
+  gap: 40px;
+}
 
-/* Box Styling */
+/* Individual box styling */
 .hostingsolbox1 {
+  width: 311px;
+  height: 300px;
   padding: 20px;
   margin-right: 40px;
   border-radius: 10px;
+  background: #ffffff;
   text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.scrollingtop {
-  width: 100%;
-  justify-content: end;
-}
-
-
-.animate-scroll {
-  animation: autoScroll 20s linear infinite;
-}
-
-
-
+/* Icon wrapper */
 .subhostingsolbox1 {
   width: 60px;
   height: 60px;
-  /* margin: auto; */
   border-radius: 28px;
   background: #3378FF;
 }
 
+/* Icon image */
 .time1 {
   padding-top: 12px;
   padding-left: 12px;
 }
 
+/* Box title */
 .hostingsolboxpar1 {
   width: 260px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #083376;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: start;
   margin-top: 15px;
 }
 
+/* Box description */
 .hostingsolboxpar2 {
   width: 240px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: start;
   color: #2D5087;
+  line-height: 100%;
+  text-align: start;
 }
 
+
+/* =========================================
+   SCROLLING
+========================================= */
+
+/* Scroll container */
+.inner-scroll-content {
+  max-height: 1240px; /* Fits 4 boxes with spacing */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Custom scroll container (if using ScrollPanel) */
 .custom-scroll {
   max-width: 100%;
-  overflow-x: auto; 
-  scrollbar-width: 0;
+  overflow-x: auto;
+  scrollbar-width: 0; /* Firefox */
 }
 
+/* Hide scrollbar */
+.custom-scroll .p-scrollpanel-bar {
+  display: none !important;
+}
+
+/* PrimeReact ScrollPanel styling */
 .p-scrollpanel-content {
-height: calc(100% + 18px);
-width: calc(100% + 18px);
-padding: 0 18px 18px 0;
-position: relative;
-overflow: auto;
-box-sizing: border-box;
-text-align: right;
-justify-content: right;
-display: grid;
+  height: calc(100% + 18px);
+  width: calc(100% + 18px);
+  padding: 0 18px 18px 0;
+  overflow: auto;
+  position: relative;
+  box-sizing: border-box;
+  text-align: right;
+  display: grid;
+  justify-content: right;
 }
 
 
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+.animate-scroll {
+  animation: scrollUp 10s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE STYLES
+========================================= */
+
+/* XL Devices (1280px) */
 @media (max-width: 1280px) {
   .hostingsolmain {
     width: 100%;
-    height: auto;
     padding: 40px;
   }
 
@@ -170,15 +217,6 @@ display: grid;
     padding-bottom: 40px;
   }
 
-  .subhostingsolsub3,
-  .subhostingsolsub4 {
-    gap: 30px;
-  }
-
-  .hostingsolbox1 {
-    padding: 15px;
-  }
-
   .hostingsolboxpar1 {
     font-size: 18px;
   }
@@ -188,6 +226,8 @@ display: grid;
   }
 }
 
+
+/* LG Devices (1024px) */
 @media (max-width: 1024px) {
   .hostingsolpar1 {
     font-size: 40px;
@@ -202,17 +242,34 @@ display: grid;
   .subhostingsolsub4 {
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
 
   .hostingsolbox1 {
     width: 90%;
     max-width: 350px;
   }
+
+  .subattack2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hostingsolpar1 span {
+    font-size: 64px;
+  }
+
+  .hostingsolpar2 {
+    width: 100%;
+  }
 }
 
+
+/* MD Devices (768px) */
 @media (max-width: 768px) {
   .hostingsolmain {
     padding: 20px;
+    height: auto;
   }
 
   .hostingsolpar1 {
@@ -220,25 +277,37 @@ display: grid;
     line-height: 50px;
   }
 
+  .hostingsolpar1 span {
+    font-size: 48px;
+  }
+
   .hostingsolpar2 {
     font-size: 12px;
+    line-height: 1.4;
   }
 
   .hostingsolbox1 {
-    width: 100%;
     max-width: 300px;
+    width: 100%;
+  }
+
+  .subhostingsol3 {
+    width: 100%;
+    text-align: center;
+    height: 450px;
   }
 }
 
-@media (max-width: 480px) {
 
+/* SM Devices (480px) */
+@media (max-width: 480px) {
   .hostingsolmain {
     height: 1200px;
   }
+
   .hostingsolpar1 {
     font-size: 28px;
     line-height: 40px;
-
   }
 
   .hostingsolpar2 {
@@ -263,81 +332,4 @@ display: grid;
   .hostingsolboxpar2 {
     font-size: 12px;
   }
-}
-
-@media (max-width: 1024px) {
-  .subattack2 {
-    width: 100%; /* Make it responsive */
-    text-align: center; /* Center content on smaller screens */
-  }
-
-  .hostingsolpar1 {
-    font-size: 48px; /* Adjust font size for tablets */
-    line-height: 1.2;
-  }
-
-  .hostingsolpar1 span {
-    font-size: 64px; /* Reduce large text on smaller screens */
-  }
-
-  .hostingsolpar2 {
-    font-size: 14px;
-    width: 100%; /* Full width for smaller screens */
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .hostingsolmain {
-    height: auto;
-  }
-  
-  .hostingsolpar1 {
-    font-size: 36px; /* Further reduce for mobile */
-  }
-
-  .hostingsolpar1 span {
-    font-size: 48px;
-  }
-
-  .hostingsolpar2 {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-  .subhostingsol3 {
-    width: 100%; /* Make it responsive */
-    text-align: center; /* Center content on smaller screens */
-    height: 450px;
-  }
-}
-
-/* HostingSolution.css */
-
-/* Hide scrollbar */
-.custom-scroll .p-scrollpanel-bar {
-display: none !important;
-}
-
-/* Smooth scrolling effect */
-.animate-scroll {
-animation: scrollUp 10s linear infinite;
-}
-
-@keyframes scrollUp {
-0% {
-  transform: translateY(100%);
-}
-100% {
-  transform: translateY(-100%);
-}
-}
-
-.inner-scroll-content {
-  max-height: 1240px; /* 4 boxes height + spacing */
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-.hostingsolbox1 {
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }

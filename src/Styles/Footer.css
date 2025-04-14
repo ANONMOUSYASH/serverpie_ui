@@ -1,4 +1,10 @@
 /* Start Footer */
+:root {
+  --footer-bg-dark: #1b2128;
+  --footer-text-color: #FFFFFF;
+  --footer-font: "Inter", sans-serif;
+}
+
 .mainfooter {
   width: auto;
 }

@@ -1,13 +1,15 @@
-/* Navbar Styling */
+/* ----------------------------------------------
+  ✅ Navbar Layout
+---------------------------------------------- */
 nav {
-  position: fixed; /* Keeps navbar at the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  background: #ffffff; /* White background */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  z-index: 1000; /* Ensures navbar is above other elements */
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,15 +21,20 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
 }
 
+/* ----------------------------------------------
+  🔷 Branding
+---------------------------------------------- */
 .logo {
   font-size: 36px;
   font-weight: 700;
   color: #3973E6;
 }
 
+/* ----------------------------------------------
+  🔷 Navigation Links
+---------------------------------------------- */
 .nav1 {
   display: flex;
   list-style: none;
@@ -45,12 +52,11 @@ nav {
   transition: color 0.3s ease;
 }
 
-/* Default link hover effect */
+/* 🔸 Hover & Active Effects */
 .nav1 li:hover {
   color: #3973E6;
 }
 
-/* Add underline effect */
 .nav1 li::after {
   content: '';
   position: absolute;
@@ -58,11 +64,10 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #25a75b;
+  background-color: #3973E6;
   transition: width 0.3s ease;
 }
 
-/* Active and hover effects */
 .nav1 li.active::after,
 .nav1 li:hover::after {
   width: 100%;
@@ -78,7 +83,9 @@ nav {
   background-color: #3973E6;
 }
 
-/* Styling for the login button */
+/* ----------------------------------------------
+  🔷 Buttons
+---------------------------------------------- */
 .loginbtn {
   padding: 10px 20px;
   border-radius: 35px;
@@ -91,10 +98,12 @@ nav {
 }
 
 .loginbtn:hover {
-  background-color: #218c4e;
+  background-color: #3973E6;
 }
 
-/* Dropdown Menu Styling */
+/* ----------------------------------------------
+  🔷 Dropdown Menus
+---------------------------------------------- */
 .dropdown {
   position: relative;
 }
@@ -130,7 +139,9 @@ nav {
   display: block;
 }
 
-/* Hamburger Menu */
+/* ----------------------------------------------
+  🔷 Hamburger Menu (Mobile Only)
+---------------------------------------------- */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -145,7 +156,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Rotate hamburger lines on open */
+/* 🔄 Hamburger Animation on Open */
 .hamburger.open div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -156,36 +167,22 @@ nav {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Default styles (desktop first) */
+/* ----------------------------------------------
+  🔷 Login Button Visibility
+---------------------------------------------- */
 .desktop-login-btn {
   display: inline-block;
 }
 
 .mobile-login-btn {
-  display: none; /* Hidden by default (desktop) */
+  display: none;
 }
 
-/* Mobile-specific overrides */
+/* ----------------------------------------------
+  🔁 Responsive: Tablets & Mobile
+---------------------------------------------- */
 @media (max-width: 1024px) {
-  .desktop-login-btn {
-    display: none; /* Hide on mobile */
-  }
-
-  .mobile-login-btn {
-    display: block; /* Show login inside mobile menu */
-    width: 100%;
-    padding: 10px 20px;
-  }
-
-  .mobile-login-btn .loginbtn {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-
-/* Responsive Styling */
-@media (max-width: 1024px) {
+  /* 📌 Layout Adjustments */
   nav {
     height: auto;
     padding: 10px 20px;
@@ -207,6 +204,7 @@ nav {
     margin-left: auto;
   }
 
+  /* 📌 Mobile Nav Display */
   .nav1 {
     flex-direction: column;
     gap: 15px;
@@ -228,12 +226,29 @@ nav {
     display: flex;
   }
 
+  /* 📌 Buttons */
+  .desktop-login-btn {
+    display: none;
+  }
+
+  .mobile-login-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .mobile-login-btn .loginbtn {
+    width: 100%;
+    margin: 0;
+  }
+
   .loginbtn {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 15px;
   }
 
+  /* 📌 Dropdown (Mobile Adjustments) */
   .dropdown-menu {
     position: relative;
     width: 100%;
