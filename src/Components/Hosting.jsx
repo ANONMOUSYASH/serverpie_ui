@@ -1,62 +1,102 @@
 import { useState } from "react";
-import { FaCircleCheck, FaChevronDown } from "react-icons/fa6";
+import { FaCircleCheck } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
 import "../Styles/Hosting.css";
 
 const Hosting = () => {
-  const [activeTab, setActiveTab] = useState("Wordpress Hosting");
+  const [activeTab, setActiveTab] = useState("Basic");
 
-  const [sectionStates, setSectionStates] = useState({});
-
-  const tabs = [
-    "Shared Hosting",
-    "Wordpress Hosting",
-    "Dedicated Hosting",
-    "Envato Hosting",
-  ];
-
-  const toggleSection = (cardIndex, key) => {
-    const sectionKey = `${cardIndex}-${key}`;
-    setSectionStates((prev) => {
-      const current = prev[sectionKey] || 0;
-      return {
-        ...prev,
-        [sectionKey]: (current + 1) % 3, // 0 = hidden, 1 = show heading, 2 = show content
-      };
-    });
-  };
+  const tabs = ["Basic", "Plus", "Premium", "Exclusive"];
 
   const sectionData = [
     {
       title: "Top Features",
       key: "features",
-      items: [
-        "1 Website",
-        "50 GB SSD Storage",
-        "Custom Themes",
-        "24/7 Customer Support",
-      ],
       withQuestion: true,
     },
     {
-      title: "Website Builder Available",
-      key: "builder",
-      items: [
-        "WordPress Integration",
-        "Drag and Drop Functionality",
-        "AI-Driven Templates",
-      ],
+      title: "Resources",
+      key: "resources",
       withQuestion: false,
     },
     {
-      title: "Also Includes",
-      key: "includes",
-      items: [
-        "Free Domain - 1 year",
-        "Free CDN Included",
-        "Free SSL Certificate",
-      ],
+      title: "Security",
+      key: "security",
       withQuestion: true,
+    },
+    {
+      title: "Support - approx response time 24-48 hr",
+      key: "support",
+      withQuestion: true,
+    },
+    {
+      title: "Technical Configuration",
+      key: "tech",
+      withQuestion: true,
+    },
+    {
+      title: "Additional Benefits",
+      key: "benefits",
+      withQuestion: true,
+    },
+  ];
+
+  const planData = [
+    {
+      name: "Basic",
+      description: "Simple. Reliable. Perfect for personal projects",
+      price: "₹169.00/m",
+      oldPrice: "₹9.99 - 12/mo term",
+      data: {
+        features: ["1 Website", "Upto ~15000 Visits", "30 GB Nvme SSD", "Unmetered Bandwidth"],
+        resources: ["Unmetered Bandwidth", "2 subdomains", "2 databases", "1 FTP account", "2 Email box", "5 cronjobs"],
+        security: ["Free SSL- Let's Encrypt", "Malware Scanning", "DDoS Protection"],
+        support: ["Email support", "Ticket support"],
+        tech: ["30 PHP workers", "Single Core", "1 GB Memory"],
+        benefits: ["Cpanel", "Softaculous", "Litespeed Engine"],
+      },
+    },
+    {
+      name: "Plus",
+      description: "Boost your site with better resources and speed",
+      price: "₹149.00/m",
+      oldPrice: "₹12.99 - 12/mo term",
+      data: {
+        features: ["5 Websites", "Upto ~50000 Visits", "60 GB Nvme SSD", "Unmetered Bandwidth"],
+        resources: ["Unlimited Bandwidth", "10 subdomains", "10 databases", "5 FTP accounts", "5 Email box", "10 cronjobs"],
+        security: ["Free SSL", "Malware Scanning", "WAF", "DDoS Protection"],
+        support: ["Live Chat", "Email", "Ticket", "Whatsapp"],
+        tech: ["50 PHP workers", "Dual Core", "2 GB Memory"],
+        benefits: ["Git Versioning", "SitePad Builder", "JetBackup"],
+      },
+    },
+    {
+      name: "Premium",
+      description: "Power your business website or online store",
+      price: "₹249.00/m",
+      oldPrice: "billed for 36 month",
+      data: {
+        features: ["10 Websites", "Upto ~100000 Visits", "100 GB Nvme SSD", "Unmetered Bandwidth"],
+        resources: ["Unlimited everything", "20 Email boxes", "20 cronjobs"],
+        security: ["Advanced Firewall", "Daily Backup", "Proactive Monitoring"],
+        support: ["Phone", "Chat", "Ticket", "Email", "WhatsApp"],
+        tech: ["70 PHP workers", "Quad Core", "4 GB Memory"],
+        benefits: ["Redis Cache", "Immunity360", "WordPress Toolkit"],
+      },
+    },
+    {
+      name: "Exclusive",
+      description: "Top-tier hosting for serious performance and scale",
+      price: "₹499.00/m",
+      oldPrice: "₹29.99 - 12/mo term",
+      data: {
+        features: ["Unlimited Websites", "Upto ~500000 Visits", "200 GB Nvme SSD", "Unmetered Bandwidth"],
+        resources: ["Unlimited everything", "Unlimited cronjobs", "Unlimited databases"],
+        security: ["Enterprise Firewall", "DDoS Protection", "WAF", "Real-time Scanning"],
+        support: ["24/7 Premium Support", "Dedicated Manager"],
+        tech: ["100 PHP workers", "Hexa Core", "8 GB Memory"],
+        benefits: ["JetBackup", "GitHub CI/CD", "Premium Cpanel", "Litespeed Pro"],
+      },
     },
   ];
 
@@ -88,10 +128,8 @@ const Hosting = () => {
                 >
                   {tab}
                   <div
-                    className={`absolute left-0 right-0 h-[3px]  bg-blue-600 rounded-full transition-all duration-300 ${
-                      activeTab === tab
-                        ? "bottom-[-16px] w-full"
-                        : "w-0 group-hover:w-full"
+                    className={`absolute left-0 right-0 h-[3px] bg-blue-600 rounded-full transition-all duration-300 ${
+                      activeTab === tab ? "bottom-[-16px] w-full" : "w-0"
                     }`}
                   ></div>
                 </div>
@@ -102,136 +140,43 @@ const Hosting = () => {
         </div>
       </div>
 
-      {/* Responsive Card Container */}
       <div className="hostingprovider">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[...Array(4)].map((_, cardIndex) => (
-            <div key={cardIndex} className="hostingsub relative">
+          {planData.map((plan, cardIndex) => (
+            <div key={plan.name} className="hostingsub relative">
               {cardIndex === 1 && (
                 <div className="absolute -top-3 left-4 bg-[#3973E6] text-white text-xs font-semibold px-3 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
-              <h4 className="hostingh4">
-                {cardIndex === 0
-                  ? "Shared Hosting"
-                  : cardIndex === 1
-                  ? "Advanced Plan"
-                  : "Standard Plan"}
-              </h4>
-              <p className="hostingpar">When you need just one site.</p>
-              <p className="hostingparprice">₹169.00/m</p>
-              <p className="hostingparprice2">Normally ₹9.99 - 12/mo term</p>
+              <h4 className="hostingh4">{plan.name}</h4>
+              <p className="hostingpar">{plan.description}</p>
+              <p className="hostingparprice">{plan.price}</p>
+              <p className="hostingparprice2">Normally {plan.oldPrice}</p>
               <hr className="hostinghr hidden sm:block" />
               <button className="hostingbutton">Buy Now</button>
 
-              {sectionData.map(({ title, key, items, withQuestion }, sectionIndex) => {
-                const sectionKey = `${cardIndex}-${key}`;
-                const state = sectionStates[sectionKey] || 0;
-
-                return (
-                  <div key={sectionKey} className="mt-6">
-                    {/* Desktop view: show everything */}
-                    <div className="hidden sm:block">
-                      <h5 className={key === "builder" ? "hostingh51" : "hostingh5"}>
-                        {title}
-                      </h5>
-                      <div className="mt-3">
-                        {items.map((item, idx) => (
-                          <div key={idx} className="hostingminipar001">
-                            <div style={{ display: "flex", flexDirection: "row" }}>
-                              <FaCircleCheck className="rightcircle" />
-                              <p className="hostingpar01">{item}</p>
-                            </div>
-                            {withQuestion && (
-                              <MdQuestionMark className="questinghost" />
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Mobile view */}
-                    <div className="sm:hidden">
-                      {/* Only show "Top Features" by default */}
-                      {key === "features" && (
-                        <>
-                          <h5 className={key === "builder" ? "hostingh51" : "hostingh5"}>
-                            {title}
-                          </h5>
-                          <div className="mt-2">
-                            {items.map((item, idx) => (
-                              <div key={idx} className="hostingminipar001">
-                                <div
-                                  style={{ display: "flex", flexDirection: "row" }}
-                                >
-                                  <FaCircleCheck className="rightcircle" />
-                                  <p className="hostingpar01">{item}</p>
-                                </div>
-                                {withQuestion && (
-                                  <MdQuestionMark className="questinghost" />
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                        </>
-                      )}
-
-                      {/* Other sections: conditional step toggle */}
-                      {key !== "features" && (
-                        <div className="mb-4">
-                          {state >= 1 && (
-                            <h5
-                              className={`${
-                                key === "builder" ? "hostingh51" : "hostingh5"
-                              }`}
-                            >
-                              {title}
-                            </h5>
-                          )}
-
-                          {state === 2 && (
-                            <div className="mt-2">
-                              {items.map((item, idx) => (
-                                <div key={idx} className="hostingminipar001">
-                                  <div
-                                    style={{
-                                      display: "flex",
-                                      flexDirection: "row",
-                                    }}
-                                  >
-                                    <FaCircleCheck className="rightcircle" />
-                                    <p className="hostingpar01">{item}</p>
-                                  </div>
-                                  {withQuestion && (
-                                    <MdQuestionMark className="questinghost" />
-                                  )}
-                                </div>
-                              ))}
-                            </div>
-                          )}
-
-                          {/* Arrow below all */}
-                          <div className="flex justify-center mt-2">
-                            <button
-                              onClick={() => toggleSection(cardIndex, key)}
-                              className="transform transition-transform duration-300"
-                            >
-                              <FaChevronDown
-                                className={`text-xl text-blue-600 mx-auto ${
-                                  state === 2 ? "rotate-180" : ""
-                                }`}
-                              />
-                            </button>
-                          </div>
+              {sectionData.map(({ title, key, withQuestion }) => (
+                <div key={key} className="mt-6">
+                  <h5 className={key === "resources" ? "hostingh51" : "hostingh5"}>
+                    {title}
+                  </h5>
+                  <div className="mt-3">
+                    {plan.data[key].map((item, idx) => (
+                      <div key={idx} className="hostingminipar001">
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                          <FaCircleCheck className="rightcircle" />
+                          <p className="hostingpar01">{item}</p>
                         </div>
-                      )}
-                    </div>
+                        {withQuestion && (
+                          <MdQuestionMark className="questinghost" />
+                        )}
+                      </div>
+                    ))}
                   </div>
-                );
-              })}
+                </div>
+              ))}
 
-              {/* Desktop only image */}
               <div className="m-auto hidden sm:block">
                 <img className="m-auto" src="longarrow.svg" alt="" />
               </div>

@@ -10,30 +10,31 @@
   }
   
   .hostingplansub {
-    width: 1027px;
+    width: auto;
     height: auto;
     gap: 48px;
   }
   
   .hostingplansub1 {
-    width: 885px;
-    height: auto;
+    width: 850px;
+    margin: auto;
     gap: 13px;
   }
   
-  .hostingplansub2 {
+  /* .hostingplansub2 {
     width: 1027px;
     height: auto;
     gap: 55px;
-  }
+  } */
   
   .hostingplansubpar1 {
-    width: 900px;
+    width: auto;
     font-family: "Inter", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 65px;
     letter-spacing: -6%;
+    text-align: center;
     color: #05214B;
     
   }
@@ -43,12 +44,12 @@
   }
   
   .hostingplansubpar12 {
-    width: 620px;
+    width: 710px;
     font-family: "Inter", serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     margin: 20px auto;
-    line-height: 14.52px;
+    line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
     color: #2d5087;

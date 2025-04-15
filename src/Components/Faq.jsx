@@ -5,51 +5,49 @@ import "../Styles/Faq.css";
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isRotating, setIsRotating] = useState(false);
 
   const handleToggle = () => {
-    setIsOpen((prev) => !prev);
+    // Trigger rotation
+    if (!isOpen) {
+      setIsRotating(true);
+      setTimeout(() => {
+        setIsRotating(false);
+        setIsOpen(true);
+      }, 300); // Wait for rotate animation
+    } else {
+      setIsOpen(false);
+    }
   };
 
   return (
     <div className="faq-item">
-      {/* Question + Toggle */}
       <div className="faq-question" onClick={handleToggle}>
         <p className="faq-text">{question}</p>
-        <button
-          className={isOpen ? "doib1" : "doib"}
-          style={{
-            transition: "background-color 3s ease, transform 3s ease",
-            transform: isOpen ? "rotate(0deg)" : "rotate(0deg)",
-          }}
-        >
-          {isOpen ? (
-            <RiSubtractFill className="plus1" style={{ transition: "all 3s ease" }} />
+        <button className={isOpen ? "doib1" : "doib"}>
+          {!isOpen ? (
+            <FaPlus
+              className={`plus ${isRotating ? "rotate-plus" : ""}`}
+            />
           ) : (
-            <FaPlus className="plus" style={{ transition: "all 2s ease" }} />
+            <RiSubtractFill className="plus1" />
           )}
         </button>
       </div>
 
-      {/* Animated Answer */}
       <div
         className="faq-answer"
         style={{
           maxHeight: isOpen ? "200px" : "0px",
           opacity: isOpen ? 1 : 0,
-          transition: "all 3s ease-in-out 0.1s",
+          transition: "all 0.5s ease-in-out",
           overflow: "hidden",
         }}
       >
         <p>{answer}</p>
       </div>
 
-      {/* Animated Divider Line */}
-      <hr
-        className={`faq-divider ${isOpen ? "is" : ""}`}
-        style={{
-          transition: "border-color 3s ease-in-out 0.1s",
-        }}
-      />
+      <hr className={`faq-divider ${isOpen ? "is blink-blue" : ""}`} />
     </div>
   );
 };
@@ -78,13 +76,11 @@ const Faq = () => {
     <div className="frammain6">
       <div className="minifram6">
         <p className="miniframpar7">
-          Here Are The Some Common Questions About <span className="serve">ServerPie</span>
+          Here Are The Some Common Questions About{" "}
+          <span className="serve">ServerPie</span>
         </p>
-        {/* ✅ NO STYLING CHANGE HERE */}
         <p className="faq">
-        Host your websites closer to your audience with our worldwide server locations, including London, New York, Sydney, Singapore, and more. Improve speed, reliability, and SEO rankings with optimized server placement.
-
-
+          Host your websites closer to your audience with our worldwide server locations, including London, New York, Sydney, Singapore, and more. Improve speed, reliability, and SEO rankings with optimized server placement.
         </p>
       </div>
 

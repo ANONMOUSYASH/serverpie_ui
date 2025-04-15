@@ -3,7 +3,7 @@ import '../Styles/GitIcons.css';
 
 const GitIcons = () => {
   return (
-    <div className="w-auto m-auto flex flex-col gap-4">
+    <div className="w-auto m-auto pr-[8%] flex flex-col gap-4">
       <p
         className="par234 font-normal  text-lg text-[#B6C4D7] text-left"
         style={{ fontFamily: "'Inter', serif" }}

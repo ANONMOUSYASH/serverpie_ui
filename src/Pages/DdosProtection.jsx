@@ -19,7 +19,7 @@ const DdosProtection = () => {
               "linear-gradient(281.84deg, #ECF2FF 5.58%, #FFFFFF 40.75%)",
           }}
         >
-          <div className="flex flex-col mt-[8%] gap-4 lg:gap-[15px] w-[802px]  ml[10%] text-start ml-[13%]">
+          <div className="flex flex-col mt-[8%] gap-4 lg:gap-[15px] w-[802px]  ml-[94px] text-start ">
             <p className="font-medium  text-3xl md:text-4xl lg:text-[64px] leading-[40px] md:leading-[50px] lg:leading-[66px] tracking-[-3%] capitalize text-[#083376] text-left lg:text-start">
               Get enterprise-grade DDoS protection
             </p>
@@ -252,8 +252,8 @@ const DdosProtection = () => {
           {/* Image Container */}
           <div className="w-full flex justify-center px-4">
             <img
-              className="w-full max-w-[90%] md:max-w-[75%] lg:max-w-[60%]"
-              src="circleitems.png"
+              className="w-full max-w-[90%] md:max-w-[75%] lg:max-w-[60%] ml-[10%]"
+              src="protection.svg"
               alt="Protection Process"
             />
           </div>

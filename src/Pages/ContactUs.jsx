@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <div>
     <nav>
-      {/* <Navbar /> */}
+      <Navbar />
     </nav>
     <main></main>
     <footer>
