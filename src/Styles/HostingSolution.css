@@ -333,3 +333,24 @@
     font-size: 12px;
   }
 }
+
+/* Make sure the scroll container is scrollable and fixed height */
+.inner-scroll-content {
+  max-height: 600px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Ensure left section stays fixed and not scrollable */
+.right {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
