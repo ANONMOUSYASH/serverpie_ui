@@ -11,6 +11,7 @@ import TryoutServices from "../../Components/TryoutServices";
 import Contactfriedly from "../../Components/Contactfriedly";
 import { IoEarthOutline } from "react-icons/io5";
 import ScrollToTopButton from "../../Components/ScrollToToButton";
+import DedicatedHost from "../../Components/DedicatedHost";
 
 const DedicatedHosting = () => {
   return (
@@ -132,7 +133,7 @@ const DedicatedHosting = () => {
         </div>
         {/* Hero image with contant */}
         {/* Hosting Plan */}
-        <Hosting />
+        <DedicatedHost />
         {/* Hosting Plan End */}
         {/* Hosting Solution */}
         <Hostingplans />

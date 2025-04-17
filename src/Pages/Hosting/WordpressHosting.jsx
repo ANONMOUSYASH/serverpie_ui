@@ -8,6 +8,8 @@ import Faq from '../../Components/Faq';
 import TryoutServices from '../../Components/TryoutServices';
 import Contactfriedly from '../../Components/Contactfriedly';
 import Wordpress from '../../Components/Wordpress';
+import WordpressHost from '../../Components/WordpressHost';
+
 
 const WordpressHosting = () => {
   return (
@@ -35,7 +37,7 @@ const WordpressHosting = () => {
       {/* Hero Image Section End */}
 
       {/* Hosting Plan */}
-      <Hosting />
+      <WordpressHost />
       {/* Hosting Plan End */}
 
       {/* Boost Component */}

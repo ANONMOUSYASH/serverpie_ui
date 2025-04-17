@@ -135,6 +135,12 @@
   /* box-shadow: 0px 0px 10px rgba(57, 115, 230, 0.5);  */
 }
 
+.active-hosting-box {
+  border: 2px solid #3973E6;
+  box-shadow: 0px 4px 15px rgba(57, 115, 230, 0.3);
+  transform: scale(1.02);
+}
+
 .hostingh4 {
     width: 237px;
     height: auto;
@@ -357,7 +363,7 @@
       width: 90%;
       margin: 30px auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
   
     .framesub1 {
@@ -432,6 +438,7 @@
   }
   
   @media (max-width: 480px) {
+  
     .framesubpar1 {
       font-size: 28px;
       line-height: 36px;

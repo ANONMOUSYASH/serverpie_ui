@@ -152,7 +152,7 @@ const Home = () => {
               <p className="framsubp2">
                 No matter what technology your application is built on, we provide seamless hosting solutions with top-tier performance and security
               </p>
-              <button className="bg-white text-[#3973E6] font-bold">Host Now →</button>
+              <button className="bg-white w-[121px] h-[44px] p-[10px] text-[#3973E6] font-bold" style={{borderRadius: "5px"}}>Host Now →</button>
             </div>
             <div className="framsubpart2">
               <img src="jio.svg" alt="App Hosting" />

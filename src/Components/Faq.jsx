@@ -26,9 +26,7 @@ const FAQItem = ({ question, answer }) => {
         <p className="faq-text">{question}</p>
         <button className={isOpen ? "doib1" : "doib"}>
           {!isOpen ? (
-            <FaPlus
-              className={`plus ${isRotating ? "rotate-plus" : ""}`}
-            />
+            <FaPlus className={`plus ${isRotating ? "rotate-plus" : ""}`} />
           ) : (
             <RiSubtractFill className="plus1" />
           )}
@@ -40,7 +38,7 @@ const FAQItem = ({ question, answer }) => {
         style={{
           maxHeight: isOpen ? "200px" : "0px",
           opacity: isOpen ? 1 : 0,
-          transition: "all 0.5s ease-in-out",
+          transition: "max-height 0.5s ease-in-out, opacity 0.5s ease-in-out",
           overflow: "hidden",
         }}
       >

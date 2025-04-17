@@ -261,7 +261,10 @@ const Testimonial = () => {
 </div>
 
         </div> */}
+        <div className="pt-[30px]">
         <TrustBoxWithButton />
+        </div>
+        
       </div>
     </div>
   );

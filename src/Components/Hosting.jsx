@@ -1,10 +1,17 @@
 import { useState } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "../Styles/Hosting.css";
 
 const Hosting = () => {
   const [activeTab, setActiveTab] = useState("Basic");
+  const [hoveredTab, setHoveredTab] = useState(null);
+  const [showMore, setShowMore] = useState({});
+
+
+  
+
 
   const tabs = ["Basic", "Plus", "Premium", "Exclusive"];
 
@@ -17,7 +24,7 @@ const Hosting = () => {
     {
       title: "Resources",
       key: "resources",
-      withQuestion: false,
+      withQuestion: true,
     },
     {
       title: "Security",
@@ -48,12 +55,65 @@ const Hosting = () => {
       price: "₹169.00/m",
       oldPrice: "₹9.99 - 12/mo term",
       data: {
-        features: ["1 Website", "Upto ~15000 Visits", "30 GB Nvme SSD", "Unmetered Bandwidth"],
-        resources: ["Unmetered Bandwidth", "2 subdomains", "2 databases", "1 FTP account", "2 Email box", "5 cronjobs"],
-        security: ["Free SSL- Let's Encrypt", "Malware Scanning", "DDoS Protection"],
-        support: ["Email support", "Ticket support"],
-        tech: ["30 PHP workers", "Single Core", "1 GB Memory"],
-        benefits: ["Cpanel", "Softaculous", "Litespeed Engine"],
+        // supportTitle: "Support - approx response time 24-48 hr",
+        features: [
+          "1 Website",
+          "Upto ~15000 Visits",
+          "30 GB Nvme SSD",
+          "Unmetered Bandwidth",
+        ],
+        resources: [
+          "Unmetered Bandwidth",
+          "2 subdomains",
+          "2 databases",
+          "1 FTP account",
+          "2 Email box",
+          "5 cronjobs",
+        ],
+        security: [
+          "Free SSL- Let's Encrypt",
+          "Free Malware Scanning",
+          "Web Application Firewall",
+          "DDoS Protection Included",
+          "Proactive protection",
+          "Secure access manager",
+          "Brute force protection ",
+          "Network level Filtering",
+          "Real time intrusion scanner",
+          "owasp and modsecurity Waf",
+          "Daily Website Backups",
+          "Email Scanner",
+          "Expert  monitoring",
+        ],
+        supportTitle: "Support - approx response time 24-48 hr",
+        support: [
+          "Customer support",
+          "Ticket support",
+          "Live chat support",
+          "Whatsapp support",
+          "On demand call support",
+        ],
+        tech: [
+          "30 PHP workers",
+          "Single Core system",
+          "1 GB Shared Memory",
+          "3,00,000 INODES",
+          "10 Processes",
+        ],
+        benefits: [
+          "Cpanel Control Panel",
+          "Dns Manager",
+          "Cage Environment",
+          "Litespeed Engine",
+          "Git version control",
+          "Wordpress toolkit",
+          "softaculous installer",
+          "softaculous installer",
+          "Jetbackup",
+          "Immunity360 Protection",
+          "Redis Cache",
+          "ClaimAV virus cleaner",
+        ],
       },
     },
     {
@@ -62,12 +122,65 @@ const Hosting = () => {
       price: "₹149.00/m",
       oldPrice: "₹12.99 - 12/mo term",
       data: {
-        features: ["5 Websites", "Upto ~50000 Visits", "60 GB Nvme SSD", "Unmetered Bandwidth"],
-        resources: ["Unlimited Bandwidth", "10 subdomains", "10 databases", "5 FTP accounts", "5 Email box", "10 cronjobs"],
-        security: ["Free SSL", "Malware Scanning", "WAF", "DDoS Protection"],
-        support: ["Live Chat", "Email", "Ticket", "Whatsapp"],
-        tech: ["50 PHP workers", "Dual Core", "2 GB Memory"],
-        benefits: ["Git Versioning", "SitePad Builder", "JetBackup"],
+        // supporttTitle: "Support - approx response time 12-28 hr",
+        features: [
+          "30 Website",
+          "Upto ~30000 Visits",
+          "60 GB Nvme SSD",
+          "Unmetered Bandwidth",
+        ],
+        resources: [
+          "Unmetered Bandwidth",
+          "100 subdomains",
+          "100 databases",
+          "100 FTP account",
+          "100 Email box",
+          "100 cronjobs",
+        ],
+        security: [
+          "Free SSL- Let's Encrypt",
+          "Free Malware Scanning",
+          "Web Application Firewall",
+          "DDoS Protection Included",
+          "Proactive protection",
+          "Secure access manager",
+          "Brute force protection ",
+          "Network level Filtering",
+          "Real time intrusion scanner",
+          "owasp and modsecurity Waf",
+          "Daily Website Backups",
+          "Email Scanner",
+          "Expert  monitoring",
+        ],
+        supporttTitle: "Support - approx response time 12-28 hr",
+        support: [
+          "Customer support",
+          "Ticket support",
+          "Live chat support",
+          "Whatsapp support",
+          "On demand call support",
+        ],
+        tech: [
+          "50 PHP workers",
+          "Single Core system",
+          "2 GB Shared Memory",
+          "6,00,000 INODES",
+          "30 Processes",
+        ],
+        benefits: [
+          "Cpanel Control Panel",
+          "Dns Manager",
+          "Cage Environment",
+          "Litespeed Engine",
+          "Git version control",
+          "Wordpress toolkit",
+          "softaculous installer",
+          "softaculous installer",
+          "Jetbackup",
+          "Immunity360 Protection",
+          "Redis Cache",
+          "ClaimAV virus cleaner",
+        ],
       },
     },
     {
@@ -76,12 +189,65 @@ const Hosting = () => {
       price: "₹249.00/m",
       oldPrice: "billed for 36 month",
       data: {
-        features: ["10 Websites", "Upto ~100000 Visits", "100 GB Nvme SSD", "Unmetered Bandwidth"],
-        resources: ["Unlimited everything", "20 Email boxes", "20 cronjobs"],
-        security: ["Advanced Firewall", "Daily Backup", "Proactive Monitoring"],
-        support: ["Phone", "Chat", "Ticket", "Email", "WhatsApp"],
-        tech: ["70 PHP workers", "Quad Core", "4 GB Memory"],
-        benefits: ["Redis Cache", "Immunity360", "WordPress Toolkit"],
+        // supportTitle: "Support - approx response time 6-12 hr",
+        features: [
+          "60 Website",
+          "Upto ~50000 Visits",
+          "100 GB Nvme SSD",
+          "Unmetered Bandwidth",
+        ],
+        resources: [
+          "Unmetered Bandwidth",
+          "300 subdomains",
+          "300 databases",
+          "300 FTP account",
+          "300 Email box",
+          "300 cronjobs",
+        ],
+        security: [
+          "Free SSL- Let's Encrypt",
+          "Free Malware Scanning",
+          "Web Application Firewall",
+          "DDoS Protection Included",
+          "Proactive protection",
+          "Secure access manager",
+          "Brute force protection ",
+          "Network level Filtering",
+          "Real time intrusion scanner",
+          "owasp and modsecurity Waf",
+          "Daily Website Backups",
+          "Email Scanner",
+          "Expert  monitoring",
+        ],
+        supportTitle: "Support - approx response time 6-12 hr",
+        support: [
+          "Customer support",
+          "Ticket support",
+          "Live chat support",
+          "Whatsapp support",
+          "On demand call support",
+        ],
+        tech: [
+          "80 PHP workers",
+          "Single Core system",
+          "3 GB Shared Memory",
+          "10,00,000 INODES",
+          "60 Processes",
+        ],
+        benefits: [
+          "Cpanel Control Panel",
+          "Dns Manager",
+          "Cage Environment",
+          "Litespeed Engine",
+          "Git version control",
+          "Wordpress toolkit",
+          "softaculous installer",
+          "softaculous installer",
+          "Jetbackup",
+          "Immunity360 Protection",
+          "Redis Cache",
+          "ClaimAV virus cleaner",
+        ],
       },
     },
     {
@@ -90,12 +256,65 @@ const Hosting = () => {
       price: "₹499.00/m",
       oldPrice: "₹29.99 - 12/mo term",
       data: {
-        features: ["Unlimited Websites", "Upto ~500000 Visits", "200 GB Nvme SSD", "Unmetered Bandwidth"],
-        resources: ["Unlimited everything", "Unlimited cronjobs", "Unlimited databases"],
-        security: ["Enterprise Firewall", "DDoS Protection", "WAF", "Real-time Scanning"],
-        support: ["24/7 Premium Support", "Dedicated Manager"],
-        tech: ["100 PHP workers", "Hexa Core", "8 GB Memory"],
-        benefits: ["JetBackup", "GitHub CI/CD", "Premium Cpanel", "Litespeed Pro"],
+        // supportTitle: "Support - approx response time 3-6 hr",
+        features: [
+          "100 Website",
+          "Upto ~200000 Visits",
+          "200 GB Nvme SSD",
+          "Unmetered Bandwidth",
+        ],
+        resources: [
+          "Unmetered Bandwidth",
+          "Unlimited subdomains",
+          "Unlimited databases",
+          "Unlimited FTP account",
+          "Unlimited Email box",
+          "Unlimited cronjobs",
+        ],
+        security: [
+          "Free SSL- Let's Encrypt",
+          "Free Malware Scanning",
+          "Web Application Firewall",
+          "DDoS Protection Included",
+          "Proactive protection",
+          "Secure access manager",
+          "Brute force protection ",
+          "Network level Filtering",
+          "Real time intrusion scanner",
+          "owasp and modsecurity Waf",
+          "Daily Website Backups",
+          "Email Scanner",
+          "Expert  monitoring",
+        ],
+        supportTitle: "Support - approx response time 3-6 hr",
+        support: [
+          "Customer support",
+          "Ticket support",
+          "Live chat support",
+          "Whatsapp support",
+          "On demand call support",
+        ],
+        tech: [
+          "100 PHP workers",
+          "Single Core system",
+          "4 GB Shared Memory",
+          "30,00,000 INODES",
+          "100 Processes",
+        ],
+        benefits: [
+          "Cpanel Control Panel",
+          "Dns Manager",
+          "Cage Environment",
+          "Litespeed Engine",
+          "Git version control",
+          "Wordpress toolkit",
+          "softaculous installer",
+          "softaculous installer",
+          "Jetbackup",
+          "Immunity360 Protection",
+          "Redis Cache",
+          "ClaimAV virus cleaner",
+        ],
       },
     },
   ];
@@ -125,6 +344,8 @@ const Hosting = () => {
                       : "text-gray-500 hover:text-blue-600"
                   }`}
                   onClick={() => setActiveTab(tab)}
+                  onMouseEnter={() => setHoveredTab(tab)}
+                  onMouseLeave={() => setHoveredTab(null)}
                 >
                   {tab}
                   <div
@@ -142,46 +363,100 @@ const Hosting = () => {
 
       <div className="hostingprovider">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {planData.map((plan, cardIndex) => (
-            <div key={plan.name} className="hostingsub relative">
-              {cardIndex === 1 && (
-                <div className="absolute -top-3 left-4 bg-[#3973E6] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                  Most Popular
-                </div>
-              )}
-              <h4 className="hostingh4">{plan.name}</h4>
-              <p className="hostingpar">{plan.description}</p>
-              <p className="hostingparprice">{plan.price}</p>
-              <p className="hostingparprice2">Normally {plan.oldPrice}</p>
-              <hr className="hostinghr hidden sm:block" />
-              <button className="hostingbutton">Buy Now</button>
+          {planData.map((plan, cardIndex) => {
+            const isActive = plan.name === activeTab;
+            const isHovered = plan.name === hoveredTab;
 
-              {sectionData.map(({ title, key, withQuestion }) => (
-                <div key={key} className="mt-6">
-                  <h5 className={key === "resources" ? "hostingh51" : "hostingh5"}>
-                    {title}
-                  </h5>
-                  <div className="mt-3">
-                    {plan.data[key].map((item, idx) => (
-                      <div key={idx} className="hostingminipar001">
-                        <div style={{ display: "flex", flexDirection: "row" }}>
-                          <FaCircleCheck className="rightcircle" />
-                          <p className="hostingpar01">{item}</p>
-                        </div>
-                        {withQuestion && (
-                          <MdQuestionMark className="questinghost" />
-                        )}
-                      </div>
-                    ))}
+            return (
+              <div
+                key={plan.name}
+                className={`hostingsub relative transition-all duration-300 ${
+                  isActive || isHovered ? "active-hosting-box" : ""
+                }`}
+                onClick={() => setActiveTab(plan.name)} // Link click to active tab
+              >
+                {cardIndex === 1 && (
+                  <div className="absolute -top-3 left-4 bg-[#3973E6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Most Popular
                   </div>
-                </div>
-              ))}
+                )}
+                <h4 className="hostingh4">{plan.name}</h4>
+                <p className="hostingpar">{plan.description}</p>
+                <p className="hostingparprice">{plan.price}</p>
+                <p className="hostingparprice2">Normally {plan.oldPrice}</p>
+                <hr className="hostinghr hidden sm:block" />
+                <button className="hostingbutton">Buy Now</button>
 
-              <div className="m-auto hidden sm:block">
-                <img className="m-auto" src="longarrow.svg" alt="" />
+                {sectionData.slice(0, 3).map(({ title, key, withQuestion }) => (
+                  <div key={key} className="mt-6">
+                    <h5 className={key === "resources" ? "hostingh51" : "hostingh5"}>
+                      {key === "support"
+                        ? plan.data.supportTitle || plan.data.supporttTitle || title
+                        : title}
+                    </h5>
+                    <div className="mt-3">
+                      {plan.data[key].map((item, idx) => {
+                        const showQuestion =
+                          withQuestion && (key !== "features" || item === "Unmetered Bandwidth");
+                        return (
+                          <div key={idx} className="hostingminipar001">
+                            <div style={{ display: "flex", flexDirection: "row" }}>
+                              <FaCircleCheck className="rightcircle" />
+                              <p className="hostingpar01">{item}</p>
+                            </div>
+                            {showQuestion && <MdQuestionMark className="questinghost" />}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+
+                {showMore[cardIndex] &&
+                  sectionData.slice(3).map(({ title, key, withQuestion }) => (
+                    <div key={key} className="mt-6">
+                      <h5 className={key === "resources" ? "hostingh51" : "hostingh5"}>
+                        {key === "support"
+                          ? plan.data.supportTitle || plan.data.supporttTitle || title
+                          : title}
+                      </h5>
+                      <div className="mt-3">
+                        {plan.data[key].map((item, idx) => {
+                          const showQuestion =
+                            withQuestion &&
+                            (key !== "features" || item === "Unmetered Bandwidth");
+                          return (
+                            <div key={idx} className="hostingminipar001">
+                              <div style={{ display: "flex", flexDirection: "row" }}>
+                                <FaCircleCheck className="rightcircle" />
+                                <p className="hostingpar01">{item}</p>
+                              </div>
+                              {showQuestion && <MdQuestionMark className="questinghost" />}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
+
+                <div
+                  className="flex justify-center items-center mt-4 cursor-pointer"
+                  onClick={() =>
+                    setShowMore((prev) => ({
+                      ...prev,
+                      [cardIndex]: !prev[cardIndex],
+                    }))
+                  }
+                >
+                  {showMore[cardIndex] ? (
+                    <FaChevronUp className="text-blue-600" />
+                  ) : (
+                    <FaChevronDown className="text-blue-600" />
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

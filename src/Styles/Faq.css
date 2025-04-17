@@ -1,21 +1,18 @@
 .frammain6 {
   width: auto;
   margin: auto;
-  /* Center horizontally */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 56px;
-  /* font-family: "Cal Sans", serif; */
-  /* Apply font */
 }
 
 .minifram6 {
-    width: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
+  width: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
   
   .minisubfram7 {
     display: flex;
@@ -61,13 +58,9 @@
   
   .minifram7 {
     width: 100%;
-    /* max-width: 928px; */
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: 20px;
-    background-color: #FAFCFF;
-    border-radius: 26px;
   }
   
   .faq-item {
@@ -338,9 +331,13 @@
     }
   }
 
+  
+
   .rotate-plus {
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out;
   }
   
+
+ 
   
