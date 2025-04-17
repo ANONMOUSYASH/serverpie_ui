@@ -1,35 +1,20 @@
 import React, { useState } from "react";
-import { FaPlus } from "react-icons/fa";
-import { RiSubtractFill } from "react-icons/ri";
 import "../Styles/Faq.css";
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isRotating, setIsRotating] = useState(false);
 
   const handleToggle = () => {
-    // Trigger rotation
-    if (!isOpen) {
-      setIsRotating(true);
-      setTimeout(() => {
-        setIsRotating(false);
-        setIsOpen(true);
-      }, 300); // Wait for rotate animation
-    } else {
-      setIsOpen(false);
-    }
+    setIsOpen(!isOpen);
   };
 
   return (
     <div className="faq-item">
       <div className="faq-question" onClick={handleToggle}>
         <p className="faq-text">{question}</p>
-        <button className={isOpen ? "doib1" : "doib"}>
-          {!isOpen ? (
-            <FaPlus className={`plus ${isRotating ? "rotate-plus" : ""}`} />
-          ) : (
-            <RiSubtractFill className="plus1" />
-          )}
+        <button className={`plus-button ${isOpen ? "active" : ""}`}>
+          <span className="horizontal-line" />
+          <span className={`vertical-line ${isOpen ? "rotate" : ""}`} />
         </button>
       </div>
 
