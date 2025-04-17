@@ -1,6 +1,6 @@
 /* Fram Main */
 .framemain {
-    width: 1357px;
+    width: 100%;
     height: auto;
     /* Adjust height dynamically */
     margin: 50px auto;
@@ -126,7 +126,7 @@
 }
 
 .hostingsub:hover {
-  animation: stableBlink 0.5s forwards ease-in-out; /* Runs once and stays */
+  animation: stableBlink 0.5s forwards ease-in-out;
 }
 
 
@@ -138,7 +138,7 @@
 .active-hosting-box {
   border: 2px solid #3973E6;
   box-shadow: 0px 4px 15px rgba(57, 115, 230, 0.3);
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
 }
 
 .hostingh4 {

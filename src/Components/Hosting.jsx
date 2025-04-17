@@ -5,15 +5,12 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "../Styles/Hosting.css";
 
 const Hosting = () => {
-  const [activeTab, setActiveTab] = useState("Basic");
+  const [activeTab, setActiveTab] = useState("Plus");
   const [hoveredTab, setHoveredTab] = useState(null);
   const [showMore, setShowMore] = useState({});
 
 
-  
-
-
-  const tabs = ["Basic", "Plus", "Premium", "Exclusive"];
+  const tabs = ["Shared Hosting", "WordpressHostinig", "Dedicated Hosting"];
 
   const sectionData = [
     {
@@ -362,12 +359,13 @@ const Hosting = () => {
       </div>
 
       <div className="hostingprovider">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
           {planData.map((plan, cardIndex) => {
             const isActive = plan.name === activeTab;
             const isHovered = plan.name === hoveredTab;
 
             return (
+              <div>
               <div
                 key={plan.name}
                 className={`hostingsub relative transition-all duration-300 ${
@@ -454,6 +452,7 @@ const Hosting = () => {
                     <FaChevronDown className="text-blue-600" />
                   )}
                 </div>
+              </div>
               </div>
             );
           })}
