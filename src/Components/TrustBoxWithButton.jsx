@@ -17,31 +17,28 @@ const TrustBoxWithButton = () => {
   }, []);
 
   return (
-    <div className="mt-5">
-      <div className="bg-[#3973E6] rounded-2xl p-5 shadow-lg">
-        <h3 className="text-white text-xl font-semibold mb-2 text-center">
-          What Our Customers Say
-        </h3>
-        <div
-          ref={trustboxRef}
-          className="trustpilot-widget"
-          data-locale="en-US"
-          data-template-id="56278e9abfbbba0bdcd568bc"
-          data-businessunit-id="67b579695186fc26ff2841b8"
-          data-style-height="52px"
-          data-style-width="100%"
-        >
-          <a
-            href="https://www.trustpilot.com/review/serverpie.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white underline hover:text-yellow-300 text-center block"
-          >
-            Check out our reviews on Trustpilot
-          </a>
-        </div>
-      </div>
-    </div>
+    
+    <div
+    ref={trustboxRef}
+    className="trustpilot-widget pt-[30px] bg-[#1F2937] text-white px-4 py-3 rounded-lg shadow-md w-auto max-w-md mx-auto"
+    data-locale="en-US"
+    data-template-id="56278e9abfbbba0bdcd568bc"
+    data-businessunit-id="67b579695186fc26ff2841b8"
+    data-style-height="52px"
+    data-style-width="100%"
+  >
+    <a
+      href="https://www.trustpilot.com/review/serverpie.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white underline hover:text-yellow-300 text-center block"
+    >
+      View Our Trustpilot Reviews
+    </a>
+  </div>
+  
+  
+   
   );
 };
 

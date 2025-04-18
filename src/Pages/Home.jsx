@@ -14,6 +14,7 @@ import ScrollToTop from "../Components/ScrollToToButton";
 // React Icons
 import { FaArrowRight } from "react-icons/fa";
 import "../Styles/Home.css";
+import HomeHosting from "../Components/HomeHosting";
 
 // Main Home Component
 const Home = () => {
@@ -34,6 +35,8 @@ const Home = () => {
         <Steps />
 
         {/* Anti-DDoS Features Section */}
+
+        <div className="container">
         <section className="framemain2">
           <div className="framechild2">
             <h2 className="framechildpar1">
@@ -86,16 +89,19 @@ const Home = () => {
             /></div>
           </div>
         </section>
+        </div>
 
         {/* Hosting Plan Section */}
-        <Hosting />
+        {/* <Hosting /> */}
+        <HomeHosting />
 
         {/* SEO Benefits Banner */}
         <SeoBanner />
 
         {/* Server Feature Highlights */}
+        <div className="container">
         <section className="heroheadmain2">
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-[86px] text-center lg:text-left items-center">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-[86px] text-left lg:text-left items-left">
             <h2 className="herohead2">
               From top performance to constant support, we’ve got you covered.
             </h2>
@@ -143,6 +149,7 @@ const Home = () => {
            
           </div>
         </section>
+        </div>
 
         {/* Universal Tech Support Section */}
         <section className="frammain3">

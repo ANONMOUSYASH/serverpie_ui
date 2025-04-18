@@ -10,18 +10,18 @@
 /* ========================
    Hero Section Containers
 =========================== */
-.herorec {
+/* .herorec {
   margin: 90px auto;
   display: flex;
-}
+} */
 
 .heroheadmain2 {
-  width: 1273px;
+  width: 100%;
   height: auto;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   text-align: left;
 }
 
@@ -267,7 +267,7 @@
 /* Framemain2 */
 
 .framemain2 {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   margin: 50px auto;

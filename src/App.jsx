@@ -21,10 +21,12 @@ import ContactUs from './Pages/ContactUs';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import ScrollToTopButton from './Components/ScrollToToButton';
+import ScrollToTopUp from './Components/ScrollToTopUp';
 
 function App() {
   return (
     <Router>
+       <ScrollToTopUp /> {/* Ensures every page starts from the top */}
       <ScrollToTopButton /> {/* Ensures every page starts from the top */}
       <Navbar /> 
       <Routes>

@@ -9,6 +9,7 @@ const FAQItem = ({ question, answer }) => {
   };
 
   return (
+    <div className="container">
     <div className="faq-item">
       <div className="faq-question" onClick={handleToggle}>
         <p className="faq-text">{question}</p>
@@ -31,6 +32,7 @@ const FAQItem = ({ question, answer }) => {
       </div>
 
       <hr className={`faq-divider ${isOpen ? "is blink-blue" : ""}`} />
+    </div>
     </div>
   );
 };
@@ -56,6 +58,7 @@ const Faq = () => {
   ];
 
   return (
+    <div className="container">
     <div className="frammain6">
       <div className="minifram6">
         <p className="miniframpar7">
@@ -72,6 +75,7 @@ const Faq = () => {
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
+    </div>
     </div>
   );
 };

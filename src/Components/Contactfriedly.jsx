@@ -3,9 +3,11 @@ import { PiChatsCircleFill } from "react-icons/pi";
 import { PiChatCircleTextFill } from "react-icons/pi";
 import { FaPhoneVolume } from "react-icons/fa6";
 import "../Styles/Contactfriedly.css";
+import { div } from "framer-motion/client";
 
 const Contactfriedly = () => {
   return (
+   <div className="container">
     <div className="frammain9">
       <div className="submainfram9">
         <p className="conpar">Contact Us</p>
@@ -58,6 +60,7 @@ const Contactfriedly = () => {
           <button className="chat">Call Now</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
