@@ -16,19 +16,19 @@ const HostingSolution = () => {
 
       // Get full height of boxes
       const scrollHeight = wrapper.scrollHeight;
-      const visibleHeight = 650;
+      const visibleHeight = 650; // Adjust this based on your layout
       const scrollDistance = scrollHeight - visibleHeight;
 
       // Animate the vertical scroll of the boxes on page scroll
-      // Animate the vertical scroll of the boxes on page scroll with smoother, slower effect
       gsap.to(wrapper, {
         y: -scrollDistance,
         ease: "power1.inOut", // smoother easing
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top center",
-          end: `+=${scrollDistance * 2.5}`, // increase scroll distance for slower effect
-          scrub: 2.5, // smooth and slow scrub
+          start: "top top", // Start when the top of the section hits the top of the viewport
+          end: `+=${scrollDistance}`, // Adjust the end point
+          scrub: 1, // smooth and slow scrub
+          pin: true, // Pin the section while scrolling
         },
       });
     }, sectionRef);
@@ -73,14 +73,13 @@ const HostingSolution = () => {
     <div
       ref={sectionRef}
       className="hostingsolmain-main"
-      style={{ height: "auto", display: "flex", overflow: "hidden" }}
+      style={{ display: "flex", overflow: "hidden", height: "100vh" }} // Full viewport height
     >
       {/* Left text content (fixed) */}
-      <div className="right">
+      <div className="right" style={{ flex: "0 0 40%", padding: "20px", position: "fixed", height: "100vh", overflow: "auto" }}>
         <div className="subattack2 h-auto flex flex-col">
           <p className="hostingsolpar1">
-            We Have a <span className="text-[96px]">Hosting Solution</span> For
-            You
+            We Have a <span className="text-[96px]">Hosting Solution</span> For You
           </p>
           <p className="hostingsolpar2">
             ServerPie Shared Hosting – Power, Speed & Security in One!
@@ -93,7 +92,7 @@ const HostingSolution = () => {
       {/* Right scrollable boxes */}
       <div
         className="hostingsolmain"
-        style={{ height: "700px", overflow: "hidden" }}
+        style={{ flex: "1", height: "750px", overflow: "hidden" }} // Full height for the right side
       >
         <div className="scrollingtop">
           <div
@@ -109,6 +108,7 @@ const HostingSolution = () => {
               <Box {...boxes[2]} />
               <Box {...boxes[3]} />
             </div>
+            {/* <div className="subhostingsolsub */}
             <div className="subhostingsolsub4">
               <Box {...boxes[4]} />
               <Box {...boxes[5]} />

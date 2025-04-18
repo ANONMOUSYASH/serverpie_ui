@@ -3,11 +3,14 @@
 ========================================= */
 
 /* Main container for the whole section */
+/* .hostingsolmain-main {
+  padding-top: 100px;
+} */
 .hostingsolmain {
   width: 100%;
   height: auto;
   margin: 50px auto;
-  padding: 20px;
+  padding: 25px;
   border-radius: 13px;
   background-color: #3973E6;
   display: flex;
