@@ -101,7 +101,7 @@ const Home = () => {
         {/* Server Feature Highlights */}
         <div className="container">
         <section className="heroheadmain2">
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-[86px] text-left lg:text-left items-left">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-[86px] text-center lg:text-left items-center">
             <h2 className="herohead2">
               From top performance to constant support, we’ve got you covered.
             </h2>

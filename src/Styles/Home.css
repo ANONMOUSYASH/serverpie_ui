@@ -40,14 +40,14 @@
 }
 
 .parhost {
-  width: 408px;
+  width: 380px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   color: #2D5087;
   letter-spacing: 0%;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   text-align: left;
 }
 

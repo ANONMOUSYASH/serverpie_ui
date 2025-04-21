@@ -1,24 +1,32 @@
-/* Shared Hosting Hero Section */
-/* Default Styling */
+/* =====================================================
+   Shared Hosting Page Styles
+===================================================== */
+
+
+/* =====================================================
+   1. Hero Section
+===================================================== */
+
+/* 1.1 Hero Container */
 .sharedhosthero {
+  width: 100%;
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
+  align-items: left;
   gap: 40px;
-  margin: auto;
+  /* margin: auto; */
   text-align: start;
-  /* padding: 50px 20px; */
   padding-top: 10%;
 }
 
-/* Hero Section Text */
+/* 1.2 Hero Text Wrapper */
 .sharedhostherosub {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  align-items: center;
+  align-items: start;
 }
 
+/* 1.3 Hero Title */
 .sharedhostingheropar1 {
   width: 610px;
   font-family: "Inter", sans-serif;
@@ -30,6 +38,7 @@
   color: #083376;
 }
 
+/* 1.4 Hero Description */
 .sharedhostingheropar2 {
   max-width: 690px;
   font-family: "Inter", sans-serif;
@@ -39,7 +48,7 @@
   text-align: start;
 }
 
-/* Buttons Section */
+/* 1.5 Buttons Container */
 .sharehostherobtn {
   display: flex;
   justify-content: flex-start;
@@ -48,6 +57,7 @@
   text-align: start;
 }
 
+/* 1.6 Button Base Styles */
 .sharedhostingbtn12,
 .sharedhostingbtn22 {
   width: 226px;
@@ -61,19 +71,26 @@
   cursor: pointer;
 }
 
+/* 1.7 Primary Button (Buy Now) */
 .sharedhostingbtn12 {
   color: #ffffff;
   background: #3973E6;
   border: 1px solid #3973E6;
 }
 
+/* 1.8 Secondary Button (Connect With Expert) */
 .sharedhostingbtn22 {
   color: #3973E6;
   background: transparent;
   border: 1px solid #3973E6;
 }
 
-/* Responsive Design */
+
+/* =====================================================
+   2. Responsive Design
+===================================================== */
+
+/* 2.1 Screens up to 1200px */
 @media (max-width: 1200px) {
   .sharedhostingheropar1 {
     font-size: 64px;
@@ -103,6 +120,7 @@
   }
 }
 
+/* 2.2 Screens up to 992px */
 @media (max-width: 992px) {
   .sharedhosthero {
     flex-direction: column;
@@ -138,6 +156,7 @@
   }
 }
 
+/* 2.3 Screens up to 768px */
 @media (max-width: 768px) {
   .sharedhostingheropar1 {
     font-size: 44px;
@@ -162,6 +181,7 @@
   }
 }
 
+/* 2.4 Screens up to 480px */
 @media (max-width: 480px) {
   .sharedhostingheropar1 {
     font-size: 34px;
@@ -177,309 +197,5 @@
     width: 140px;
     height: 38px;
     font-size: 12px;
-  }
-}
-
-
-.sharedhostsecretmain {
-  width: auto;
-  height: 781px;
-  margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
-.sharedhostsecretmain1 {
-  /* width: 762px; */
-  height: 102px;
-}
-
-.sharehostsecpar1 {
-  width: 650px;
-  font-family: "Inter", serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  letter-spacing: 0%;
-  color: #0e2954;
-  border: #00000033;
-}
-
-.sharedhostsecretmain2 {
-  display: flex;
-  gap: 80px;
-}
-
-.sharedhostsecretmain22 {
-  width: 354px;
-  height: 619px;
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-}
-
-.sharedhostsecretmain3 {
-  width: 354px;
-  height: 132px;
-  display: flex;
-  gap: 18px;
-}
-
-.subbsec1 {
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-}
-
-.minisubsec1 {
-  display: flex;
-  gap: 18px;
-}
-
-.linesubsec1 {
-  width: 5px;
-  height: 80px;
-  background-color: #25a75b;
-}
-
-/* .subsecparmini1 {
-} */
-
-.subsecparmini2 {
-  width: 251px;
-  font-family: 'Inter',serif;
-font-weight: 700;
-font-size: 24px;
-line-height: 29.05px;
-letter-spacing: 0%;
-color: #0E2954;
-border: #00000033;
-}
-
-.subsecparmini3 {
-  width: 280px;
-  font-family: 'Inter',serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 14.52px;
-letter-spacing: 0%;
-color: #2D5087;
-}
-
-.subsecbtnmini1 {
-  width: 158px;
-height: 50px;
-border-radius: 5px;
-gap: 10px;
-padding: 10px;
-font-family: 'Inter',serif;
-font-weight: 700;
-font-size: 14px;
-line-height: 14.52px;
-letter-spacing: 0%;
-color: #FFFFFF;
-background: #25A75B;
-}
-
-.sharedhostsecretmain4 {
-  width: 380px;
-  height: 380px;
-  margin-left: 300px;
-  background: #d9d9d9;
-}
-
-.sharedhostsecretmain21 {
-  display: flex;
-  gap: 280px; /* Space between items */
-  margin:  auto;
-  flex-direction: row-reverse;
-}
-
-.sharedhostsecretmain44 {
-  width: 380px;
-  height: 380px;
-  /* margin-left: 300px; */
-  background: #d9d9d9;
-}
-
-.sharedhostsecretmain222 {
-  display: flex;
-  gap: 80px;
-  margin: 50px auto;
-}
-
-
-/* Responsive Design for .sharedhostsecretmain */
-@media (max-width: 1200px) {
-  .sharedhostsecretmain {
-    width: 95%;
-    gap: 40px;
-  }
-
-  .sharehostsecpar1 {
-    width: 100%;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-  }
-
-  .sharedhostsecretmain2 {
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sharedhostsecretmain21 {
-    gap: 100px;
-    justify-content: center;
-  }
-
-  .sharedhostsecretmain3 {
-    width: 100%;
-    height: auto;
-    gap: 15px;
-  }
-
-  .sharedhostsecretmain4,
-  .sharedhostsecretmain44 {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 992px) {
-  .sharedhostsecretmain {
-    width: 98%;
-    gap: 30px;
-  }
-
-  .sharehostsecpar1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .sharedhostsecretmain2,
-  .sharedhostsecretmain21 {
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sharedhostsecretmain22 {
-    width: 100%;
-    height: auto;
-    gap: 30px;
-  }
-
-  .subbsec1 {
-    gap: 30px;
-  }
-
-  .sharedhostsecretmain3 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .linesubsec1 {
-    height: 60px;
-  }
-
-  .subsecparmini2 {
-    font-size: 20px;
-  }
-
-  .subsecparmini3 {
-    font-size: 12px;
-    width: 100%;
-  }
-
-  .sharedhostsecretmain4,
-  .sharedhostsecretmain44 {
-    width: 260px;
-    height: 260px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sharedhostsecretmain {
-    width: 100%;
-    gap: 20px;
-  }
-
-  .sharehostsecpar1 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  .sharedhostsecretmain2,
-  .sharedhostsecretmain21,
-  .sharedhostsecretmain222 {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .sharedhostsecretmain3 {
-    gap: 10px;
-    text-align: left;
-  }
-
-  .subbsec1 {
-    gap: 20px;
-  }
-
-  .subsecbtnmini1 {
-    width: 140px;
-    height: 45px;
-    font-size: 12px;
-  }
-
-  .sharedhostsecretmain4,
-  .sharedhostsecretmain44 {
-    width: 220px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 480px) {
-  .sharedhostsecretmain {
-    padding: 15px;
-  }
-
-  .sharehostsecpar1 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .sharedhostsecretmain2,
-  .sharedhostsecretmain21,
-  .sharedhostsecretmain222 {
-    gap: 15px;
-  }
-
-  .sharedhostsecretmain3 {
-    gap: 8px;
-  }
-
-  .subsecparmini2 {
-    font-size: 18px;
-  }
-
-  .subsecparmini3 {
-    font-size: 11px;
-  }
-
-  .subsecbtnmini1 {
-    width: 130px;
-    height: 40px;
-    font-size: 11px;
-  }
-
-  .sharedhostsecretmain4,
-  .sharedhostsecretmain44 {
-    width: 180px;
-    height: 180px;
   }
 }
