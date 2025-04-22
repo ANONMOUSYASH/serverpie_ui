@@ -16,17 +16,15 @@ import DedicatedHost from "../../Components/DedicatedHost";
 const DedicatedHosting = () => {
   return (
     <div>
-      
+      {/* --------------------------------- Main Content --------------------------------- */}
       <main>
-        {/* Hero Contant */}
+
+        {/* ===================== HERO SECTION ===================== */}
         <div className="dedicatedhostmain">
           <div className="dedicatedhostmain1">
-            <p className="dedicatedhostpar1">
-              Exclusive Performance with Our Dedicated Hosting
-            </p>
+            <p className="dedicatedhostpar1">Exclusive Performance with Our Dedicated Hosting</p>
             <p className="dedicatedhostpar2">
-              Enjoy isolated resources, top-notch security, and ultimate control
-              with our dedicated hosting plans
+              Enjoy isolated resources, top-notch security, and ultimate control with our dedicated hosting plans
             </p>
             <div className="dedicatedhostbtn">
               <button className="dedicatedhostbtn1">Get Stated</button>
@@ -34,284 +32,145 @@ const DedicatedHosting = () => {
             </div>
           </div>
         </div>
-        {/* Hero Contant End */}
-        {/* Hero image with contant */}
+
+        {/* ===================== HERO IMAGE WITH CONTENT ===================== */}
         <div className="dedicatedheroimgmain">
+          {/* Left Side Image */}
           <div className="dedicatedheroimgmain1"></div>
+
+          {/* Right Side Content */}
           <div className="dedicatedheroimgmain2">
             <div className="dedicatedheroimgmain3">
-              <p className="dedicatedheroimgpar1">
-                Advanced features for the advanced user
-              </p>
+              <p className="dedicatedheroimgpar1">Advanced features for the advanced user</p>
               <p className="dedicatedheroimgpar2">
-                Focus on your business and avoid all the web hosting managed
-                hosting guarantees unmatched performance, reliability and choice
-                with 24/7 support.{" "}
+                Focus on your business and avoid all the web hosting managed hosting guarantees unmatched performance, reliability and choice with 24/7 support.
               </p>
               <p className="dedicatedheroimgpar3">Advance Feature</p>
               <hr className="dedicatedhosthr1" />
             </div>
+
+            {/* Feature List */}
             <div className="dedicatedheroimgmain4">
               <ul className="dedicatedhostul">
-                <li className="dedicatedhostli">
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
+                {[
+                  "Unlimited Free SSL Certificates.",
+                  "Unlimited Bandwidth",
+                  "Unlimited MySQL Databases",
+                  "Unlimited Subdomains",
+                  "Unlimited FTP/SFTP Accounts.",
+                  "Unlimited Mail accounts",
+                  "Unlimited Scheduled Tasks",
+                  "Dedicated Support"
+                ].map((item, index) => (
+                  <li key={index}>
+                    <div className="dedicatedsubimgparmain">
+                      <div className="icondsedicatedhost">
+                        <FaCheck className="checkdedicated" />
+                      </div>
+                      <p className="dedicatedsuvhostpar1">{item}</p>
                     </div>
-                    <p className="dedicatedsuvhostpar1">
-                      Unlimited Free SSL Certificates.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">Unlimited Bandwidth</p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">
-                      Unlimited MySQL Databases
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">Unlimited Subdomains</p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">
-                      Unlimited FTP/SFTP Accounts.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">
-                      Unlimited Mail accounts
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">
-                      Unlimited Scheduled Tasks
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="dedicatedsubimgparmain">
-                    <div className="icondsedicatedhost">
-                      <FaCheck className="checkdedicated" />
-                    </div>
-                    <p className="dedicatedsuvhostpar1">Dedicated Support </p>
-                  </div>
-                </li>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
-        {/* Hero image with contant */}
-        {/* Hosting Plan */}
+
+        {/* ===================== HOSTING PLAN ===================== */}
         <DedicatedHost />
-        {/* Hosting Plan End */}
-        {/* Hosting Solution */}
+
+        {/* ===================== HOSTING SOLUTIONS ===================== */}
         <Hostingplans />
-        {/* Hosting Solution End */}
-        {/* Uur Addopt */}
+
+        {/* ===================== OUR ADDON SERVICES ===================== */}
         <div className="mainserve">
           <p className="ourparmainsub">Our Addon That will help You </p>
+
+          {/* Decorative Line and Circles */}
           <div className="subserve">
+            {Array(4).fill().map((_, i) => (
+              <React.Fragment key={i}>
+                <hr className={`minihr${i || ''}`} />
+                <div className="circlezero">
+                  <div className="circlezeromini"></div>
+                </div>
+              </React.Fragment>
+            ))}
             <hr className="minihr" />
-            <div className="circlezero">
-              <div className="circlezeromini"></div>
-            </div>
-            <hr className="minihr1" />
-            <div className="circlezero">
-              <div className="circlezeromini"></div>
-            </div>
-            <hr className="minihr2" />
-            <div className="circlezero">
-              <div className="circlezeromini"></div>
-            </div>
-            <hr className="minihr3" />
-            <div className="circlezero">
-              <div className="circlezeromini"></div>
-            </div>
-            <hr className="minihr" />
-            {/* <div className="circlezero">
-                     <div className="circlezeromini"></div>
-                     </div> */}
           </div>
+
+          {/* Addon Cards */}
           <div className="minisubserve">
-            <div className="subminiservebox1">
-              <div className="earthserve">
-                <IoEarthOutline className="webearth" />
+            {[
+              {
+                title: "Dedicated Ip",
+                desc: "Switching to Serverpie is quick and easy...",
+              },
+              {
+                title: "Abuse Protection",
+                desc: "Pay no extra charges for the registration of an SSL certificate...",
+              },
+              {
+                title: "360 Monitering",
+                desc: "Our Support Team is Certified & Trained...",
+              },
+              {
+                title: "Click Installer",
+                desc: "Simple and quick installation of your favorite CMS app...",
+              },
+            ].map((item, i) => (
+              <div className="subminiservebox1" key={i}>
+                <div className="earthserve">
+                  <IoEarthOutline className="webearth" />
+                </div>
+                <div className="parserve">
+                  <p className="servepar1">{item.title}</p>
+                  <p className="servepar2">{item.desc}</p>
+                </div>
               </div>
-              <div className="parserve">
-                <p className="servepar1">Dedicated Ip</p>
-                <p className="servepar2">
-                  Switching to Serverpie is quick and easy ,we offer first-time
-                  migrations for FREE, and our migrations for FREE, and our
-                  expert migration team will move your website swiftly to us in
-                  no time
-                </p>
-              </div>
-            </div>
-            <div className="subminiservebox1">
-              <div className="earthserve">
-                <IoEarthOutline className="webearth" />
-              </div>
-              <div className="parserve">
-                <p className="servepar1">Abuse Protectionv</p>
-                <p className="servepar2">
-                  Pay no extra charges for the registration of an SSL
-                  certificate. Serverpie grants free SSL certificates for every
-                  website from Let's Encrypt with your hosting plan
-                </p>
-              </div>
-            </div>
-            <div className="subminiservebox1">
-              <div className="earthserve">
-                <IoEarthOutline className="webearth" />
-              </div>
-              <div className="parserve">
-                <p className="servepar1">360 Monitering </p>
-                <p className="servepar2">
-                  Our Support Team is Certified & Trained with deep expertise in
-                  solving all technical issues promptly and effeciently
-                </p>
-              </div>
-            </div>
-            <div className="subminiservebox1">
-              <div className="earthserve">
-                <IoEarthOutline className="webearth" />
-              </div>
-              <div className="parserve">
-                <p className="servepar1">Click Installer</p>
-                <p className="servepar2">
-                  Simple and quick installation of your favorite CMS app! With
-                  Softaculous one-click installer, you can install apps like
-                  WordPress, Joomla, PHP and 400+ similar ones in just a
-                  single-click.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-        {/* Uur Addopt End */}
-        {/* Technologies  */}
+
+        {/* ===================== TECHNOLOGIES SECTION ===================== */}
         <div className="technologymain">
+          {/* First Row */}
           <div className="technologysub1">
-            <div className="technologysub11">
-              <div className="technologyminibox">
-                <img src="/01icon.png" alt="" />
+            {["wordpress", "Whmcs", "Mangento", "Laravel", "Druple", "Joomla"].map((tech, i) => (
+              <div className="technologysub11" key={i}>
+                <div className="technologyminibox">
+                  <img src={`/${String(i + 1).padStart(2, '0')}icon.png`} alt="" />
+                </div>
+                <p className="technologypar1">{tech}</p>
               </div>
-              <p className="technologypar1">wordpress</p>
-            </div>
-            <div className="technologysub11">
-            <div className="technologyminibox">
-            <img src="/02icon.png" alt="" />
-            </div>
-            <p className="technologypar1">Whmcs</p>
-            </div>
-            <div className="technologysub11">
-            <div className="technologyminibox">
-            <img src="/03icon.png" alt="" />
-            </div>
-            <p className="technologypar1">Mangento</p>
-            </div>
-            <div className="technologysub11">
-            <div className="technologyminibox">
-            <img src="/04icon.png" alt="" />
-            </div>
-            <p className="technologypar1">Laravel</p>
-            </div>
-            <div className="technologysub11">
-            <div className="technologyminibox">
-            <img src="/05icon.png" alt="" />
-            </div>
-            <p className="technologypar1">Druple</p>
-            </div>
-            <div className="technologysub11">
-            <div className="technologyminibox">
-            <img src="/06icon.png" alt="" />
-            </div>
-            <p className="technologypar1">Joomla</p>
-            </div>
+            ))}
           </div>
+
+          {/* Second Row */}
           <div className="technologysub2">
-          <div className="technologysub11">
-              <div className="technologyminibox">
-              <img src="/07icon.png" alt="" />
+            {["Python", "wordpress", "PrestaShop", "Django", "React", "Node js"].map((tech, i) => (
+              <div className="technologysub11" key={i}>
+                <div className="technologyminibox">
+                  <img src={`/${String(i + 7).padStart(2, '0')}icon.png`} alt="" />
+                </div>
+                <p className="technologypar1">{tech}</p>
               </div>
-              <p className="technologypar1">Python</p>
-            </div>
-            <div className="technologysub11">
-              <div className="technologyminibox">
-              <img src="/08icon.png" alt="" />
-              </div>
-              <p className="technologypar1">wordpress</p>
-            </div>
-            <div className="technologysub11">
-              <div className="technologyminibox">
-              <img src="/09icon.png" alt="" />
-              </div>
-              <p className="technologypar1">PrestaShop</p>
-            </div>
-            <div className="technologysub11">
-              <div className="technologyminibox">
-              <img src="/10icon.png" alt="" />
-              </div>
-              <p className="technologypar1">Django</p>
-            </div>
-            <div className="technologysub11">
-              <div className="technologyminibox">
-              <img src="/11icon.png" alt="" />
-              </div>
-              <p className="technologypar1">React</p>
-            </div>
-            <div className="technologysub11">
-              <div className="technologyminibox">
-              <img src="/12icon.png" alt="" />
-              </div>
-              <p className="technologypar1">Node js</p>
-            </div>
+            ))}
           </div>
         </div>
-        {/* Technologies  End*/}
-        {/* Faq Com */}
+
+        {/* ===================== FAQ SECTION ===================== */}
         <Faq />
-        {/* Faq Com End*/}
 
-         {/* TryOutServices Com */}
-       <TryoutServices />
-        {/* TryOutServices Com End*/}
+        {/* ===================== TRY OUT SERVICES SECTION ===================== */}
+        <TryoutServices />
 
-        {/* ContactFriedly Com */}
-       <Contactfriedly />
-       {/* ContactFriedly Com End*/}
+        {/* ===================== CONTACT FRIENDLY SECTION ===================== */}
+        <Contactfriedly />
+
       </main>
+
+      {/* --------------------------------- Footer --------------------------------- */}
       <footer>
         <Footer />
       </footer>

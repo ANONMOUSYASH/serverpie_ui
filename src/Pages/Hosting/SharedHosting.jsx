@@ -24,7 +24,7 @@ const SharedHosting = () => {
         <div className="container">
         <section className='sharedhosthero'>
           <div className="sharedhostherosub">
-            <p className='sharedhostingheropar1 text-start font-medium'>
+            <p className='sharedhostingheropar1 text-start font-medium'> 
               Fast & Secure Hosting Go Live Instantly!
             </p>
             <p className='sharedhostingheropar2 text-start pl-[30px] text-[#2D5087]'>
@@ -46,7 +46,7 @@ const SharedHosting = () => {
         {/* ===== Steps Section (Working Process) ===== */}
         <WorkingStaps />
 
-        {/* ===== Hosting Comparison Section ===== */}
+        {/* ===== Hosting Comparison Section ===== */}  
         <Hosting />
 
         {/* ===== Hosting Solution Section (Scroll-based) ===== */}
@@ -60,6 +60,7 @@ const SharedHosting = () => {
         {/* ===== Secret of Serverpie End ===== */}
 
         {/* ===== Hosting Plans with Tabs Section ===== */}
+        
         <Hostingplans />
 
         {/* ===== Testimonial Section (Client Reviews) ===== */}

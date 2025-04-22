@@ -13,8 +13,9 @@ import Contactfriedly from "../../Components/Contactfriedly";
 const EnvatoHosting = () => {
   return (
     <div>
-      <main>
-      
+      <main> 
+        <div></div>
+    
         {/* Envvanto Hosting Hero Section */}
         <div className="max-w-[1352px] w-full mt-[10%] h-auto mx-auto rounded-[22px] bg-gradient-to-b from-[#F4FFF7] to-[#FFFFFF] flex flex-col items-center justify-center p-6 md:p-10 lg:h-[541px]">
   <div className="max-w-[930px] w-full h-auto flex flex-col items-center gap-6">
