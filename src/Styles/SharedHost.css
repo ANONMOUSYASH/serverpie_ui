@@ -93,11 +93,11 @@
     margin-top: 50px;
    /*Centers the container */
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center; 
     text-align: center;
     /* margin-left: 134px; */
-    gap: 23.61px;    
+    gap: 23.61px;
 }
 
 /* @keyframes stableBlink {
@@ -430,17 +430,10 @@
       width: 100%;
       max-width: 180px;
     }
-
-    .hostingprovider{
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 1rem;
-      padding-bottom: 1rem;
-    }
   
     .hostingsub {
-      min-width: 280px; /* Or any width that works well for mobile */
-    flex-shrink: 0;
+      width: 90%;
+      text-align: center;
     }
   }
   
@@ -485,7 +478,7 @@
   
     .hostingprovider {
         display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       gap: 20px;
     }

@@ -9,7 +9,7 @@ import { IoEarthSharp } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import TechBoxes from "../../Components/TechBoxes";
-import BestPricing from "../../Components/BestPricing";
+import BestPricing from "../../Components/BestPricing";    
 
 const VpsServer = () => {
   return (

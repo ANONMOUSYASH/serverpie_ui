@@ -277,6 +277,7 @@
     flex-direction: column;
     padding-top: 80px;
     text-align: center;
+    width: 100%;
   }
 
   .herohead1,
@@ -293,6 +294,7 @@
   .heropar2 {
     font-size: 14px;
     line-height: 28px;
+    text-align: center;
     padding: 0 20px;
   }
 
@@ -323,6 +325,11 @@
     width: 150px;
     height: 45px;
     font-size: 13px;
+  }
+
+  .boxes {
+    width: 95%;
+    margin: auto;
   }
 
   .domainprice {

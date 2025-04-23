@@ -13,6 +13,7 @@ import Testimonial from "../../Components/Testimonial";
 import WorkingStaps from '../../Components/WorkingSteps';
 import BestPricing from '../../Components/BestPricing';
 import SecretServpie from '../../Components/SecretServpie';
+import SharedHost from '../../Components/SharedHost';
 
 const SharedHosting = () => {
   return (
@@ -47,7 +48,8 @@ const SharedHosting = () => {
         <WorkingStaps />
 
         {/* ===== Hosting Comparison Section ===== */}  
-        <Hosting />
+        {/* <Hosting /> */}
+        <SharedHost />
 
         {/* ===== Hosting Solution Section (Scroll-based) ===== */}
         <HostingSolution />
