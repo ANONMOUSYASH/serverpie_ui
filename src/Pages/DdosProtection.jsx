@@ -7,6 +7,8 @@ import Hostingplans from "../Components/Hostingplans";
 import DdosAttacks from "../Components/DdosAttacks";
 import Faq from "../Components/Faq";
 import WorkingStaps from "../Components/WorkingSteps";
+import Trusted from "../Components/Trusted";
+import ResellerSolution from "../Components/ResellerSolution";
 
 const DdosProtection = () => {
   return (
@@ -301,13 +303,17 @@ const DdosProtection = () => {
             </button>
           </div>
         </div>
+        {/* Trusted */}
+        <Trusted />
+        <ResellerSolution />
+        {/* Trusted End */}
         {/* Cpu Compare End */}
 
         {/* <Migration /> */}
         <DdosAttacks />
-        {/* Hosting Plans */}
+        
         {/* <Hostingplans /> */}
-        {/* Hosting Plans End */}
+        
         {/* Faq */}
         <Faq />
         {/* Faq End */}

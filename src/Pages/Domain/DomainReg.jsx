@@ -16,7 +16,7 @@ const DomainReg = () => {
       <main>
         <DomainPricing/>
         <HostingSolution />
-        <div className='pt-[10%]'>
+        <div className='pt-[15%]'>
         <Wordpress />
         </div>
       </main>
